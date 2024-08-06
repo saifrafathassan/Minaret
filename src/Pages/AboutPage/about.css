@@ -1,0 +1,252 @@
+.sec1 {
+    display: flex;
+    position: relative;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+}
+.sec2{
+    display: flex;
+    gap:1rem
+}
+.usps{
+    display: flex;
+    flex-direction: column;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.right {
+    flex: 1;
+    position: relative;
+    
+}
+.imagepana img{
+   
+    width: 100%;
+   
+    top:0;
+    
+}
+
+.left-about {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    
+   
+}
+
+.left-header {
+    font-family: 'Somar', sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
+    /* Adjusted font size for better scaling */
+    line-height: 2.5rem;
+    margin-bottom: 1rem;
+
+
+}
+
+.pragrf {
+    line-height: 1.8rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.15rem;
+    color: #FBC6AC;
+    padding-bottom:3rem ;
+
+
+}
+
+.Vector{
+    position: absolute;
+    width: 45%;
+    top:13.5rem;
+    left:19rem;
+    
+}
+@keyframes flash{
+    50%, 0%{
+         opacity:0.01;
+    }
+   
+    25%,100%{
+        opacity:1;
+    }
+}
+
+.animate-apear{
+    animation: apear 5s ease-out;
+}
+
+.animate-apear-2{
+    animation: apear 2s ease-out;
+}
+.animate-flash{
+    animation: flash 5s ease-in-out;
+    
+}
+
+.eclips{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Somar-bold';
+    font-size: 1.5rem;
+    padding: 1rem;
+    bottom: 4rem;
+    width: 17rem;
+    height: 13rem;
+    left:19rem;
+    /* Ellipse 39 */
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(50px);
+    border-radius: 50%;
+    z-index: 58;
+}
+@keyframes apear{
+    0%{
+       opacity:0;
+    }
+    100%{
+       opacity:1;
+    }
+}
+.Team-section{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.team{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.member{
+    display: flex;
+    flex-direction: row;
+    
+
+}
+.mem-data{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    justify-content: space-around;
+    flex: 1.5;
+}
+.mem-image{
+    flex: 0.5;
+}
+
+.mem-image img{
+    border-radius: 50%;
+    width: 80%;
+    
+}
+
+.social{
+    display: flex;
+    gap: 1rem;
+}
+.icon{
+    background: rgba(217, 217, 217, 0.36);
+    border-radius: 50%;
+    padding: 0.5rem;
+}
+
+.singel-usp-containr{
+    display: flex;
+    flex-direction: column;
+    background: #FBC6AC;
+    padding: 1rem;
+    position: relative;
+    
+}
+.usp-desc{
+    color: black;
+    font-weight: 600;
+}
+.usp-title{
+    font-weight: 700;
+    font-family: 'Somar-bold';
+    font-size: 1.5rem;
+}
+
+.singel-usp-containr img{
+    position: absolute;
+    top:0;
+    right: 0;
+    width:5%
+    
+}
+
+
+
+.slick-dots li button:before {
+    color: #451C44; /* Dots color */
+    font-size: 12px; /* Adjust dot size if needed */
+}
+
+.slick-dots li.slick-active button:before {
+    color: #451C44; /* Active dot color */
+}
+
+/* Change the background color of the arrows */
+.slick-prev,
+.slick-next {
+    background-color: #451C44; /* Arrow background color */
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.75;
+    transition: opacity 0.3s;
+    z-index: 6;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+    opacity: 1;
+}
+
+/* Adjust the arrow icon color */
+.slick-prev:before,
+.slick-next:before {
+    color: #FBC6AC; /* Change arrow icon color */
+    font-size: 20px; /* Adjust icon size if needed */
+}
+
+.slick-prev {
+    left: -40px; /* Adjust this value to add gap to the left arrow */
+}
+
+.slick-next {
+    right: -40px; /* Adjust this value to add gap to the right arrow */
+}
+.slideru{
+    padding: 0 5rem;
+}
+
+
+
+@media (max-width: 1200px) {
+    .sec1{
+        flex-direction: column;
+    }
+    .eclips{
+        z-index: -5;
+
+    }
+    .Vector{
+        z-index: -5;
+    }
+
+}

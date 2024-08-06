@@ -1,0 +1,422 @@
+
+  
+
+.Service_container {
+    display: flex;
+    padding-bottom: 8vh;
+    padding-top: 8vh;
+    background-color: #451C44;
+    height: 100%;
+
+}
+
+.service-grid {
+    display: grid;
+    width: 100%;
+    gap: 0.5rem;
+    grid-template-columns: 0.9fr 0.9fr 0.9fr;
+    grid-template-rows: 335px 335px;
+}
+
+.Service_container .card {
+    position: relative;
+    overflow: hidden;
+}
+
+.Service_container .card .card-bottom {
+    transition: opacity 0.3s ease;
+}
+
+
+.Service_container .card:hover .card-bottom {
+    opacity: 0;
+    pointer-events: none; /* Prevent interaction when hidden */
+}
+.Service_container .card:hover .card-content {
+    padding: 1rem;
+    position: absolute;
+    top:30%;
+
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    border: 1px  solid #FBC6AC;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-bottom: 0px;
+    padding: 1rem;
+    padding-bottom: 0;
+    padding-right: 0;
+    gap: 1rem;
+    justify-content:space-between;
+    position: relative;
+
+
+}
+.card-header{
+    font-family: 'Somar';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 150%;
+    color: #F36E37;
+
+} 
+.card-header span{
+    color: #FBC6AC;
+}
+
+
+.card-content{
+    align-self: center;
+    
+}
+.card-content ul{
+    list-style-type: unset;
+}
+
+.card-bottom{
+    display: flex;
+    align-self: flex-end;
+    
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+
+
+.btm1st{
+    width :3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background:rgba(255, 255, 255, 0.2); 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.btm1st img{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    height: 2rem;
+    width:2rem
+}
+.card-bottom p{
+    color: #FBC6AC;
+    margin-left: -3rem;
+
+}
+
+.btm3d{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    background:rgba(248, 191, 138, 0.2);
+    border-top-left-radius: 200px; /* 100% of the width and height */
+    /* Hide the other three quarters */
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    width: 6rem;
+    height: 6rem;
+}
+
+.btm3d img{
+    display: block;
+    width:5rem
+        
+}
+ 
+/* first  card style */ 
+
+.first{
+    display: flex;
+    flex-direction: column; 
+    gap:0.5rem;
+    padding: 3rem 0 08rem 0;
+    
+
+}
+
+
+.view-more {
+display: flex;
+
+    
+}
+.v-cont span{
+    display: block;
+    font-family: 'Somar';
+    font-weight: 500;
+    display: flex;
+    text-align: end;
+    padding: 0;
+    font-size: 0.7rem;
+
+}
+.v-cont{
+    padding: 3px 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.07);
+    border-radius: 10px 0 0 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 7rem;
+
+    justify-content: space-between;
+   
+}
+.view-more img{
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+
+  width: 2rem;
+  height: 1.5rem;
+
+}
+
+.back{
+    display: flex;
+    align-items: center;
+    background: #F36E37;
+    height: 100%;
+    width:11%;
+    border-radius: 0px 10px 10px 0px;
+}
+
+/* end of the frist card */ 
+
+
+
+@media (max-width: 1200px) {
+    .Service_container {
+        padding-bottom: 6vh;
+        padding-top: 6vh;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 400px 400px 400px;
+        gap: 0.75rem;
+    }
+
+    .card {
+        padding: 0.75rem;
+        gap: 0.75rem;
+    }
+
+    .card-header {
+        font-size: 1.3rem;
+        line-height: 1.4;
+    }
+
+    .desc {
+        font-size: 0.9rem;
+        line-height: 1.8;
+    }
+
+    .v-cont {
+        width: 6rem;
+    }
+
+    .btm3d {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .btm3d img {
+        width: 4rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .Service_container {
+        flex-direction: column;
+        padding-bottom: 5vh;
+        padding-top: 5vh;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 400px;
+        gap: 1rem;
+    }
+
+    .card {
+        padding: 0.5rem;
+        gap: 0.5rem;
+    }
+
+    .card-header {
+        font-size: 1.2rem;
+        line-height: 1.3;
+    }
+
+    .desc {
+        font-size: 0.8rem;
+        line-height: 1.6;
+    }
+
+    .v-cont {
+        width: 5rem;
+    }
+
+    .btm3d {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .btm3d img {
+        width: 3rem;
+    }
+    .first{
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .Service_container {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 4vh;
+        padding-top: 4vh;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr 1fr;
+      
+        gap: 1rem;
+    }
+
+    .card {
+        padding: 0.5rem;
+        gap: 0.5rem;
+    }
+
+    .card-header {
+        font-size: 1.1rem;
+        line-height: 1.2;
+    }
+
+    .desc {
+        font-size: 0.7rem;
+        line-height: 1.4;
+    }
+
+    .v-cont {
+        width: 4rem;
+    }
+
+    .btm3d {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .btm3d img {
+        width: 2.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .first{
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .view-more{
+        width: 100%;
+    }
+
+    .Service_container {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 3vh;
+        padding-top: 3vh;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px;
+        gap: 1rem;
+    }
+
+    .card {
+        padding: 0.5rem;
+        gap: 0.5rem;
+    }
+
+    .card-header {
+        font-size: 1rem;
+        line-height: 1.2;
+    }
+
+    .desc {
+        font-size: 0.6rem;
+        line-height: 1.4;
+    }
+
+    .v-cont {
+        width: 3.5rem;
+    }
+
+    .btm3d {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .btm3d img {
+        width: 2rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .Service_container {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 2vh;
+        padding-top: 2vh;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 1rem;
+    }
+
+    .card {
+        padding: 0.5rem;
+        gap: 0.5rem;
+    }
+
+    .card-header {
+        font-size: 0.9rem;
+        line-height: 1.1;
+    }
+
+    .desc {
+        font-size: 0.5rem;
+        line-height: 1.2;
+    }
+
+    .v-cont {
+        width: 3rem;
+    }
+
+    .btm3d {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .btm3d img {
+        width: 1.5rem;
+    }
+}

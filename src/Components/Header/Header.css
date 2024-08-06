@@ -1,0 +1,22 @@
+.Header-container{
+    height: 100%;
+}
+.Caption{
+    font-family: 'Somar-bold';
+    font-size: 3rem;
+    margin-top:10rem;
+    margin-bottom: 10rem;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .Caption {
+        font-size: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+}
+
+

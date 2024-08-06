@@ -1,0 +1,161 @@
+{ 
+    "services": [
+        {
+          "service_name": "Foundation and Strategy",
+          "service_icon": "/Assets/Gifs/1.gif",
+          "service_categories": [ "Strategy and Consulting",  "Branding and Identity"]
+        },
+        {
+          "service_name": "Content and SEO",
+          "service_icon": "/Assets/Gifs/2.gif",
+          "service_categories": [  "Content and SEO", "Media and Creative Services" ]
+        },
+        {
+          "service_name": "Publishing, Engagement and Outreach",
+          "service_icon": "/Assets/Gifs/3.gif",
+          "service_categories": ["Social Media and Influencer Marketing","Engagement and Outreach" ]
+        },
+        {
+          "service_name": "Sponsored, Conversion and Analytics",
+          "service_icon": "/Assets/Gifs/4.gif",
+          "service_categories": ["Advertising and Promotion",  "Analytics and Conversion"  ]
+        },
+        {
+          "service_name": "Online Expansion",
+          "service_icon": "/Assets/Gifs/5.gif",
+          "service_categories": [ "Web and Mobile Presence",  "E-commerce and Lead Generation" ]
+        }
+      ]
+
+      ,
+      "service_cat":[
+        {
+            "cat_name":"Strategy and Consulting",
+            "sup_cats":["Strategic Planning and Consulting",
+                        "Market Research and Competitor Analysis",
+                            "Business Development Strategy",
+                                    "Operational Efficiency Consulting"]
+        },
+        {
+            "cat_name":"Content and SEO",
+            "sup_cats":["Content Strategy Development","Search Engine Optimization (SEO)",
+            "Content Marketing"]
+        }
+        ,
+        {
+            "cat_name":"Branding and Identity",
+            "sup_cats":["Branding and Logo Design","Graphic Design"]
+        }
+        ,
+        {
+            "cat_name":"Media and Creative Services",
+            "sup_cats":["Motion & Animation",
+                    "Video Marketing",
+"Interactive Content Creation"]
+        }
+        ,
+        {
+            "cat_name":"Social Media and Influencer Marketing",
+            "sup_cats":["Social Media Marketing",
+                        "Influencer Marketing & Management"]
+        },
+        {
+            "cat_name":"Engagement and Outreach",
+            "sup_cats":["SEmail Marketing","WhatsApp Wave Marketing"]
+        }
+        ,
+        {
+            "cat_name":"Advertising and Promotion",
+            "sup_cats":["Pay-Per-Click (PPC) Advertising", "Display and Retargeting Advertising",  "Social Media Advertising"]
+        },
+        {
+            "cat_name":"Analytics and Conversion",
+            "sup_cats":["Analytics and Data Analysis","Conversion Rate Optimization (CRO)"]
+        },
+        {
+            "cat_name":"Web and Mobile Presence",
+            "sup_cats":["Web Design and Development","Mobile App Design and Development"]
+        }
+        ,{
+            "cat_name":"E-commerce and Lead Generation",
+            "sup_cats":["E-commerce Markting", "Lead Generation"]
+        }
+
+
+      ]
+
+
+
+
+    
+    
+    ,
+    "Testimonials":[{
+        "customer_Name":"Sohila Ali",
+        "image":"/Assets/images/Testimonials/1.png",
+        "comment":"Very professional agency, boosted our business sales and traffic significantly",
+        "date":"4 Months ago"
+    },{
+        "customer_Name":"Bassem Mohamed",
+        "image":"/Assets/images/Testimonials/3.png",
+        "comment":"Professional team of marketers and graphic designers Creative and so talente",
+        "date":"5 Months ago"
+    },{
+        "customer_Name":"Shady Al-dimshawy",
+        "image":"/Assets/images/Testimonials/2.png",
+        "comment":"Definitely the place for your education needs , great teachers and excellent curriculum",
+        "date":"7 Months ago"
+
+    }] ,
+
+
+    "bolgs":[{
+        "title":" Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore ",
+        "image":"/Assets/images/Blogs/1.png",
+        "content":"the minraet blogs is the way where you can know trends of the markting in digital market"
+
+    },
+    {
+        "title":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore ",
+        "image":"/Assets/images/Blogs/2.png",
+        "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut "
+
+    },
+    {
+        "title":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore ",
+        "image":"/Assets/images/Blogs/3.png",
+        "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut  "
+
+    }
+       
+    ],
+    "bolgspage":[
+        {
+        "title":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore ",
+        "image":"/Assets/images/Blogs/2.png",
+        "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut "
+        },
+        {
+            "title":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore ",
+            "image":"/Assets/images/Blogs/21.png",
+            "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut "
+        }
+        ,
+        {
+            "title":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore ",
+            "image":"/Assets/images/Blogs/22.png",
+            "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut "
+        },
+        {
+            "title":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore ",
+            "image":"/Assets/images/Blogs/23.png",
+            "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut "
+        },
+        {
+            "title":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore ",
+            "image":"/Assets/images/Blogs/24.png",
+            "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut "
+        }
+    ]
+
+}

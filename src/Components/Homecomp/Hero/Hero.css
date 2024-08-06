@@ -1,0 +1,144 @@
+.Hero_Container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem; /* Reduced gap for better responsiveness */
+    
+}
+
+.Hero-left {
+    flex: 1;
+    margin-top: 10rem; /* Adjusted for better scaling */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10rem ;
+}
+
+.Hero-left > p {
+    color: #BDBDBD;
+    font-family: 'Somar', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-align: start;
+    line-height: 3rem;
+    margin: 20px 0;
+}
+
+.Hero-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.image img {
+    position: absolute;
+    width: 100%;
+    max-width: 23rem;
+    height: auto;
+    left: 10rem;
+    top: 5rem;
+}
+
+.Hero-left-header {
+    font-family: 'Somar', sans-serif;
+    font-weight: 800;
+    font-size: 1.6rem; /* Adjusted font size for better scaling */
+    line-height: 2.5rem;
+    background: linear-gradient(100deg, #8A1848 52.05%, #9b9999 150%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.Company {
+    font-family: 'Somar', sans-serif;
+    font-weight: 600;
+    background: linear-gradient(90deg, #F36E37 32.05%, #eee5ea 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .Hero_Container {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .Hero-left {
+        margin-top: 5rem;
+    }
+
+    .Hero-left > p {
+        font-size: 1.1rem;
+        line-height: 2.5rem;
+    }
+
+    .Hero-left-header {
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+    }
+
+    .image img {
+        left: 5rem;
+        top: 4rem;
+        max-width: 20rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .Hero_Container {
+        padding: 10px;
+    }
+
+    .Hero-left {
+        margin-top: 3rem;
+    }
+
+    .Hero-left > p {
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+
+    .Hero-left-header {
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+
+    .image img {
+        left: 2rem;
+        top: 3rem;
+        max-width: 18rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .Hero_Container {
+        padding: 5px;
+    }
+
+    .Hero-left {
+        margin-top: 2rem;
+    }
+
+    .Hero-left > p {
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+    }
+
+    .Hero-left-header {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .image img {
+        left: 1rem;
+        top: 2rem;
+        max-width: 15rem;
+    }
+}

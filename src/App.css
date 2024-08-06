@@ -1,0 +1,120 @@
+
+/* Apply the Somar font to the entire application */
+
+@font-face {
+  font-family: 'Somar';
+  src: url('/Assets/Fonts/_SomarGX.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Somar-bold';
+  src: url('/Assets/Fonts/Somar-Bold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+body {
+  font-family: 'Somar';
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #F5F5F5;
+  background-image: url('/Assets/images/background.png');
+  background-size: contain;
+  background-repeat: repeat-y;
+  overflow-x: hidden;
+}
+
+
+.padc{
+  padding: 2rem 9.416vw 2vh 9.416vw;
+
+}
+
+
+
+.title {
+  /* Our Services */
+  
+  font-family: 'Somar-bold';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 150%;
+  color:  #FBC6AC;
+
+}
+.title span{
+  color:#F36E37;
+ 
+}
+
+.mcolor{
+  color: #451C44;
+  display: inline;
+}
+.secolor{
+  color: #F36E37;
+}
+.thrcolor{
+  color: #8A1848;
+}
+.frthcolor{
+  color: #FBC6AC;
+}
+
+.desc{
+  font-size: 1rem;
+  color: white;
+  font-weight: 700;
+  font-family: 'Somar';
+  line-height: 2;
+}
+
+
+.width-50{
+  width:50%;
+}
+
+.bg1{
+  background:  #451C44;
+}
+.bg2{
+  background:#F36E37;
+}
+.bg3{
+  background:  #FBC6AC;
+}
+
+.animate-right-left {
+  opacity: 1; /* Make the element visible */
+  transform: translateX(0); /* Move to final position */
+  animation: rlft 2s linear; /* Apply up-down animation */
+} 
+
+
+@keyframes rlft {
+  0% {
+      transform: translateX(50%);
+  }
+  100% {
+      transform: translateX(0);
+  }
+}
+
+.s2{
+  font-size: 1.8rem;
+}
+.s1{
+  font-size: 1rem;
+}
+
+
+@media (max-width: 1200px) {
+  body{
+    background-size:cover;
+  }
+}

@@ -1,0 +1,23 @@
+.port-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    position: relative; 
+    gap: 0.3rem;
+    grid-auto-rows: auto;
+}
+
+.image-portfolio {
+   
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.image-portfolio img {
+    width: 100%; /* Make the image fill the width of the cell */
+   /* Maintain aspect ratio */
+   height: 100%;
+    display: block;
+}
+
+/* Define specific areas for each item */
