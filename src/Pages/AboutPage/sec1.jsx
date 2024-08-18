@@ -24,7 +24,7 @@ componentDidMount() {
                 }
             });
         },
-        { threshold: 0.1 } // Adjust the threshold as needed
+        { threshold: 0.3 } // Adjust the threshold as needed
     );
 
     if (this.rightRef.current) {

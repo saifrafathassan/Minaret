@@ -1,6 +1,6 @@
 .portfolio-cont{
     background-color: #451C44;
-    height: 100vh;
+  
     display: flex;
     flex-direction: column;
     gap:2rem;
@@ -8,8 +8,15 @@
     position: relative;
 }
 
+
 .Portf_images{
     display: flex;
     flex-direction: row;
     gap :1rem
 }
+
+@media (max-width: 768px) {
+    .Portf_images {
+      flex-direction: column;
+    }
+  }

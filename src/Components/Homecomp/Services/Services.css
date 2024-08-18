@@ -194,7 +194,7 @@ display: flex;
 
 /* end of the frist card */ 
 
-
+ 
 
 @media (max-width: 1200px) {
     .Service_container {
@@ -281,6 +281,22 @@ display: flex;
         justify-content: center;
         align-items: center;
     }
+
+    .view-more{
+        justify-content: space-between;
+    }
+    .back {
+        position: relative;
+        width: 2rem;
+    }
+    .back img{
+        position: absolute;
+        width: 5rem;
+        z-index: 10;
+    }
+    .v-cont {
+        width: 5rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -312,9 +328,6 @@ display: flex;
         line-height: 1.4;
     }
 
-    .v-cont {
-        width: 4rem;
-    }
 
     .btm3d {
         width: 3rem;
@@ -324,17 +337,31 @@ display: flex;
     .btm3d img {
         width: 2.5rem;
     }
+
+    .view-more{
+        justify-content: space-between;
+    }
+    .back {
+        position: relative;
+        width: 2rem;
+    }
+    .back img{
+        position: absolute;
+        width: 5rem;
+        z-index: 10;
+    }
+    .v-cont {
+        width: 5rem;
+    }
 }
 
 @media (max-width: 576px) {
     .first{
-        justify-content: center;
-        align-items: center;
+        justify-content: start;
+        align-items: start;
         
     }
-    .view-more{
-        width: 100%;
-    }
+   
 
     .Service_container {
         flex-direction: column;
@@ -355,7 +382,7 @@ display: flex;
     }
 
     .card-header {
-        font-size: 1rem;
+        font-size: 1.5rem;
         line-height: 1.2;
     }
 
@@ -364,8 +391,20 @@ display: flex;
         line-height: 1.4;
     }
 
+    .view-more{
+        justify-content: space-between;
+    }
+    .back {
+        position: relative;
+        width: 2rem;
+    }
+    .back img{
+        position: absolute;
+        width: 5rem;
+        z-index: 10;
+    }
     .v-cont {
-        width: 3.5rem;
+        width: 5rem;
     }
 
     .btm3d {

@@ -42,7 +42,7 @@ const Contact =()=>{
                 <div className='Contact-Container 'ref={cont_ref} >
 
                 <div className='left-contact padc' >
-                <div className='title'> 
+                <div className='title-contact'> 
                     <p >Ready to elevate your brand?</p>
                 </div>
                 <div className='width-50 tc '>

@@ -125,14 +125,16 @@
 .arrow-up{
     font-size: 1.23rem;
 }
+ 
 
-@media (max-width:768px) {
-    .Clients-container{
+@media (max-width: 768px) {
+    .Clients-container {
         flex-direction: column-reverse;
         height: 100%;
-        gap:2rem
+        gap: 2rem;
     }
 
-
-    
+    .arrows {
+        display: none;
+    }
 }

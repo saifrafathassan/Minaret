@@ -10,6 +10,7 @@ const About = () => {
         const observer = new IntersectionObserver(
             (entries) => {
 
+
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
                         if(entry.target.classList[0]==='About-left'){
@@ -26,7 +27,7 @@ const About = () => {
                     } else {
                         entry.target.classList.remove("animate-up-down");
                         entry.target.classList.remove( "animate-down");
-                        entry.target.children.classList.remove( "rotate");
+                        entry.target.classList.remove( "rotate");
                     }
                 });
             },

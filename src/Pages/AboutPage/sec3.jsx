@@ -6,7 +6,7 @@ class Sec3 extends Component {
     state = {  } 
     render() { 
         return (
-            <section className="sec2 padc bg2" >
+            <section className="sec2-r padc bg2" >
                    
                     <div className="left-about">
                         <div className="imagepana">

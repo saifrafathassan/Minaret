@@ -5,6 +5,7 @@ import { FaStar } from "react-icons/fa";
 import './Clients.css';
 import data from '../../../utils/data/data.json';
 import { HiArrowSmallDown } from "react-icons/hi2";
+import { HiArrowSmUp } from "react-icons/hi";
 
 class ClientRev extends Component {
     state = {

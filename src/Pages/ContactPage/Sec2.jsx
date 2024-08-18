@@ -9,7 +9,8 @@ class Sec2 extends Component {
             <section className="padc bg2  Sec2">
                 <div className="uper">
                 <div className="title flex gap-1">
-                            Let's Start <p className="thrcolor" > a Conversation</p>
+                Fill this  <p className="thrcolor" > form to join us</p>
+                            
                         </div>
                         <div className="sup-title  text-3xl">
                         Embark on Your Brand's Success Journey with Us

@@ -6,7 +6,7 @@ class Sec3 extends Component {
     state = {  } 
     render() { 
         const media=[{'title':'Our Doors Are Open','content':{"Address": "Apt 30, (C) Tower, University Towers, Taha Hussein St, El-Minya, Egypt Feel the pulse of digital creativity firsthand. Visit us!"},'icon':"/Assets/Gifs/cont1.gif"},
-              {'title':'Direct Lines to Our Team','content':{'phone':'0198877655543','email':' Theminaretagency.com'},'icon':"/Assets/Gifs/cont2.gif"},
+              {'title':'Direct Lines to Our Team','content':{'phone':'+201151131131','email':'Info@theminaretagency.com'},'icon':"/Assets/Gifs/cont2.gif"},
               {'title':'Join Our Community','content':{'Facebook':' The Minaret Agency','Instgram':' The Minaret Agency','Sanpchat':' The Minaret Agency'},'icon':"/Assets/Gifs/cont3.gif"}
         ]
 

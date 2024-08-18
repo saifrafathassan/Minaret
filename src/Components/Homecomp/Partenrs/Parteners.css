@@ -1,7 +1,7 @@
 .partenr{
     background:rgba(255,255,255,0.1);
    
-    height: 65vh;
+    padding-bottom: 5rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -13,6 +13,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border:solid gold 5px;
+    background: white;
   }
   
   .slider-wrapper .slick-list {
@@ -43,10 +45,19 @@
     .logo {
       width: 50rem;
     }
+    .partenr{
+      padding-right: 2rem;
+      padding-left: 2rem;
+    }
   }
   
   @media (max-width: 360px) {
     .logo {
       width: 40rem;
     }
+    .partenr{
+      padding-right: 2rem;
+      padding-left: 2rem;
+    }
+
   }

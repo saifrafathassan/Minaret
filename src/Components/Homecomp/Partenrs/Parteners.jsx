@@ -19,7 +19,7 @@ class Parteners extends Component {
         const settings = {
             dots: true,
             infinite: true,
-            speed: 3000,
+            speed: 2000,
             slidesToShow: 4,
             slidesToScroll: 1,
             autoplay: false,
@@ -62,7 +62,7 @@ class Parteners extends Component {
                     <Slider {...settings}>
                         {logos.map((logo, index) => (
                             <div key={index} className="logo-containr">
-                                <img src={logo} alt={`Partner ${index + 1}`} className="logo" />
+                                <img src={logo} alt={`Partner  ${index + 1}`} className="logo" />
                             </div>
                         ))}
                     </Slider>
