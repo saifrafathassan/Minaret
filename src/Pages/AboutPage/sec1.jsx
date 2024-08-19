@@ -24,7 +24,7 @@ componentDidMount() {
                 }
             });
         },
-        { threshold: 0.3 } // Adjust the threshold as needed
+        { threshold: 0.1 } // Adjust the threshold as needed
     );
 
     if (this.rightRef.current) {
@@ -38,7 +38,7 @@ componentDidMount() {
 
 render() { 
     return (
-        <div className="sec1 padc bg1">
+        <div className="sec1 padc bg1" style={{paddingBottom: '150px'}}>
             <div className= {`left-about ${this.state.isVisible ? 'animate-apear' : ''}`} 
                 ref={this.rightRef}>
                 <div className="left-header secolor">
@@ -56,7 +56,7 @@ render() {
                 </div>
             </div>
             <div 
-                className='right'
+                className='right rightImg'
             >
                 <img src={image} alt="" />
             </div>

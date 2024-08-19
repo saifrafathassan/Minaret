@@ -2,14 +2,15 @@ import React from "react";
 import { Component } from "react";
 import image from '/Assets/images/AboutPage/4.png'
 import './about.css';
+import { Padding } from "@mui/icons-material";
 class Sec4 extends Component {
     state = {  } 
     render() { 
         return (
-            <section className="sec2 padc bg1" >
+            <section className="sec2 padc bg1 mission">
                     <div className="left-about " >
                        <div>
-                       <div className="title">
+                       <div className="title missionTitle"  style={{marginBottom:'10px'}}>
                         Our <span>Mession</span>
                         </div>
                         <div className="desc">
@@ -18,7 +19,7 @@ class Sec4 extends Component {
                         </div>
                        </div>
                        <div>
-                       <div className="title">
+                       <div className="title" style={{marginTop: '20px',marginBottom:'10px'}}>
                         Our <span>Vissoin</span>
                         </div>
                         <div className="desc">

@@ -6,8 +6,7 @@ class Sec3 extends Component {
     state = {  } 
     render() { 
         return (
-            <section className="sec2-r padc bg2" >
-                   
+            <section className="padc bg2 sec-reverse">
                     <div className="left-about">
                         <div className="imagepana">
                         <img src={image} alt="" />
@@ -15,8 +14,8 @@ class Sec3 extends Component {
                         
                     </div>
 
-                    <div className="right pt-20" >
-                        <div className="title">
+                    <div className="right" >
+                        <div className="title" style={{marginBottom:'10px'}}>
                         Our <p className="mcolor">Message</p> 
                         </div>
                         <div className="desc">

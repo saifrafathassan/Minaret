@@ -33,9 +33,9 @@ componentDidMount() {
     render() { 
         return (
             <section className="sec2 padc bg2" >
-                    <div className= {`left-about  pt-20 ${this.state.isVisible ? 'animate-apear' : ''}`} 
+                    <div className= {`left-about  ${this.state.isVisible ? 'animate-apear' : ''}`} 
                 ref={this.rightRef} >
-                        <div className="title">
+                        <div className="title" style={{marginBottom:'10px'}}>
                         Our <p className="mcolor">Story</p> 
                         </div>
                         <div className="desc">
@@ -45,7 +45,7 @@ componentDidMount() {
                         </div>
 
                     </div>
-                    <div className={`right  pt-20 ${this.state.isVisible ? 'animate-apear-2' : ''}`} 
+                    <div className={`right  ${this.state.isVisible ? 'animate-apear-2' : ''}`} 
                 ref={this.rightRef} >
                         <div className="imagepana">
                         <img src={image} alt="" />
