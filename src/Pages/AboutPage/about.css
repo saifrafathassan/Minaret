@@ -1,16 +1,17 @@
 .sec1 {
     display: flex;
     position: relative;
-    padding-top: 5rem;
+    padding-top: 4rem;
     padding-bottom: 5rem;
+
 }
-.sec2{
+.sec2 ,.sec-reverse{
     display: flex;
-    gap:1rem
+    align-items: center;
+    gap:2rem
 }
-.sec2-r {
-    display: flex;
-    gap:3rem
+.sec-reverse,.mission{
+    padding-bottom: 50px;
 }
 .usps{
     display: flex;
@@ -50,7 +51,9 @@
 
 
 }
-
+.missionTitle{
+    padding-top: 50px;
+}
 .pragrf {
     line-height: 1.8rem;
     font-size: 1rem;
@@ -66,8 +69,8 @@
 .Vector{
     position: absolute;
     width: 45%;
-    top:13.5rem;
-    left:19rem;
+    top:19rem;
+    left:19.2rem;
     
 }
 @keyframes flash{
@@ -99,11 +102,11 @@
     align-items: center;
     font-family: 'Somar-bold';
     font-size: 1.5rem;
-    padding: 1rem;
-    bottom: 4rem;
+    padding: 1.5rem;
+    bottom: 2.36rem;
     width: 17rem;
-    height: 13rem;
-    left:19rem;
+    height: 13.6rem;
+    left:19.2rem;
     /* Ellipse 39 */
     background: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(50px);
@@ -126,7 +129,7 @@
 
 .team{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: 1fr 1fr;
     gap: 3rem;
 }
 
@@ -150,12 +153,17 @@
 .mem-image img{
     border-radius: 50%;
     width: 80%;
+    border: solid 2px #8A1848;
     
 }
 
 .social{
     display: flex;
     gap: 1rem;
+}
+.social2{
+    display: none;
+    gap:10px
 }
 .icon{
     background: rgba(217, 217, 217, 0.36);
@@ -241,8 +249,14 @@
 
 
 @media (max-width: 1200px) {
-    .sec1{
+    .sec1,.sec2{
         flex-direction: column;
+        gap:30px;
+        align-items: flex-start;
+    }
+    .sec-reverse{
+        /* display: flex; */
+        flex-direction: column-reverse !important;
     }
     .eclips{
         z-index: -5;
@@ -251,39 +265,87 @@
     .Vector{
         z-index: -5;
     }
+    .pt-20{
+        padding-top: 10px;
+    }
+    .slideru {
+        padding: 10px;
+    }
+    .slick-prev, .slick-next{
+        top:35%;
+    }
+    .usps{
+        padding-top: 2.5rem;
+        padding-bottom: 0;
+    }
+    .slick-dots{
+        bottom: 20px;
+    }
+    .team{
+        grid-template-columns: 1fr;
+    }
+    .missionTitle{
+        padding-top: 0;
+    }
+    
 
 }
-
-
-@media (max-width: 768px) {
-    .sec1{
-        flex-direction: column;
+@media (max-width: 480px) {
+    .left-header{
+        font-size: 24px;
     }
-    .eclips{
-        z-index: -5;
+    .social{
+        display: none;
+    }
+    .social2{
+        display: flex;
+    }
+    .Team-section .header .title p{
+        font-family: 'Somar';
+        font-weight: 400;
+        font-size: 24px;
+    }
+    .desc{
+        margin-top: -15px;
+        padding-top: 0;
+    }
+    .pt-20{
+        padding-top: 0;
+    }
+    .usp-desc{
+        font-size: 10px;
+    }
+    .rightImg img{
+        padding-left: 120px;
+        z-index: 99;
     }
     .Vector{
-        z-index: -5;
-    }
-    .sec2{
-        flex-direction: column;
-    }
-    .sec2-r {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    .pragrf{
-        line-height: 1.05;
-        letter-spacing: 0;
-        word-spacing: 1.5;
-    }
-    .left-header{
-        font-size: 1.5rem;
-    }
-    .left-about{
-        gap: 0;
+        position:absolute;
+        width: 60%;
+        top:52.5rem;
+        left: 0.75rem;;
+        z-index: 98;
         
-       
     }
-
+    .eclips{
+        display: none;
+    }
+    .eclips{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Somar-bold';
+        font-size: 0.5rem;
+        padding: 20px;
+        bottom: 6.22rem;
+        width: 5.8rem;
+        height: 74px;
+        left: 0.75rem;;
+        background: rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(50px);
+        border-radius: 50%;
+        z-index: 100;
+        /* border: 1px red solid; */
+    }
 }

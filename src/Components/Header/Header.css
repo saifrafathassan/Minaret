@@ -3,9 +3,9 @@
 }
 .Caption{
     font-family: 'Somar-bold';
-    font-size: 3rem;
-    margin-top:10rem;
-    margin-bottom: 10rem;
+    font-size: 80px;
+    padding-top:10rem;
+    padding-bottom: 10rem;
 }
 
 
@@ -14,9 +14,20 @@
 @media (max-width: 768px) {
     .Caption {
         font-size: 2rem;
-        margin-top: 2rem;
-        margin-bottom: 1rem;
+        padding: 2rem;
+        padding-bottom: 1rem;
     }
 }
-
-
+@media (max-width: 480px) {
+    .Header-container{
+        height: 30vh;
+        background-image: url('/Assets/images/background.png');
+        background-size: cover;
+    }
+    .Caption {
+        font-size: 2rem;
+        padding-top: 5rem;
+        padding-bottom: 1rem;
+        font-size: 30px;
+    }
+}

@@ -12,7 +12,7 @@ class Team extends Component {
             <section className="padc Team-section bg1">
                 <div className="header">
                     <div className="title">
-                        <p>Meet <span> Our Team</span></p>
+                        <p >Meet <span style={{color:'#8A1848'}}> the Team</span></p>
                     </div>
                     <div className="desc">
                         <p>The Architects Behind Your Brand's Ascension</p>
@@ -39,7 +39,11 @@ class Team extends Component {
                                 <div className="icon"> <TiSocialLinkedin size={20} /></div>
                                 <div className="icon"> <TiSocialFacebook size={20}/></div>
                                 <div className="icon"> <FiPhone size={20}/></div>
-
+                            </div>
+                            <div className="social2">
+                                <div className="icon"> <TiSocialLinkedin size={10} /></div>
+                                <div className="icon"> <TiSocialFacebook size={10}/></div>
+                                <div className="icon"> <FiPhone size={10}/></div>
                             </div>
                         </div>
                     </div>
@@ -64,6 +68,11 @@ class Team extends Component {
                                 <div className="icon"> <TiSocialFacebook size={20}/></div>
                                 <div className="icon"> <FiPhone size={20}/></div>
 
+                            </div>
+                            <div className="social2">
+                                <div className="icon"> <TiSocialLinkedin size={10} /></div>
+                                <div className="icon"> <TiSocialFacebook size={10}/></div>
+                                <div className="icon"> <FiPhone size={10}/></div>
                             </div>
                         </div>
                     </div>

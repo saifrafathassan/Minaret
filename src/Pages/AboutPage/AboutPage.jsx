@@ -15,7 +15,6 @@ class AboutPage extends Component {
             <section className="About-page  ">
                 <Header Cap='Learn About Our Agency '/>
                 <Sec1/>
-
                 <Sec2/>
                 <Sec3/>
                 <Sec4/>
