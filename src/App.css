@@ -26,6 +26,7 @@ body {
   background-size: contain;
   background-repeat: repeat-y;
   overflow-x: hidden;
+  
 }
 
 
@@ -120,9 +121,9 @@ body {
 }
 @media (max-width: 480px){
   body{
-    background-color: transparent;
-    /* background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top center; */
+    
+    background-size: 100vw 60vh;
+    
+    background-position:  top; 
   }
 }

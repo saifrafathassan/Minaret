@@ -1,12 +1,15 @@
 .Nav-Container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     background: rgb(221, 233, 221, 0.0);
     max-width: 1920px;
-    position: relative;
-    justify-content: space-between;
+    position: absolute; /* Make the container absolute */
+    top: 0; /* Position it at the top of its containing element */
+    left: 0; /* Position it at the left of its containing element */
+    width: 100%; /* Ensure it spans the full width of the screen */
+    z-index: 10; /* Ensure it's above other elements if necessary */
 }
-
 .nav-logo {
     height: 5.592105263dvh;
     width: 8.4375vw;
