@@ -11,6 +11,7 @@ class Footer extends Component {
             <section className="Footer padc">
                 <div className="footer-content" >
                     <div className="col1">
+                        
                         <img src={logo} alt="" />
                         <p>
                         Navigate through our site with ease. Connect with us on social media, 
