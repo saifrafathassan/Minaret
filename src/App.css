@@ -22,9 +22,8 @@ body {
   padding: 0;
   box-sizing: border-box;
   color: #F5F5F5;
-  background-image: url('/Assets/images/background.png');
-  background-size: contain;
-  background-repeat: repeat-y;
+  
+  
   overflow-x: hidden;
   
 }

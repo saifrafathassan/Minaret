@@ -1,9 +1,12 @@
 .Hero_Container {
-    margin-top: 5rem;
+    padding-top: 5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     gap: 2rem; /* Reduced gap for better responsiveness */
+    background-image: url('/Assets/images/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
     
 }
 
@@ -94,7 +97,9 @@
 
 @media (max-width: 768px) {
     .Hero_Container {
-        padding: 10px;
+        padding: 5rem;
+        background-size: cover;
+        background-position: center;
     }
 
     .Hero-left {
@@ -120,7 +125,7 @@
 
 @media (max-width: 480px) {
     .Hero_Container {
-        padding: 5px;
+        padding-top: 3rem;
     }
 
     .Hero-left {
