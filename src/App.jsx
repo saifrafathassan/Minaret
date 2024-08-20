@@ -10,6 +10,7 @@ import ServicesPage from './Pages/ServicesPage/ServicesPage';
 import BlogsPage from './Pages/BlogsPage/BlogsPage';
 import PortofolioPage from './Pages/PortofolioPage/PortofolioPage';
 import ContactPage from './Pages/ContactPage/ContactPage';
+import CareerPage from './Pages/CareerPage/CareerPage';
 function App() {
   
 
@@ -23,6 +24,7 @@ function App() {
         <Route path='/Blog' element={<BlogsPage/>}/>
         <Route path='/portfolio' element={<PortofolioPage/>}/>
         <Route path='/Contact us' element={<ContactPage/>}/>
+        <Route path='/Career' element={<CareerPage/>}/>
         <Route path="*" element={<Navigate to="/Home" />} />
       </Routes>
   

@@ -125,4 +125,8 @@ body {
     
     background-position:  top; 
   }
+
+  .title{
+    font-size: 25px;
+  }
 }

@@ -4,7 +4,8 @@ import { Component } from "react";
 import image from '/Assets/images/AboutPage/1.png';
 import './about.css';
 import image2 from '/Assets/images/AboutPage/vec.png';
-class Sec1 extends Component {  constructor(props) {
+class Sec1 extends Component {  
+    constructor(props) {
     super(props);
     this.rightRef = React.createRef();
     this.eclips=React.createRef();
