@@ -1,6 +1,7 @@
 import React from "react";
 import { Component } from "react";
-import './spage.css'
+import './spage.css';
+import { Link } from "react-router-dom";
 import Btn from "../../Components/btn/btn";
 class ServiceCard extends Component {
     state = {  } 
@@ -21,7 +22,12 @@ class ServiceCard extends Component {
                             <div className="desc text-sm ">
                                 {service.service_decs}
                             </div>
-                            <Btn Caption={'Book Now'} />
+                          
+                           
+                            <Link key={index} to={`/Service/${service.service_id}`}>
+                            <Btn   Caption={'Book Now'} />
+                            </Link>
+                          
 
                         </div>
                     )

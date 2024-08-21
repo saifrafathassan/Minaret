@@ -8,22 +8,30 @@
                     "sup_name": "Strategy and Consulting",
                     "services": [
                         {
+                            
                             "service_name": "Strategic Planning and Consulting",
+                            "service_id":1,
                             "service_decs": "Crafting bespoke business strategies focused on digital navigation, long-term growth, and ROI. Our plans are designed to integrate seamlessly with your business operations, ensuring sustainable success.",
                             "service_logo": "/Assets/images/Service-Logo/1.png"
                         },
                         {
+                           
                             "service_name": "Market Research & Competitor Analysis",
+                            "service_id":2,
                             "service_decs": "Crafting bespoke business strategies focused on digital navigation, long-term growth, and ROI. Our plans are designed to integrate seamlessly with your business operations, ensuring sustainable success.",
                             "service_logo": "/Assets/images/Service-Logo/2.png"
                         },
                         {
+                            
                             "service_name": "Business Development Strategy",
+                            "service_id":3,
                             "service_decs": "Specializing in identifying and pursuing strategic partnerships, exploring new markets, and developing channels for customer acquisition to drive business growth. We help you identify untapped opportunities and forge connections that amplify your reach and influence.",
                             "service_logo": "/Assets/images/Service-Logo/3.png"
                         },
                         {
+                           
                             "service_name": "Operational Efficiency Consulting",
+                            "service_id":4,
                             "service_decs": "Streamlining operations to enhance productivity and reduce costs. Our approach involves analyzing your business processes, identifying areas for improvement, and implementing solutions that boost operational effectiveness.",
                             "service_logo": "/Assets/images/Service-Logo/4.png"
                         }
@@ -33,12 +41,16 @@
                     "sup_name": "Branding and Identity",
                     "services": [
                         {
+                            
                             "service_name": "Branding and Logo Design",
+                            "service_id":5,
                             "service_decs": " Crafting unique brand identities with memorable logos, ensuring brand consistency across all digital platforms.",
                             "service_logo": "/Assets/images/Service-Logo/5.png"
                         },
                         {
+                            
                             "service_name":  " Graphic Design",
+                            "service_id":6,
                             "service_decs":"Creating visually appealing designs, including infographics and branding materials, to communicate brand messages effectively.",
                             "service_logo": "/Assets/images/Service-Logo/6.png"
                         }
@@ -54,17 +66,23 @@
                     "sup_name": "Content and SEO",
                     "services": [
                         {
+                           
                             "service_name": "Content Strategy Development",
+                            "service_id":7,
                             "service_decs": "Creating comprehensive content plans aligned with business objectives, targeting audience engagement and brand authority.",
                             "service_logo": "/Assets/images/Service-Logo/7.png"
                         },
                         {
+                            
                             "service_name": "Search Engine Optimization (SEO)",
+                            "service_id":8,
                             "service_decs": "SEO Brief: Enhancing online visibility through technical SEO, keyword optimization, and high-quality backlinks for higher search engine rankings.",
                             "service_logo": "/Assets/images/Service-Logo/8.png"
                         },
                         {
+                            
                             "service_name": "Content Marketing",
+                            "service_id":9,
                             "service_decs": "Developing and distributing valuable content to attract, engage, and retain a targeted audience, fostering brand loyalty.",
                             "service_logo": "/Assets/images/Service-Logo/9.png"
                         }
@@ -74,20 +92,26 @@
                     "sup_name": "Media and Creative Services",
                     "services": [
                         {
+                            
                             "service_name": "Motion & Animation",
+                            "service_id":10,
                             "service_decs": "Bring your brand to life with our Motion & Animation services. From captivating videos to engaging animations, we make your message move.",
                             "service_logo": "/Assets/images/Service-Logo/10.png"
                         }
                         ,
                         {
+                            
                             "service_name": "Video Marketing",
+                            "service_id":11,
                             "service_decs": "Producing engaging video content such as explainer videos, testimonials, and product demos to enhance online presence.",
                             "service_logo": "/Assets/images/Service-Logo/11.png"
                         }
                         ,
 
                         {
+                            
                             "service_name": "Interactive Content Creation",
+                            "service_id":12,
                             "service_decs": "Developing interactive elements like quizzes and polls to increase user engagement and time spent on the site.",
                             "service_logo": "/Assets/images/Service-Logo/12.png"
                         }
@@ -105,12 +129,16 @@
                     "sup_name": "Social Media and Influencer Marketing",
                     "services": [
                         {
+                            
                             "service_name": "Social Media Marketing",
+                            "service_id":13,
                             "service_decs": "Engaging with audiences on platforms like Facebook, Instagram, and Twitter through tailored content, fostering community and brand awareness.",
                             "service_logo": "/Assets/images/Service-Logo/13.png"
                         },
                         {
+                           
                             "service_name": "Influencer Marketing & Management",
+                            "service_id":14,
                             "service_decs": "Leveraging influencer partnerships to reach wider audiences, enhancing brand credibility and driving conversions.",
                             "service_logo": "/Assets/images/Service-Logo/14.png"
                         }
@@ -121,12 +149,16 @@
                     "sup_name": "Engagement and Outreach",
                     "services": [
                         {
+                            
                             "service_name": "Email Marketing",
+                            "service_id":15,
                             "service_decs": "Designing targeted email campaigns to nurture leads, promote offers, and maintain customer relationships.",
                             "service_logo": "/Assets/images/Service-Logo/15.png"
                         },
                         {
+                            
                             "service_name": "WhatsApp Wave Marketing",
+                            "service_id":16,
                             "service_decs": " Utilizing WhatsApp for direct marketing to engage customers personally and boost conversion rates.",
                             "service_logo": "/Assets/images/Service-Logo/16.png"
                         }
@@ -144,18 +176,24 @@
                     "sup_name":"Advertising and Promotion",
                     "services": [
                         {
+                            
                             "service_name": "Pay-Per-Click (PPC) Advertising",
+                            "service_id":17,
                             "service_decs": "Managing targeted ad campaigns on platforms like Google Ads for immediate traffic and lead generation.",
                             "service_logo": "/Assets/images/Service-Logo/17.png"
                         },
                         {
+                            
                             "service_name": "Display and Retargeting Advertising",
+                            "service_id":18,
                             "service_decs": "Utilizing visual ads and retargeting techniques to recapture the interest of website visitors and increase conversion rates.",
                             "service_logo": "/Assets/images/Service-Logo/18.png"
                         }
                       ,
                       {
+                        
                         "service_name": "Social Media Advertising",
+                        "service_id":19,
                         "service_decs": "Crafting strategic ads on social media channels to target specific demographics and interests, maximizing ROI.",
                         "service_logo": "/Assets/images/Service-Logo/19.png"
                     }
@@ -165,12 +203,16 @@
                     "sup_name":  "Analytics and Conversion",
                     "services": [
                         {
+                            
                             "service_name": "Analytics and Data Analysis",
+                            "service_id":20,
                             "service_decs": "Monitoring digital campaigns using analytics to glean insights, measure performance, and optimize strategies.",
                             "service_logo": "/Assets/images/Service-Logo/20.png"
                         },
                         {
+                            
                             "service_name": "Conversion Rate Optimization (CRO)",
+                            "service_id":21,
                             "service_decs": " Enhancing website elements to improve user experience and increase the rate of visitors converting into customers.",
                             "service_logo": "/Assets/images/Service-Logo/21.png"
                         }
@@ -188,12 +230,16 @@
                     "sup_name":  "Web and Mobile Presence",
                     "services": [
                         {
+                           
                             "service_name": "Web Design and Development",
+                            "service_id":22,
                             "service_decs": " Building responsive and aesthetically pleasing websites, optimized for search engines and user experience.",
                             "service_logo": "/Assets/images/Service-Logo/22.png"
                         },
                         {
+                           
                             "service_name": "Mobile App Design and Development",
+                            "service_id":23,
                             "service_decs": " Creating custom mobile applications to enhance customer engagement and provide a seamless user experience.",
                             "service_logo": "/Assets/images/Service-Logo/23.png"
                         }
@@ -205,12 +251,16 @@
                     "sup_name": "E-commerce and Lead Generation",
                     "services": [
                         {
+                            
                             "service_name": "E-commerce Marketing",
+                            "service_id":24,
                             "service_decs": "  Developing strategies to drive online sales, including SEO, PPC, and social media marketing tailored for e-commerce platforms.",
                             "service_logo": "/Assets/images/Service-Logo/24.png"
                         },
                         {
+                           
                             "service_name": "Lead Generation",
+                            "service_id":25,
                             "service_decs": "Implementing tactics like inbound marketing and lead nurturing to generate and convert leads into customers.",
                             "service_logo": "/Assets/images/Service-Logo/25.png"
                         }

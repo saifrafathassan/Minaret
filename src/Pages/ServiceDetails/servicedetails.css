@@ -1,0 +1,41 @@
+
+.service-detail{
+    display: flex;
+    gap: 2rem;
+
+}
+
+
+.service-right{
+    flex: 1;
+}
+
+.service-left{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 1rem;
+   
+}
+
+.service-logo{
+    position: relative;
+    flex: 1;
+    
+}
+.service-logo img{
+  
+    width: 40%;
+   
+}
+.contact-form{
+    color: black;
+}
+
+
+
+@media (max-width: 680px){
+    .service-detail{
+        flex-direction: column;
+    }
+  }

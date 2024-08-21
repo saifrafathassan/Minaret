@@ -11,6 +11,7 @@ import BlogsPage from './Pages/BlogsPage/BlogsPage';
 import PortofolioPage from './Pages/PortofolioPage/PortofolioPage';
 import ContactPage from './Pages/ContactPage/ContactPage';
 import CareerPage from './Pages/CareerPage/CareerPage';
+import ServiceDetailsPage from './Pages/ServiceDetails/ServiceDetails';
 function App() {
   
 
@@ -25,7 +26,10 @@ function App() {
         <Route path='/portfolio' element={<PortofolioPage/>}/>
         <Route path='/Contact us' element={<ContactPage/>}/>
         <Route path='/Career' element={<CareerPage/>}/>
+        <Route path='/Service/:id' element={<ServiceDetailsPage/>}/>
         <Route path="*" element={<Navigate to="/Home" />} />
+        
+
       </Routes>
   
     <Footer/>
