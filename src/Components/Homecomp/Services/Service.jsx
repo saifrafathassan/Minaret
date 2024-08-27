@@ -27,17 +27,17 @@ class Service extends Component {
         const { hoveredServiceIndex } = this.state;
 
         return (
-            <div className="Service_container padc">
+            <div className="Service_container padc py-[100px]">
                 <div className="service-grid">
                     <div className="first">
-                        <div className="title">
+                        <div className="title text-[50px]">
                             Our <span>Services</span>
                         </div>
                         <div className="desc">
                             Explore our comprehensive services designed to elevate your brand and Craft your digital legacy,
                             brick by brick. Our services guide you from brand identity to peak visibility.
                         </div>
-                        <div className="view-more">
+                        <div className="view-more pt-4">
                             <div className="v-cont"><span>view more</span></div>
                             <div className="back">
                                 <img src={arow} alt="->" />
@@ -75,7 +75,7 @@ class Service extends Component {
                                     <div className="card-content">
                                         <ul>
                                             {service.service_categories.map((category, catIndex) => (
-                                                <li key={catIndex}>{category}</li>
+                                                <li className="pb-[7px]" key={catIndex}>{category}</li>
                                             ))}
                                         </ul>
                                     </div>

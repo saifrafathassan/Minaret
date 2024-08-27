@@ -23,6 +23,13 @@
   .slider-wrapper .slick-list {
     overflow: hidden;
   }
+  .slick-dots li{
+    width:2px;
+  }
+  .slick-dots li button:before {
+    color: #fff !important;
+    font-size: 10px !important;
+}
   
   
   

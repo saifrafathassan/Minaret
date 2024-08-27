@@ -24,7 +24,8 @@
 }
 
 .Service_container .card .card-bottom {
-    transition: opacity 0.3s ease;
+    opacity: 1;
+    transition: opacity 3s ease-in-out;
 }
 
 
@@ -33,10 +34,14 @@
     pointer-events: none; /* Prevent interaction when hidden */
 }
 .Service_container .card:hover .card-content {
-    padding: 1rem;
+    /* padding: 1rem; */
     position: absolute;
-    top:30%;
+    top:40%;
+    /* left: 6rem; */
 
+}
+.Service_container .card:hover{
+    background-color: #451C44;
 }
 
 .card {
@@ -71,7 +76,10 @@
 
 
 .card-content{
-    align-self: center;
+    /* align-self: center; */
+    padding-left:6rem;
+    position: absolute;
+    top: 40%;
     
 }
 .card-content ul{

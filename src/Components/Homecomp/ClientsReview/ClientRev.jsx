@@ -33,9 +33,9 @@ class ClientRev extends Component {
         const Testimonials = data['Testimonials'];
 
         return (
-            <section className="Clients-container padc">
+            <section className="Clients-container padc py-[100px]">
                 <div className="left">
-                    <div className="slides">
+                    <div className="slides h-[600px]">
                         {
                             Testimonials.map((testimon, index) => {
                                 const position = (index - currentIndex + Testimonials.length) % Testimonials.length;
@@ -76,7 +76,7 @@ class ClientRev extends Component {
                 </div>
 
                 <div className="right">
-                    <div className="title">
+                    <div className="title text-[50px]">
                         Client <p className="mcolor">Testimonials</p>
                     </div>
                     <div className="desc">
