@@ -45,26 +45,26 @@ const About = () => {
     }, []);
 
     return (
-        <div className="padc about_container">
+        <div className="padc about_container py-[150px]">
             <div className="About-left" ref={aboutleftref} >
-                <div className="p1">
+                <p className="p1">
                     Choose The Minaret Marketing Agency for innovative strategies, a dedicated team, and a commitment to your brand's growth.
-                </div>
-                <div className="p1">
+                </p>
+                <p className="p1">
                     We're not just marketers; we're your partners in navigating the digital landscape.
-                </div>
+                </p>
                 <div className="p1">
                     <button className="button"><Link to='/About'>Learn More</Link></button>
                 </div>
             </div>
 
             <div className="About-right" ref={aboutRightRef}>
-                <div className="about-img" ref={imageref}>
+                <div className="about-img  animate-rotate hover:animate-spin" ref={imageref}>
                     <img src={image} alt="" />
                 </div>
                 <div className="text">
-                    <span className="why">WHY</span>
-                    <br />
+                    <span className="why pt-4">WHY</span>
+                    {/* <br /> */}
                     <span>CHOOSE</span>
                     <span>US</span>
                 </div>

@@ -2,8 +2,8 @@
     background: #F36E37;
     display: flex;
     gap: 2rem;
-    height: 95vh;
-    justify-content: space-evenly;
+    /* height: 95vh; */
+    /* justify-content: space-evenly; */
     overflow-x: hidden;
 
 
@@ -14,38 +14,32 @@
 .About-left {
     display: flex;
     flex-direction: column;
-    margin-top: 6rem;
+    /* margin-top: 6rem; */
     gap: 2rem;
     flex: 1.35;
    
 
 }
 
-.p1 {
-    display: flex;
-
+.About-left p {
     text-transform: uppercase;
-
-    font-style: normal;
-    line-height: 0.85;
+    /* font-style: normal; */
+    line-height: 2.4rem;
     color: #ffffff;
-
+    font-family: 'Somar';
     font-weight: Regular;
-    font-size: 2.3rem;
+    font-size: 25px;
+    font-weight: 200 !important;
     opacity: 1;
     /* Choose The Minaret Marketing Agency for innovative strategies, a dedicated team, and a commitment to your brand's growth. We're not just marketers; we're your partners in navigating the digital landscape. */
-
-
-
 
 }
 
 .button {
     padding: 5px 20px;
-    font-size: 1rem;
+    font-size: 18px;
     width: 10rem;
     height: 3rem;
-
     background: rgba(255, 255, 255, 0.01);
     border: 2px solid #451C44;
     border-radius: 10px;
@@ -66,7 +60,7 @@
     flex-grow: 0;
     color: #451c44;
     background-color: rgba(0,0,0, 0.2);
-    font-size: 1.1rem;
+    /* font-size: 1.3rem; */
 
 }
 
@@ -80,12 +74,12 @@
     align-items: center;
     opacity: 0; /* Start with hidden element */
     transform: translateY(20px); /* Start with offset */
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Smooth transition */
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out; ;
 }
 
 .about-img {
     position: absolute;
-    animation: rotateBackground 10s  ease-in-out;
+    /* animation: rotateBackground 10s  ease-in-out; */
 }
 .animate-down{
     animation: down 2s ease-in-out; 
