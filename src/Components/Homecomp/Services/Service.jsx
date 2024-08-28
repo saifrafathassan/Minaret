@@ -27,7 +27,7 @@ class Service extends Component {
         const { hoveredServiceIndex } = this.state;
 
         return (
-            <div className="Service_container padc py-[100px]">
+            <div className="Service_container padc sm:py-[40px] md:py-[100px]">
                 <div className="service-grid">
                     <div className="first">
                         <div className="title text-[50px]">

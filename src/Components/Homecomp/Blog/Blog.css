@@ -140,6 +140,7 @@
     .blog-card-container {
         margin-top: 1rem;
         margin-bottom: 1rem;
+        row-gap: 15px !important;
     }
     
     .blog {
@@ -164,6 +165,8 @@
     
     .blog {
         padding: 0.5rem;
+        /* padding-bottom: 20px; */
+
     }
     
     .blog-content {

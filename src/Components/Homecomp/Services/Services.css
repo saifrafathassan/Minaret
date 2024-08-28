@@ -424,7 +424,11 @@ display: flex;
         width: 2rem;
     }
 }
-
+@media (max-width: 480px){
+    .card-content{
+        padding-left: 40px;
+    }
+}
 @media (max-width: 360px) {
     .Service_container {
         flex-direction: column;
@@ -465,5 +469,8 @@ display: flex;
 
     .btm3d img {
         width: 1.5rem;
+    }
+    .card-content{
+        padding-left: 40px;
     }
 }

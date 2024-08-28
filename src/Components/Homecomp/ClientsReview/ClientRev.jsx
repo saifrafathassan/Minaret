@@ -33,7 +33,7 @@ class ClientRev extends Component {
         const Testimonials = data['Testimonials'];
 
         return (
-            <section className="Clients-container padc py-[100px]">
+            <section className="Clients-container padc m:py-[20px] lg:py-[100px]">
                 <div className="left">
                     <div className="slides h-[600px]">
                         {

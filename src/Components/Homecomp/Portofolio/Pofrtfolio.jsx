@@ -12,7 +12,7 @@ class Portfolio extends Component {
         const images=[image1,image2,image3]
 
         return (
-            <section className=" portfolio-cont padc py-[100px]" >
+            <section className=" portfolio-cont padc sm:py-[40px] md:py-[100px]sm:py-[40px] md:py-[100px]" >
                 <div className="title text-[50px]">
                 Our   <span> Portfolio</span>   
                 </div>

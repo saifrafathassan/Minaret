@@ -10,6 +10,8 @@ module.exports = {
         slideDown: "slideDown 1s ease-in",
         spin: "spin 7s linear infinite",
         rotate: "spin 7s linear",
+        expandContract: 'expandContract 3s forwards',
+        slideIn: 'slideIn 3s forwards',
       },
       keyframes: {
         fade: {
@@ -31,6 +33,14 @@ module.exports = {
             transform: "translateY(0)",
             opacity: 1,
           },
+        },
+        expandContract: {
+          '0%': { flex: '9 1 0%' },
+          '100%': { flex: '5 1 0%' },
+        },
+        slideIn: {
+          '0%': { flex: '1 1 0%', transform: 'translateX(100%)' },
+          '100%': { flex: '5 1 0%', transform: 'translateX(0)' },
         },
       },
 
