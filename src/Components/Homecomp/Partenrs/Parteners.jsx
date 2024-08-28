@@ -53,9 +53,9 @@ class Parteners extends Component {
         const logos = [im1, im2, im3, im4, im5]
         return (
 
-            <div className="partenr padc" >
+            <div className="partenr padc sm:py-[40px] md:py-[100px]" >
 
-                <div className="title">
+                <div className="title md:text-[50px]">
                 Our    <span> Trusted Parteners</span>     
                 </div>
                 <div className="silder ">

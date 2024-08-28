@@ -5,12 +5,24 @@
 }
 .left-contact{
     display: flex;
+    width:90%;
+    /* height: 40vh; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
+    gap: 1rem;
+    transition:width 5s ease-in-out;
     text-align: center;
     
+}
+/*
+.right{
+    overflow: hidden;
+    position: absolute;
+    right:-90%;
+} */
+.right img{
+    height: 100%;
 }
 
 .btn{
@@ -30,8 +42,9 @@
 }
 
 .title-contact{
-    font-family: 'Somar-bold';
-    font-size: 2rem;
+    font-family: 'Somar';
+    font-weight: 500;
+    /* font-size: 2rem; */
 }
 
 
@@ -39,11 +52,13 @@
 @media (max-width: 768px) {
     .Contact-Container {
         align-items: center;
+        flex-direction: column;
     }
 
     .left-contact {
         gap: 1rem;
-        flex:1
+        flex:1;
+        width:100%;
 
     }
     .tc{
@@ -51,11 +66,15 @@
     }
     .btn {
         font-size: 0.8rem;
-        padding: 0.3rem;
+        padding: 0.3rem 1rem;
         height: auto;
     }
     .title-contact{
         font-size: 1.1rem;
+    }
+    .Contact-Container{
+        
+        height: fit-content !important;
     }
 
 }

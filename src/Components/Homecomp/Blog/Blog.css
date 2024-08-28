@@ -1,10 +1,9 @@
 .bolg-container{
     background: #451C44;
     display: flex;
-    
     flex-direction: column;
     position: relative;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     font-family: 'Somar-bold';
  
 }
@@ -34,18 +33,25 @@
 .read-more {
     display: flex;
     z-index: -5;
-    flex-direction: row;
-    position: relative;
     justify-content: start;
-    
+    /* flex-direction: row; */
+    position: relative;
+    /* left:20px; */
+    margin-left: -28px;  
+    font-size: 16px;  
+    font-family: 'Somar';
 }
 
 .read-more img{
-    width: 3rem;
-    height: 100%;
-    position: absolute;
+    /* width: 3rem; */
+    /* height: 100%; */
+    /* position: absolute; */
+    width:20px;
     z-index: 15;
-    left:60%;
+    display: inline-block;
+    margin-left: 25px;
+    /* padding-left: -60px; */
+    
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
 }
@@ -56,7 +62,7 @@
     z-index: 15;
     justify-content: space-around;
 }
-.blog img{
+.blog .bg-img{
     position: absolute;
     top: 0;
     bottom: 0;
@@ -67,27 +73,31 @@
     
 }
 
-.blog:hover img{
+.blog:hover .bg-img{
     opacity: 0.5;
     background: white;
 }
 .blog:hover{
     transition-duration: 1000ms;
    
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.6) 70%, rgba(252, 100, 38, 0.75) );
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.6) 50%, rgba(252, 100, 38, 0.75) );
 
    
 }
 
 .blog:hover .bolg-title{
     z-index: 5;
-    font-size: 1.2rem;
+    font-size: 18px;
+    /* font-family: 'Somar'; */
+    font-weight: 600;
+    line-height: 25px;
     opacity: 1;
     line-height: 1;
 
 }
 .blog-content{
-    font-size: 1rem;
+    font-size: 14px;
+    font-family: 'Somar';
 }
 
 
@@ -130,6 +140,7 @@
     .blog-card-container {
         margin-top: 1rem;
         margin-bottom: 1rem;
+        row-gap: 15px !important;
     }
     
     .blog {
@@ -154,6 +165,8 @@
     
     .blog {
         padding: 0.5rem;
+        /* padding-bottom: 20px; */
+
     }
     
     .blog-content {
