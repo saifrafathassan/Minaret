@@ -23,6 +23,13 @@
   .slider-wrapper .slick-list {
     overflow: hidden;
   }
+  .slick-dots li{
+    width:2px;
+  }
+  .slick-dots li button:before {
+    color: #fff !important;
+    font-size: 10px !important;
+}
   
   
   
@@ -52,6 +59,15 @@
       padding-right: 2rem;
       padding-left: 2rem;
     }
+    .title{
+      font-size: 45px;
+    }
+    .silder{
+      padding: 20px;
+    }
+    .slick-dots{
+      bottom: -20px !important;
+    }
   }
   
   @media (max-width: 360px) {
@@ -62,5 +78,6 @@
       padding-right: 2rem;
       padding-left: 2rem;
     }
+
 
   }

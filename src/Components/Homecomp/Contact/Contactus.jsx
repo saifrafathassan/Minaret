@@ -39,13 +39,14 @@ const Contact =()=>{
 
         return (
             <section className=' bg1' >
-                <div className='Contact-Container 'ref={cont_ref} >
+                {/* ref={cont_ref} */}
+                <div className='Contact-Container h-[600px]' >
 
-                <div className='left-contact padc' >
-                <div className='title-contact'> 
+                <div className='left-contact animate-expandContract padc sm:px-4 lg:px-[80px]' >
+                <div className='title-contact text-[40px] uppercase  '> 
                     <p >Ready to elevate your brand?</p>
                 </div>
-                <div className='width-50 tc '>
+                <div className='width-40 tc text-[20px] py-6'>
                 <p>Contact us today and start your journey to visibility and success.</p>
                 </div>
                 <div className=' btn'>
@@ -53,7 +54,8 @@ const Contact =()=>{
                 </div>
                 </div>
 
-                <div className='right' >
+
+                <div className='right animate-slideIn'>
                     <img src={image} alt="" />
 
                 </div>

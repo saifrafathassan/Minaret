@@ -30,6 +30,7 @@
 .the-button:hover{
     background: white;
     color: #F36E37;
+    border-color: white;
 
 }
   
@@ -37,6 +38,4 @@
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
     content: url('/Assets/images/arow2.png');
-   
-
 }

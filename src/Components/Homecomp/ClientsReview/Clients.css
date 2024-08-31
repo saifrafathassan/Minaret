@@ -15,6 +15,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-left: 50px;
 }
 
 
@@ -124,6 +125,7 @@
 }
 .arrow-up{
     font-size: 1.23rem;
+    opacity: 0.5;
 }
  
 
@@ -135,6 +137,14 @@
     }
 
     .arrows {
-        display: none;
+        /* display: none; */
+    }
+    .title{
+        font-size: 45px !important;
+        margin-bottom: 20px;
+    }
+    .right{
+        padding-left: 0;
+
     }
 }

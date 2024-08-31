@@ -12,25 +12,32 @@ class Blogs extends Component {
         const bolgs=data['bolgs']
 
         return (
-            <section className="padc bolg-container" >
-                <div className="title" >
+            <section className="padc bolg-container m:py-[40px] lg:py-[100px]" >
+                <div className="title text-[50px]" >
                    Latest From <span>The Blog</span>
                 </div>
 
-                <div className="desc width-50">
+                <div className="desc sm:w-100 lg:width-50 pt-[20px] pb-[30px]">
                 Stay updated with the latest insights in digital marketing.
                  Our blog is a treasure trove of knowledge and tips for your brand's journey.
                 </div>
 
                 <div className="blog-card-container">
                         {bolgs.map((blog, index) => (
-                            <div key={index} className="blog">
-                                <img src={blog.image} alt={`Blog ${index + 1}`}  />
+                            <div key={index} className="blog sm:mb-[10px] lg:mb-0" >
+                                <img className="bg-img" src={blog.image} alt={`Blog ${index + 1}`}  />
                                 <div className="bolg-title "> {blog.title} </div>
+<<<<<<< HEAD
                                 <div className="blog-content" >{blog.content}</div>
                                 <div className='read-more '>
                                     <div className='th'> <p>Read More</p></div>
                                     <div className='mh'> <img src={arow} alt="" /></div>
+=======
+                                <div className="blog-content py-[15px]" >{blog.content}</div>
+                                <div className='read-more'>
+                                     Read More
+                                    <img className="pl-[10px]" src={arow} alt="" />
+>>>>>>> refs/remotes/origin/main
                                 </div>
                             </div>
                         ))}
