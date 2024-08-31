@@ -24,9 +24,9 @@ class ServiceCard extends Component {
                             </div>
                           
                            
-                            <Link key={index} to={`/Service/${service.service_id}`}>
-                            <Btn   Caption={'Book Now'} />
-                            </Link>
+                       
+                            <Btn   Caption={'Book Now'} link={`/Service/${service.service_id}`}/>
+                        
                           
 
                         </div>

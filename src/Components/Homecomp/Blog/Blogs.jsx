@@ -29,8 +29,8 @@ class Blogs extends Component {
                                 <div className="bolg-title "> {blog.title} </div>
                                 <div className="blog-content" >{blog.content}</div>
                                 <div className='read-more '>
-                                    <div className='t'> <p>Read More</p></div>
-                                    <div className='m'> <img src={arow} alt="" /></div>
+                                    <div className='th'> <p>Read More</p></div>
+                                    <div className='mh'> <img src={arow} alt="" /></div>
                                 </div>
                             </div>
                         ))}

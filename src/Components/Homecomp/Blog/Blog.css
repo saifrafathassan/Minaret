@@ -42,12 +42,10 @@
 
 .read-more img{
     width: 3rem;
-    height: 100%;
+  
     position: absolute;
-    z-index: 15;
-    left:60%;
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
+    z-index: 155;
+    
 }
 
 .blog:hover .read-more{

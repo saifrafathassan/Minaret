@@ -19,6 +19,7 @@ class Blogs extends Component {
                                 <div className='read-more '>
                                     <div className='t'> <p>Read More</p></div>
                                     <div className='m'> <img src={arow} alt="" /></div>
+                                    
                                 </div>
                             </div>
                         ))}
