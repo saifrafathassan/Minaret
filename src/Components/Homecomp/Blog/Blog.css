@@ -43,13 +43,12 @@
 }
 
 .read-more img{
-<<<<<<< HEAD
+
     width: 3rem;
   
     position: absolute;
     z-index: 155;
     
-=======
     /* width: 3rem; */
     /* height: 100%; */
     /* position: absolute; */
@@ -61,7 +60,7 @@
     
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
->>>>>>> refs/remotes/origin/main
+
 }
 
 .blog:hover .read-more{

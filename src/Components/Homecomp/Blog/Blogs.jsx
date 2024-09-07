@@ -27,22 +27,22 @@ class Blogs extends Component {
                             <div key={index} className="blog sm:mb-[10px] lg:mb-0" >
                                 <img className="bg-img" src={blog.image} alt={`Blog ${index + 1}`}  />
                                 <div className="bolg-title "> {blog.title} </div>
-<<<<<<< HEAD
                                 <div className="blog-content" >{blog.content}</div>
                                 <div className='read-more '>
                                     <div className='th'> <p>Read More</p></div>
                                     <div className='mh'> <img src={arow} alt="" /></div>
-=======
                                 <div className="blog-content py-[15px]" >{blog.content}</div>
                                 <div className='read-more'>
                                      Read More
                                     <img className="pl-[10px]" src={arow} alt="" />
->>>>>>> refs/remotes/origin/main
+
                                 </div>
                             </div>
+                            </div>
                         ))}
+                        </div>
                     
-                </div>
+               
                   
                    <Btn Caption={"Read More"} link={'/Blog'}/>
                   
