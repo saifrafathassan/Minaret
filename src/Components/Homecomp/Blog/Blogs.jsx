@@ -32,11 +32,10 @@ class Blogs extends Component {
                                     <div className='th'> <p>Read More</p></div>
                                     <div className='mh'> <img src={arow} alt="" /></div>
                                 <div className="blog-content py-[15px]" >{blog.content}</div>
-                                <div className='read-more'>
-                                     Read More
+                                    <div className='read-more'>
+                                        Read More
                                     <img className="pl-[10px]" src={arow} alt="" />
-
-                                </div>
+                                    </div>
                             </div>
                             </div>
                         ))}

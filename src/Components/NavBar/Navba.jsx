@@ -31,7 +31,8 @@ class Navbar extends Component {
                
 
                 <div className={`NavMenue ${menuOpen ? "open" : ""}`}>
-                    {["Home", "About", "Services", "Portfolio", "Blog", "Contact us"].map((item) => (
+                    
+                    {["Home", "About", "Services", "Portfolio", "Blog", "Contact us", ""].map((item) => (
                         <div
                             key={item}
                             className={`item ${selectedItem === item ? "active" : ""}`}

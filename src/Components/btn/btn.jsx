@@ -7,14 +7,14 @@ class Btn extends Component {
     state = {  } 
     render() { 
         return (
-             <div className="the-button">
+             <div className="the-button cursor-pointer">
                  
 
                     <div className="caption">
-                    <Link to={this.props.link}>
+                    <Link onClick={() => window.scrollTo(0, 0)} to={this.props.link}>
                     <span> { this.props.Caption}</span>
-                    </Link>
                    
+                    </Link>
                     </div>
                     <div className="arow" >
                             <img src={arow} alt="" />

@@ -40,10 +40,11 @@
     margin-left: -28px;  
     font-size: 16px;  
     font-family: 'Somar';
+    cursor: pointer;
 }
 
 .read-more img{
-
+    cursor: pointer;
     width: 3rem;
   
     position: absolute;
