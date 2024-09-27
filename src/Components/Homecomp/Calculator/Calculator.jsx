@@ -25,7 +25,7 @@ const Calculator = () => {
     };
 
     return (
-        <div className='calculator-container'> {/* عنصر الحاوية */}
+        <div className='calculator-container'> 
             <div className='calculator-text'>
                 Calculate your services
             </div>

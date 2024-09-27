@@ -12,6 +12,7 @@ import PortofolioPage from './Pages/PortofolioPage/PortofolioPage';
 import ContactPage from './Pages/ContactPage/ContactPage';
 import CareerPage from './Pages/CareerPage/CareerPage';
 import ServiceDetailsPage from './Pages/ServiceDetails/ServiceDetails';
+import Totop from "./Components/Homecomp/To top Btn/Totop";
 function App() {
   
 
@@ -31,7 +32,7 @@ function App() {
         
 
       </Routes>
-  
+    <Totop/>
     <Footer/>
     </div>
   )
