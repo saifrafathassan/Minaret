@@ -10,6 +10,7 @@ import Blogs from './../../Components/Homecomp/Blog/Blogs';
 import Game from './../../Components/Homecomp/Game/Game'
 import Contact from "../../Components/Homecomp/Contact/Contactus";
 import './home.css';
+import Calculator from "../../Components/Homecomp/Calculator/Calculator";
 class Home extends Component {
     state = {}
     render() {
@@ -18,6 +19,7 @@ class Home extends Component {
                 <Hero />
                 <About />
                 <Service />
+                <Calculator/>
                 <Parteners />
                 <Portfolio />
                 <ClientRev />
