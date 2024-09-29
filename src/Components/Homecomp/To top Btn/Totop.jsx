@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { IoIosArrowUp } from 'react-icons/io';
+import { MdKeyboardDoubleArrowUp } from "react-icons/md";
 import './Totop.css';
 
 const Totop = () => {
@@ -35,7 +35,7 @@ const Totop = () => {
           className='bg-[#fff] flex justify-center items-center rounded-full h-[43px] w-[43px] fixed right-0 bottom-0 mb-[20px] sm:mb-[40px] mr-[30px] sm:mr-[40px] z-[1000]' 
           onClick={scrollTo}
         >
-          <IoIosArrowUp className="text-[#451C44]" size={30} />
+          <MdKeyboardDoubleArrowUp className="text-[#451C44] icon" size={42} />
         </button>
       )}
     </div>

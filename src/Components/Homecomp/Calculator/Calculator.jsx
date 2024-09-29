@@ -15,9 +15,20 @@ const Calculator = () => {
         setInput("");
     };
 
+    const handleBackspace = () => {
+        setInput(input.slice(0, -1));
+    };
+
     const handleCalculate = () => {
         try {
-            const result = math.evaluate(input);
+            // حساب النسبة المئوية
+            let expression = input;
+            if (expression.includes("%")) {
+                expression = expression.replace(/(\d+)%/g, (match, p1) => {
+                    return `${p1} * 0.01`;
+                });
+            }
+            const result = math.evaluate(expression);
             setInput(result.toString());
         } catch (error) {
             setInput("Error");
@@ -44,10 +55,14 @@ const Calculator = () => {
                     <button className='bg-slate-500' onClick={() => handleClick("8")}>8</button>
                     <button className='bg-slate-500' onClick={() => handleClick("9")}>9</button>
                     <button className='bg-slate-800' onClick={() => handleClick("*")}>x</button>
-                    <button className='bg-red-500' onClick={handleClear}>C</button>
                     <button className='bg-slate-500' onClick={() => handleClick("0")}>0</button>
-                    <button className='bg-slate-800' onClick={handleCalculate}>=</button>
+                    <button className='bg-slate-500' onClick={() => handleClick(".")}>.</button>
+                    <button className='bg-slate-500' onClick={handleBackspace}>⌫</button>
+                    <button className='bg-blue-800' onClick={handleCalculate}>=</button>
+                    <button className='bg-red-500' onClick={handleClear}>AC</button>
                     <button className='bg-slate-800' onClick={() => handleClick("/")}>/</button>
+                    <button className='bg-slate-800' onClick={() => handleClick("^")}>^</button> 
+                    <button className='bg-slate-800' onClick={() => handleClick("%")}>%</button>
                 </div>
             </div>
         </div>
