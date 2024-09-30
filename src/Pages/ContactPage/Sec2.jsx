@@ -1,19 +1,21 @@
 import React from "react";
 import { Component } from "react";
 import image from '/Assets/images/contact/3.png'
+import { withTranslation } from 'react-i18next';
 
 class Sec2 extends Component {
     state = {}
     render() {
+        const { t } = this.props;
         return (
             <section className="padc bg2  Sec2">
                 <div className="uper">
                 <div className="title flex gap-1">
-                Fill this  <p className="thrcolor" > form to join us</p>
+                {t("Fill this")}  <p className="thrcolor" >{t("form to join us")} </p>
                             
                         </div>
                         <div className="sup-title  text-3xl">
-                        Embark on Your Brand's Success Journey with Us
+                        {t("Embark")}
                         </div>
                 </div>
 
@@ -27,7 +29,7 @@ class Sec2 extends Component {
                             <input type="text" className="input" name="service" placeholder="Choose Which Service You Want" required />
                             <textarea className="input" name="project-brief" placeholder="Project Brief" rows="5" required></textarea>
 
-                            <button className="contact-btn mcolor bg3" type="submit">Submit</button>
+                            <button className="contact-btn mcolor bg3" type="submit">{t("Submit")}</button>
                         </form>
 
                     </div>
@@ -54,4 +56,4 @@ class Sec2 extends Component {
     }
 }
 
-export default Sec2;
+export default withTranslation()(Sec2);

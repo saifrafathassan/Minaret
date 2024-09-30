@@ -2,9 +2,10 @@ import React, { useRef ,useEffect} from 'react';
 import image from '/Assets/images/contact/1.png'
 import './contact.css';
 import { Link } from 'react-router-dom';
+import { withTranslation } from 'react-i18next';
 
 
-const Contact =()=>{
+const Contact =({t})=>{
 
         const cont_ref=useRef(null);
         useEffect(() => {
@@ -44,13 +45,13 @@ const Contact =()=>{
 
                 <div className='left-contact animate-expandContract padc sm:px-4 lg:px-[80px]' >
                 <div className='title-contact text-[40px] uppercase  '> 
-                    <p >Ready to elevate your brand?</p>
+                    <p >{t('Ready')}</p>
                 </div>
                 <div className='width-40 tc text-[20px] py-6'>
-                <p>Contact us today and start your journey to visibility and success.</p>
+                <p>{t('Contact')}</p>
                 </div>
                 <div className=' btn'>
-               <Link to="/Contact us">  <span > Contact us </span></Link>    
+            <Link to="/Contact us">  <span > {t('Contact us')} </span></Link>    
                 </div>
                 </div>
 
@@ -65,5 +66,5 @@ const Contact =()=>{
         );
     }
 
- 
-export default Contact;
+
+export default withTranslation()(Contact);

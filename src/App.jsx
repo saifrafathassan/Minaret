@@ -1,5 +1,3 @@
-import { useState } from 'react'
-
 import './App.css';
 import Home from './Pages/Home/Home';
 import Footer from './Components/Footer/Footer';
@@ -13,7 +11,11 @@ import ContactPage from './Pages/ContactPage/ContactPage';
 import CareerPage from './Pages/CareerPage/CareerPage';
 import ServiceDetailsPage from './Pages/ServiceDetails/ServiceDetails';
 import Totop from "./Components/Homecomp/To top Btn/Totop";
-function App() {
+import { withTranslation  } from 'react-i18next';
+
+
+
+function App({t}) {
   
 
   return (
@@ -38,4 +40,4 @@ function App() {
   )
 }
 
-export default App
+export default  withTranslation()(App);

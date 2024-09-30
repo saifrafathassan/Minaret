@@ -1,5 +1,5 @@
 import React from "react";
-
+import { withTranslation } from 'react-i18next';
 import { Component } from "react";
 import img5 from '/Assets/images/career/5.png';
 import img6 from '/Assets/images/career/6.png';
@@ -33,28 +33,29 @@ class Hiring extends Component {
         }
     }
     render() { 
+        const { t } = this.props;
         return (
             <div className="Hiring-container padc bg1">
                 <div className="title">
-                Our <span>Hiring Process</span>
+                {t("Our")} <span>{t("Hiring Process")}</span>
                 </div>
                
 
                 <div className="hiring-content" >
                
                     <div className="hiring-content-left">
-                        <div className="title">Our hiring process is transparent and straightforward:</div>
+                        <div className="title">{t("Our hiring process")}</div>
                         <div className="benfts-list desc">
                                     <ul>
-                                        <li>Submitting Your Application: Share your story and skills with us through our online application.</li>
-                                        <li>Initial Review and Screening: We carefully review each application to find potential matches.</li>
-                                        <li>Interview(s): Engage in in-depth discussions with HR and potential team members.</li>
-                                        <li>Task or Project: For some roles, demonstrate your skills through a practical task.</li>
-                                        <li>Offer and Onboarding: Welcome to the team! We'll guide you through every step of joining our agency.</li>
+                                        <li>{t("Submitting")}</li>
+                                        <li>{t("Initial")}</li>
+                                        <li>{t("Interview")}</li>
+                                        <li>{t("Task")}</li>
+                                        <li>{t("Offer")}</li>
                                     </ul>
                         </div>
                         <div className="Apply-button bg2">
-                            <span>Apply</span>
+                            <span>{t("Apply")}</span>
                         </div>
 
                     </div>
@@ -70,5 +71,5 @@ class Hiring extends Component {
         );
     }
 }
- 
-export default Hiring;
+
+export default withTranslation()(Hiring);

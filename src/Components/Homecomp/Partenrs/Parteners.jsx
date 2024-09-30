@@ -4,6 +4,8 @@ import Typewriter from 'react-typewriter-effect';
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer"; 
 
+import { withTranslation } from 'react-i18next';
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { NextArrow, PrevArrow } from './CustomArrows';
@@ -14,7 +16,7 @@ import im3 from '/Assets/images/partnrs/3.png';
 import im4 from '/Assets/images/partnrs/4.png';
 import im5 from '/Assets/images/partnrs/5.png';
 
-const Parteners = () => {
+const Parteners = ({t}) => {
     const [ref, inView] = useInView({ threshold: 0.1 }); 
 
     const settings = {
@@ -62,14 +64,14 @@ const Parteners = () => {
                 transition={{ duration: 0.6 }}
                 className="flex gap-2 title md:text-[50px]"
             >
-                Our<span style={{ whiteSpace: 'nowrap' }}>
+                {t("Our")}<span style={{ whiteSpace: 'nowrap' }}>
                     <Typewriter
                         startDelay={500}
                         cursorColor="transparent"
                         multiText={[
-                            ' Trusted Partners',
-                            ' Reliable Partners',
-                            ' Strong Relationships',
+                            t("Trusted Partners"),
+                            t("Reliable Partners"),
+                            t("Strong Relationships")
                         ]}
                         multiTextDelay={2500}
                         typeSpeed={100}
@@ -98,4 +100,4 @@ const Parteners = () => {
     );
 }
 
-export default Parteners;
+export default withTranslation()(Parteners);

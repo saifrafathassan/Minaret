@@ -4,22 +4,21 @@ import './Blog.css'
 import Btn from "./../../btn/btn";
 import arow from '/Assets/Gifs/0.gif';
 import data from '../../../utils/data/data.json';
-import { Link } from "react-router-dom";
+import { withTranslation } from 'react-i18next';
 
 class Blogs extends Component {
     state = {  } 
     render() { 
         const bolgs=data['bolgs']
-
+        const { t } = this.props;
         return (
             <section className="padc bolg-container m:py-[40px] lg:py-[100px]" >
                 <div className="title text-[50px]" >
-                   Latest From <span>The Blog</span>
+                   {t("Latest From")} <span>{t("The Blog")}</span>
                 </div>
 
                 <div className="desc sm:w-100 lg:width-50 pt-[20px] pb-[30px]">
-                Stay updated with the latest insights in digital marketing.
-                 Our blog is a treasure trove of knowledge and tips for your brand's journey.
+                {t("Stay")}
                 </div>
 
                 <div className="blog-card-container">
@@ -29,11 +28,11 @@ class Blogs extends Component {
                                 <div className="bolg-title "> {blog.title} </div>
                                 <div className="blog-content" >{blog.content}</div>
                                 <div className='read-more '>
-                                    <div className='th'> <p>Read More</p></div>
+                                    <div className='th'> <p>{t("Read More")}</p></div>
                                     <div className='mh'> <img src={arow} alt="" /></div>
                                 <div className="blog-content py-[15px]" >{blog.content}</div>
                                     <div className='read-more'>
-                                        Read More
+                                        {t("Read More")}
                                     <img className="pl-[10px]" src={arow} alt="" />
                                     </div>
                             </div>
@@ -53,4 +52,4 @@ class Blogs extends Component {
     }
 }
  
-export default Blogs;
+export default withTranslation()(Blogs);

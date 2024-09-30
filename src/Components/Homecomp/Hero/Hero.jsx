@@ -2,19 +2,21 @@ import { Component } from "react";
 import React from "react";
 import "./Hero.css"
 import image from '/Assets/images/Contact us frame.png'
+import { withTranslation } from 'react-i18next';
 
 class Hero extends Component {
     state = {}
     render() {
+        const { t } = this.props;
         return (
             <div className="padc Hero_Container" >
                 <div className="Hero-left" >
-                    <span className="Hero-left-header sm:text-[30px] lg:text-[45px]"> Distinctly Visible, Uniquely Heard </span>
+                    <span className="Hero-left-header sm:text-[30px] lg:text-[45px] ">{t("Distinctly Visible, Uniquely Heard")} </span>
 
                     <p className="lg:text-[30px]">
-                        Navigating Your Brand to New Heights<br/>
-                        with  <span className="Company"> The Minaret Marketing Agency.</span> Your<br/>
-                        journey to unparalleled digital presence begins here.
+                        {t("Navigating Your Brand to New Heights")}<br/>
+                        {t("with")}  <span className="Company"> {t("The Minaret Marketing Agency.")}</span> {t("Your")}<br/>
+                        {t("journey to unparalleled digital presence begins here.")}
                     </p>
                 </div>
 
@@ -29,4 +31,4 @@ class Hero extends Component {
     }
 }
 
-export default Hero;
+export default withTranslation()(Hero);

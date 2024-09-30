@@ -1,9 +1,10 @@
 import React from "react";
-
+import { withTranslation } from 'react-i18next';
 import { Component } from "react";
 import image from '/Assets/images/AboutPage/1.png';
 import './about.css';
 import image2 from '/Assets/images/AboutPage/vec.png';
+
 class Sec1 extends Component {  
     constructor(props) {
     super(props);
@@ -38,21 +39,22 @@ componentDidMount() {
 }
 
 render() { 
+    const { t } = this.props;
     return (
         <div className="sec1 padc bg1" style={{paddingBottom: '150px'}}>
             <div className= {`left-about ${this.state.isVisible ? 'animate-apear' : ''}`} 
                 ref={this.rightRef}>
                 <div className="left-header secolor">
-                    <p>Discover the Minaret Magic</p>
+                    <p>{t("Discover the Minaret Magic")}</p>
                 </div>
                 <div className="pragrf">
                     <p className="frthcolor">
-                        Envision a towering minaret piercing the skyline, a beacon visible from miles away, its call resonating uniquely through the air. This powerful imagery captures the essence of our approach at Minaret Marketing Agency.
+                        {t("Envision a towering")}
                     </p>
                 </div>
                 <div className="pragrf">
                     <p className="frthcolor">
-                        We are committed to elevating your brand to unprecedented heights making it not just seen, but deeply experienced; not just heard, but profoundly remembered. Our unique blend of creativity and data-driven strategies ensures that your brand's presence is impactful and enduring.
+                        {t("We are committed")}
                     </p>
                 </div>
             </div>
@@ -69,11 +71,11 @@ render() {
                 ref={this.eclips}>
             
                 <p className="mcolor">
-                    How do we transform this vision into reality for your brand? <span className="frthcolor"> Let us show you the way.</span>
+                    {t("How do we")}<span className="frthcolor">{t("Let us show you the way.")} </span>
                 </p>
             </div>
         </div>
     );
 }
 }
-export default Sec1;
+export default withTranslation()(Sec1);

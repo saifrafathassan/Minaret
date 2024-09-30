@@ -7,6 +7,7 @@ import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import vec from '/Assets/images/contact/vec.png'
 import { styled } from '@mui/system';
+import { withTranslation } from 'react-i18next';
 
 const ExpandIcon = styled('img')({
     width: '20px',
@@ -27,32 +28,32 @@ const StyledAccordion = styled(Accordion)(({ theme }) => ({
     backgroundColor: '#FBC6AC',
   }));
 
-const FAQAccordion = () => {
+const FAQAccordion = ({t}) => {
   const faqs = [
     {
-      question: ' How Long Does It Typically Take to See Results from a Digital Marketing Campaign?',
-      answer: 'The timeline for seeing results can vary depending on the type of campaign and your specific goals. Typically, SEO efforts may start showing results in 3-6 months, while ',
+      question: t("question1"),
+      answer: t("answer1"),
     },
     {
-      question: ' Are there opportunities for remote work?',
-      answer: 'Yes, we value flexibility and work-life balance. Many of our positions offer remote work opportunities or the option to work from the office ',
+      question: t("question2"),
+      answer: t("answer2"),
     },
     
     {
-        question: 'Does The Minaret Marketing Agency offer internship programs?',
-        answer: 'Yes, we offer internship programs in various departments, including marketing, design, and content creation. These programs are designed ',
+        question: t("question3"),
+        answer: t("answer3"),
       },
       {
-        question: 'What kind of benefits and perks does The Minaret Marketing Agency offer?',
-        answer: 'Our team members enjoy a range of benefits, including competitive salaries, comprehensive health insurance, flexible working hours, ',
+        question: t("question4"),
+        answer: t("answer4"),
       },
       {
-        question: 'How does The Minaret Marketing Agency support professional development?',
-        answer: "We're committed to the continuous growth of our team members. We offer personal development allowances for courses, conferences, ",
+        question: t("question5"),
+        answer: t("answer5"),
       },
       {
-        question: 'What makes The Minaret Marketing Agency a unique place to work?',
-        answer: "What sets us apart is our collaborative culture, our commitment to innovation and continuous learning, and our dedication to creating impactful ",
+        question: t("question6"),
+        answer: t("answer6"),
       },
   ];
 
@@ -78,4 +79,4 @@ const FAQAccordion = () => {
   );
 };
 
-export default FAQAccordion;
+export default withTranslation()(FAQAccordion);

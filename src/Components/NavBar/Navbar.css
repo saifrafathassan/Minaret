@@ -55,6 +55,11 @@
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+    .lng-btn {
+        top: 10px !important;
+        left: 30px !important;
+        position: absolute;
+    }
     .NavMenue {
         display: none;
         flex-direction: column;

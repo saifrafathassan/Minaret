@@ -1,10 +1,11 @@
 import './Calculator.css';
 import { create, all } from 'mathjs';
 import { useState } from 'react';
+import { withTranslation } from 'react-i18next';
 
 const math = create(all);
 
-const Calculator = () => {
+const Calculator = ({t}) => {
     const [input, setInput] = useState("");
 
     const handleClick = (value) => {
@@ -38,7 +39,7 @@ const Calculator = () => {
     return (
         <div className='calculator-container'> 
             <div className='calculator-text'>
-                Calculate your services
+                {t("Calculate")}
             </div>
             <div className="calculator">
                 <input type="text" value={input} readOnly className="calculator-display" />
@@ -69,4 +70,4 @@ const Calculator = () => {
     );
 }
 
-export default Calculator;
+export default withTranslation()(Calculator);

@@ -3,9 +3,12 @@ import { Component } from "react";
 import arow from '/Assets/Gifs/0.gif';
 import { Link } from "react-router-dom";
 import './btn.css'
+import { withTranslation } from 'react-i18next';
+
 class Btn extends Component {
     state = {  } 
     render() { 
+        const { t } = this.props;
         return (
              <div className="the-button cursor-pointer">
                  
@@ -24,7 +27,7 @@ class Btn extends Component {
     }
 }
  
-export default Btn;
+export default withTranslation()(Btn);
  <div className="the-button">
                     <div className="caption">
                     <span> Read More </span>

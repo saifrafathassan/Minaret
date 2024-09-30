@@ -2,7 +2,7 @@ import React from "react";
 import { Component } from "react";
 import './Services.css';
 import arow from '/Assets/Gifs/0.gif';
-
+import { withTranslation } from 'react-i18next';
 import data from '../../../utils/data/data.json';
 
 
@@ -25,20 +25,19 @@ class Service extends Component {
         const services = data['services'];
         const serviceCat = data['service_cat'];
         const { hoveredServiceIndex } = this.state;
-
+        const { t } = this.props;
         return (
             <div className="Service_container padc sm:py-[40px] md:py-[100px]">
                 <div className="service-grid">
                     <div className="first">
                         <div className="title text-[50px]">
-                            Our <span>Services</span>
+                            {t("Our")}  <span>{t("Services")} </span>
                         </div>
                         <div className="desc">
-                            Explore our comprehensive services designed to elevate your brand and Craft your digital legacy,
-                            brick by brick. Our services guide you from brand identity to peak visibility.
+                            {t("Explore our comprehensive")} 
                         </div>
                         <div className="view-more pt-4">
-                            <div className="v-cont"><span>view more</span></div>
+                            <div className="v-cont"><span>{t("view more")} </span></div>
                             <div className="back">
                                 <img src={arow} alt="->" />
                             </div>
@@ -83,7 +82,7 @@ class Service extends Component {
                                         <div className="btm1st">
                                             <img src={arow} alt="->" />
                                         </div>
-                                        <p>Read More</p>
+                                        <p>{t("Read More")} </p>
                                         <div className="btm3d">
                                             <img src={service.service_icon} alt="" />
                                         </div>
@@ -98,4 +97,4 @@ class Service extends Component {
     }
 }
  
-export default Service;
+export default withTranslation()(Service);

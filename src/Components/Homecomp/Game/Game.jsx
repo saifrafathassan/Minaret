@@ -5,12 +5,11 @@ class Game extends Component {
     state = {  } 
     render() { 
         return (
-            <section>
-                <img src={image} />
-            </section>
-
+        <section className="bg-[#451C44] md:h-[600px] w-full">
+            <img className="max-w-full h-full object-contain" src={image} />
+        </section>
         );
     }
 }
- 
+
 export default Game;

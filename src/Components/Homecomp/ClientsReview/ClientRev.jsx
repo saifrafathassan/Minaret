@@ -1,6 +1,6 @@
 import { Component } from "react";
 import React from "react";
-
+import { withTranslation } from 'react-i18next';
 import { FaStar } from "react-icons/fa";
 import './Clients.css';
 import data from '../../../utils/data/data.json';
@@ -31,7 +31,7 @@ class ClientRev extends Component {
     render() {
         const { currentIndex } = this.state;
         const Testimonials = data['Testimonials'];
-
+        const { t } = this.props;
         return (
             <section className="Clients-container padc m:py-[20px] lg:py-[100px]">
                 <div className="left">
@@ -77,11 +77,10 @@ class ClientRev extends Component {
 
                 <div className="right">
                     <div className="title text-[50px]">
-                        Client <p className="mcolor">Testimonials</p>
+                        {t("Client")} <p className="mcolor">{t("Testimonials")}</p>
                     </div>
                     <div className="desc">
-                        Hear from our satisfied clients who've journeyed with us to success.
-                        Your trust is our greatest achievement.
+                        {t("Hear from")}
                     </div>
                 </div>
             </section>
@@ -90,4 +89,4 @@ class ClientRev extends Component {
 }
 
 
-export default ClientRev;
+export default withTranslation()(ClientRev);

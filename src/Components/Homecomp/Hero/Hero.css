@@ -49,7 +49,7 @@
     font-family: 'Somar', sans-serif;
     font-weight: 500;
     font-size: 1.6rem; /* Adjusted font size for better scaling */
-    line-height: 2.5rem;
+    line-height: 4rem;
     background: linear-gradient(180deg, #8A1848 , #573348);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

@@ -5,12 +5,15 @@ import './Career.css'
 import Culutre from "./Culture";
 import Why from "./whyWork";
 import Hiring from "./hiring";
+import { withTranslation } from 'react-i18next';
+
 class CareerPage extends Component {
     state = {  } 
     render() { 
+        const { t } = this.props;
         return (
             <section>
-                    <Header Cap='Join Our Journey of innovation and success '/>
+                    <Header Cap={t("Join Our Journey of innovation and success")}/>
                     <Culutre/>
                     <Why/>
                     <Hiring/>
@@ -19,4 +22,4 @@ class CareerPage extends Component {
     }
 }
  
-export default CareerPage;
+export default withTranslation()(CareerPage);
