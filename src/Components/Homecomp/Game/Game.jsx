@@ -38,7 +38,7 @@ render() {
     const { currentImageIndex } = this.state;
 
     return (
-    <section className="bg-[#451C44] md:h-[600px] w-full flex justify-center items-center">
+    <section className="bg-[#451C44] md:h-[800px] w-full flex justify-center items-center">
 
         <motion.img 
         key={currentImageIndex} 
