@@ -25,12 +25,12 @@ return (
         <ul className='absolute z-20 text-white'>
         {currentLanguage !== 'ar' && (
         <li className='hover:bg-transparent'>
-            <button style={{ backgroundColor: 'transparent' }} className='w-full text-end py-1 px-2' onClick={() => handleLanguageChange('ar')}>العربية</button>
+            <button style={{ backgroundColor: 'transparent' }} className='w-full text-end py-1' onClick={() => handleLanguageChange('ar')}>العربية</button>
         </li>
         )}
         {currentLanguage !== 'en' && (
         <li className='hover:bg-transparent'>
-            <button style={{ backgroundColor: 'transparent' }} className='w-full text-start py-1 px-2' onClick={() => handleLanguageChange('en')}>English</button>
+            <button style={{ backgroundColor: 'transparent' }} className='w-full text-start py-1' onClick={() => handleLanguageChange('en')}>English</button>
         </li>
         )}
         </ul>
