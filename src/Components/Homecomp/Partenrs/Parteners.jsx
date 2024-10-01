@@ -20,6 +20,7 @@ import i18n from 'i18next';
 const Parteners = ({t}) => {
     const [ref, inView] = useInView({ threshold: 0.1 }); 
     const currentLanguage = i18n.language.split('-')[0];
+    const [showText, setShowText] = React.useState(false);
     const settings = {
         dots: true,
         infinite: true,
@@ -56,6 +57,17 @@ const Parteners = ({t}) => {
 
     const logos = [im1, im2, im3, im4, im5];
 
+    React.useEffect(() => {
+        setShowText(false); 
+
+        const timer = setTimeout(() => {
+            setShowText(true);
+            console.log("Timer completed, setShowText to true.");
+        }, 1500); 
+
+        return () => clearTimeout(timer);
+    }, [currentLanguage]); 
+
     return (
         <div className="partenr padc sm:py-[40px] md:py-[100px]">
             <motion.div
@@ -66,21 +78,20 @@ const Parteners = ({t}) => {
                 transition={{ duration: 0.6 }}
                 className="flex gap-2 title md:text-[50px]"
             >
-                {t("Our")}<span style={{ whiteSpace: 'nowrap' }}>
-                    <Typewriter
-                        startDelay={500}
-                        cursorColor="transparent"
-                        multiText={[
-                            t("Trusted Partners"),
-                            t("Reliable Partners"),
-                            t("Strong Relationships"),
-                        ]}
-                        multiTextDelay={2500}
-                        typeSpeed={100}
-                        deleteSpeed={10}
-                        multiTextLoop={true}
-                    />
-                </span>
+        {t("Our")}<span>
+            {showText && (
+                <Typewriter
+                    cursorColor="transparent"
+                    multiText={[
+                        t("Trusted Partners"),
+                        t("Reliable Partners"),
+                        t("Strong Relationships")
+                    ]}
+                    typeSpeed={100}
+                    multiTextLoop={true}
+                />
+            )}
+        </span>
             </motion.div>
 
             <motion.div
