@@ -2,10 +2,10 @@
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
-    height: 60vh; 
+    height: 55vh; 
     background-color: #F36E37; 
-    padding-right: 10px; 
-    padding-left: 10px; 
+    padding-right: 160px; 
+    padding-left: 160px; 
 }
 
 .calculator {
