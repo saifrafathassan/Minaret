@@ -29,15 +29,12 @@ class Blogs extends Component {
                                 <img className="bg-img" src={blog.image} alt={`Blog ${index + 1}`}  />
                                 <div className="bolg-title "> {blog.title} </div>
                                 <div className="blog-content" >{blog.content}</div>
-                                <div className='read-more '>
-                                    <div className='th'> <p>{t("Read More")}</p></div>
-                                    <div className='mh'> <img src={arow} alt="" /></div>
-                                <div className="blog-content py-[15px]" >{blog.content}</div>
+
                                     <div className='read-more'>
                                         {t("Read More")}
                                     <img className="pl-[10px]" src={arow} alt="" />
                                     </div>
-                            </div>
+
                             </div>
                         ))}
                         </div>

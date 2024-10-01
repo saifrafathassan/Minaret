@@ -10,31 +10,31 @@ class Btn extends Component {
     render() { 
         const { t } = this.props;
         return (
-             <div className="the-button cursor-pointer">
+            <div className="the-button">
                  
 
-                    <div className="caption">
-                    <Link onClick={() => window.scrollTo(0, 0)} to={this.props.link}>
-                    <span> { this.props.Caption}</span>
-                   
-                    </Link>
-                    </div>
-                    <div className="arow" >
-                            <img src={arow} alt="" />
-                    </div>
-                </div>
+            <div className="caption">
+            <Link to={this.props.link}>
+            <span> { this.props.Caption}</span>
+            </Link>
+           
+            </div>
+            <div className="arow" >
+                    <img src={arow} alt="" />
+            </div>
+        </div>
         );
     }
 }
  
 export default withTranslation()(Btn);
- <div className="the-button">
-                    <div className="caption">
-                    <span> Read More </span>
-                    </div>
-                    <div className="arow" >
-                            <img src={arow} alt="" />
-                    </div>
+<div className="the-button">
+<div className="caption">
+<span> Read More </span>
+</div>
+<div className="arow" >
+        <img src={arow} alt="" />
+</div>
 
 
-                </div>
+</div>
