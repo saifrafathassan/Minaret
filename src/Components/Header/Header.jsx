@@ -1,12 +1,16 @@
 import React from "react";
 import { Component } from "react";
 import './Header.css';
+import { withTranslation } from 'react-i18next';
+import i18n from 'i18next';
+
 class Header extends Component {
     state = {  } 
     render() { 
+        const currentLanguage = i18n.language.split('-')[0];
         return (
             <section className="Header-container padc">
-                <div className="Caption" >
+                <div  dir={currentLanguage === 'ar' ? 'rtl' : 'ltr'} className="Caption" >
                     <p>{this.props.Cap} </p>
                 </div>
 
@@ -15,4 +19,4 @@ class Header extends Component {
     }
 }
  
-export default Header;
+export default withTranslation()(Header);

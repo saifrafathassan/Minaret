@@ -4,11 +4,12 @@ import pin from '/Assets/Gifs/pin.gif';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { withTranslation } from 'react-i18next';
+import i18n from 'i18next';
 
 class Usps extends Component {
     render() {
         const { t } = this.props; 
-
+        const currentLanguage = i18n.language.split('-')[0];
         const usps = [
             { 'title': t("title1"), 'desc': t("desc1") },
             { 'title': t("title2"), 'desc': t("desc2") },
@@ -28,17 +29,17 @@ class Usps extends Component {
                 <div className="title">
                     USPs
                 </div>
-                <div className="slideru">
-                    <Slider {...settings}>
+                <div  className="slideru">
+                    <Slider {...settings} >
                         {usps.map((usp, index) => (
-                            <div key={index} className="singel-usp-containr">
+                            <div dir={currentLanguage === 'ar' ? 'rtl' : 'ltr'} key={index} className="singel-usp-containr">
                                 <div className="usp-title">
                                     <span className="mcolor">{usp.title}</span>
                                 </div>
                                 <div className="usp-desc">
                                     {usp.desc}
                                 </div>
-                                <img src={pin} alt="" />
+                                <img className={currentLanguage === 'ar' ? 'limg' : 'rimg'} src={pin} alt="" />
                             </div>
                         ))}
                     </Slider>
