@@ -73,7 +73,7 @@ const Parteners = ({t}) => {
                         multiText={[
                             t("Trusted Partners"),
                             t("Reliable Partners"),
-                            t("Strong Relationships")
+                            t("Strong Relationships"),
                         ]}
                         multiTextDelay={2500}
                         typeSpeed={100}
