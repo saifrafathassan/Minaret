@@ -6,6 +6,7 @@ import './Clients.css';
 import data from '../../../utils/data/data.json';
 import { HiArrowSmallDown } from "react-icons/hi2";
 import { HiArrowSmUp } from "react-icons/hi";
+import i18n from 'i18next';
 
 class ClientRev extends Component {
     state = {
@@ -32,6 +33,7 @@ class ClientRev extends Component {
         const { currentIndex } = this.state;
         const Testimonials = data['Testimonials'];
         const { t } = this.props;
+        const currentLanguage = i18n.language.split('-')[0];
         return (
             <section className="Clients-container padc m:py-[20px] lg:py-[100px]">
                 <div className="left">
@@ -75,7 +77,7 @@ class ClientRev extends Component {
                     </div>
                 </div>
 
-                <div className="right">
+                <div dir={currentLanguage === 'ar' ? 'rtl' : 'ltr'} className="right">
                     <div className="title text-[50px]">
                         {t("Client")} <p className="mcolor">{t("Testimonials")}</p>
                     </div>

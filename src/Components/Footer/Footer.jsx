@@ -4,13 +4,15 @@ import './Footer.css';
 import logo from '/Assets/images/logo.png';
 import { Link } from 'react-router-dom';
 import { withTranslation } from 'react-i18next';
+import i18n from 'i18next';
 
 class Footer extends Component {
     state = {}
     render() {
         const { t } = this.props;
+        const currentLanguage = i18n.language.split('-')[0];
         return (
-            <section className="Footer padc">
+            <section dir={currentLanguage === 'ar' ? 'rtl' : 'ltr'} className="Footer padc">
                 <div className="footer-content" >
                     <div className="col1">
                         

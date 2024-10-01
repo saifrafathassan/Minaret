@@ -3,13 +3,16 @@ import React from "react";
 import "./Hero.css"
 import image from '/Assets/images/Contact us frame.png'
 import { withTranslation } from 'react-i18next';
+import i18n from 'i18next';
 
 class Hero extends Component {
+    
     state = {}
     render() {
+        const currentLanguage = i18n.language.split('-')[0];
         const { t } = this.props;
         return (
-            <div className="padc Hero_Container" >
+            <div dir={currentLanguage === 'ar' ? 'rtl' : 'ltr'} className="padc Hero_Container" >
                 <div className="Hero-left" >
                     <span className="Hero-left-header sm:text-[30px] lg:text-[45px] ">{t("Distinctly Visible, Uniquely Heard")} </span>
 

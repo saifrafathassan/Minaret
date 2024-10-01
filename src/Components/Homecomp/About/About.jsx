@@ -3,11 +3,13 @@ import './About.css';
 import image from '/Assets/images/about.png';
 import { Link } from "react-router-dom";
 import { withTranslation } from 'react-i18next';
+import i18n from 'i18next';
 
 const About = ({t}) => {
     const aboutRightRef = useRef(null);
     const aboutleftref=useRef(null);
     const imageref= useRef(null);
+    const currentLanguage = i18n.language.split('-')[0];
     useEffect(() => {
         const observer = new IntersectionObserver(
             (entries) => {
@@ -47,7 +49,7 @@ const About = ({t}) => {
     }, []);
 
     return (
-        <div className="padc about_container sm:py-[40px] md:py-[100px]">
+        <div dir={currentLanguage === 'ar' ? 'rtl' : 'ltr'} className="padc about_container sm:py-[40px] md:py-[100px]">
             <div className="About-left" ref={aboutleftref} >
                 <p className="p1">
                 {t("Choose The Minaret")}

@@ -15,10 +15,11 @@ import im2 from '/Assets/images/partnrs/2.png';
 import im3 from '/Assets/images/partnrs/3.png';
 import im4 from '/Assets/images/partnrs/4.png';
 import im5 from '/Assets/images/partnrs/5.png';
+import i18n from 'i18next';
 
 const Parteners = ({t}) => {
     const [ref, inView] = useInView({ threshold: 0.1 }); 
-
+    const currentLanguage = i18n.language.split('-')[0];
     const settings = {
         dots: true,
         infinite: true,
@@ -58,6 +59,7 @@ const Parteners = ({t}) => {
     return (
         <div className="partenr padc sm:py-[40px] md:py-[100px]">
             <motion.div
+                dir={currentLanguage === 'ar' ? 'rtl' : 'ltr'}
                 ref={ref} 
                 initial={{ x: -100, opacity: 0 }}
                 animate={inView ? { x: 0, opacity: 1 } : { x: -100, opacity: 0 }} 

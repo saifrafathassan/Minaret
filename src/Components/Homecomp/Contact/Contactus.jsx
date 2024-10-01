@@ -3,10 +3,10 @@ import image from '/Assets/images/contact/1.png'
 import './contact.css';
 import { Link } from 'react-router-dom';
 import { withTranslation } from 'react-i18next';
-
+import i18n from 'i18next';
 
 const Contact =({t})=>{
-
+    const currentLanguage = i18n.language.split('-')[0];
         const cont_ref=useRef(null);
         useEffect(() => {
             const observer = new IntersectionObserver(
@@ -47,7 +47,7 @@ const Contact =({t})=>{
                 <div className='title-contact text-[40px] uppercase  '> 
                     <p >{t('Ready')}</p>
                 </div>
-                <div className='width-40 tc text-[20px] py-6'>
+                <div dir={currentLanguage === 'ar' ? 'rtl' : 'ltr'} className='width-40 tc text-[20px] py-6'>
                 <p>{t('Contact')}</p>
                 </div>
                 <div className=' btn'>

@@ -5,19 +5,21 @@ import Btn from "./../../btn/btn";
 import arow from '/Assets/Gifs/0.gif';
 import data from '../../../utils/data/data.json';
 import { withTranslation } from 'react-i18next';
+import i18n from 'i18next';
 
 class Blogs extends Component {
     state = {  } 
     render() { 
         const bolgs=data['bolgs']
         const { t } = this.props;
+        const currentLanguage = i18n.language.split('-')[0];
         return (
             <section className="padc bolg-container m:py-[40px] lg:py-[100px]" >
-                <div className="title text-[50px]" >
+                <div dir={currentLanguage === 'ar' ? 'rtl' : 'ltr'} className="title text-[50px]" >
                    {t("Latest From")} <span>{t("The Blog")}</span>
                 </div>
 
-                <div className="desc sm:w-100 lg:width-50 pt-[20px] pb-[30px]">
+                <div dir={currentLanguage === 'ar' ? 'rtl' : 'ltr'} className="desc sm:w-100 lg:width-50 pt-[20px] pb-[30px]">
                 {t("Stay")}
                 </div>
 
@@ -42,7 +44,7 @@ class Blogs extends Component {
                     
                
                   
-                   <Btn Caption={"Read More"} link={'/Blog'}/>
+                   <Btn Caption={t("Read More")} link={'/Blog'}/>
                   
 
                       
