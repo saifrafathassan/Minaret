@@ -39,7 +39,7 @@ const Contact =({t})=>{
         }, []);
 
         return (
-            <section className=' bg1' >
+            <section className='lg:pt-44 bg1' >
                 {/* ref={cont_ref} */}
                 <div className='Contact-Container h-[600px]' >
 
