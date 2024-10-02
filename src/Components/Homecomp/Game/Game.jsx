@@ -4,11 +4,11 @@ import image from '/Assets/images/Game/Property1.jpg';
 import image1 from '/Assets/images/Game/Property 1=Variant2.jpg';
 import image2 from '/Assets/images/Game/Property 1=Variant3.jpg';
 import image3 from '/Assets/images/Game/Property 1=Variant4.jpg';
-import image4 from '/Assets/images/Game/Property 1=Variant5.jpg';
-import image5 from '/Assets/images/Game/Property 1=Variant6.jpg';
-import image6 from '/Assets/images/Game/Property 1=Variant7.jpg';
-import image7 from '/Assets/images/Game/Property 1=Variant8.jpg';
-import image8 from '/Assets/images/Game/Property 1=Variant9.jpg';
+import image4 from '/Assets/images/Game/Property-1=Variant5.jpg';
+import image5 from '/Assets/images/Game/Property-1=Variant6.jpg';
+import image6 from '/Assets/images/Game/Property-1=Variant7.jpg';
+import image7 from '/Assets/images/Game/Property-1=Variant8.jpg';
+import image8 from '/Assets/images/Game/Property-1=Variant9.jpg';
 
 class Game extends Component {
 state = { 
