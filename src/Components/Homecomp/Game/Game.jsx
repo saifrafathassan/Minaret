@@ -10,6 +10,10 @@ import image6 from '/Assets/images/Game/Property-1=Variant7.jpg';
 import image7 from '/Assets/images/Game/Property-1=Variant8.jpg';
 import image8 from '/Assets/images/Game/Property-1=Variant9.jpg';
 
+import { FaHeart } from "react-icons/fa";
+import { GiTrophyCup } from "react-icons/gi";
+import { IoMdStar } from "react-icons/io";
+
 class Game extends Component {
   state = { 
     currentImageIndex: 0, 
@@ -123,21 +127,29 @@ class Game extends Component {
     const currentArea = this.getCorrectArea(currentImageIndex, { width: window.innerWidth, height: window.innerHeight });
 
     return (
-      <section className="bg-[#451C44] pt-20 md:h-[800px] w-full flex flex-col justify-center items-center relative">
-        <div className="w-full py-20">
-            <hr className="border-t border-gray-400" />
-        </div>
+<section className="bg-[#451C44] pt-20 md:h-[850px] w-full flex flex-col justify-center items-center relative">
+  <div className="w-full pt-32">
+    <hr className="border-t border-gray-400" />
+  </div>
+  <h1 className="pt-20 pb-10 text-3xl font-bold text-center">Welcome to our game</h1>
 
-                <div className="text-white text-2xl mb-32">Your Score: {score}</div>
-                <div className="absolute mb-14 lg:top-32 lg:left-24 text-white text-xl">
-                Chances: {chances}
-                </div>
-                <div className="absolute lg:top-32 lg:right-24 text-white text-xl">
-                Wins: {wins}
-                </div>
+  <div className="text-white text-2xl mb-0 flex items-center justify-center gap-2">
+    Your Score: {score} <IoMdStar className="text-yellow-300 mb-1" />
+  </div>
+
+  <div className="flex sm:flex-row flex-col justify-center sm:justify-between items-center text-white text-xl mb-20 gap-10">
+    <div className="flex items-center gap-2">
+      Chances: {chances} <FaHeart className="text-red-500" />
+    </div>
+    <div className="flex items-center gap-2">
+      Wins: {wins} <GiTrophyCup className="text-orange-400" size={25} />
+    </div>
+  </div>
+
+
 
         {gameOver ? (
-          <div className="text-white text-4xl font-bold">Game Over</div>
+          <div className="text-white text-4xl font-bold h-screen">Game Over</div>
         ) : (
           <>
             <motion.img 
@@ -151,9 +163,14 @@ class Game extends Component {
               transition={{ duration: 0.8, ease: "easeInOut" }}
               style={{ width: '100%', height: '100%' }} 
             />
+            {currentImageIndex === 1 && (
+            <div className="absolute bottom-1 md:bottom-[100px] text-white text-sm sm:text-lg bg-black bg-opacity-50 p-1 sm:p-2 rounded-lg">
+                remember these places because you will need them.
+            </div>
+          )}
             {currentArea && currentImageIndex < 8 && (
               <div
-                className="absolute opacity-50 cursor-pointer"
+                className="absolute bg-red-500 opacity-50 cursor-pointer"
                 style={{
                   left: `${currentArea.xMin}px`,
                   top: `${currentArea.yMin}px`,
@@ -167,7 +184,7 @@ class Game extends Component {
         )}
 
         {showInstructions && (
-          <div className="absolute bottom-1 text-white text-lg bg-black bg-opacity-50 p-4 rounded-lg">
+          <div className="absolute bottom-1 text-white text-lg bg-black bg-opacity-50 p-2 rounded-lg">
             Welcome to the game! Click the image to proceed. You have 3 chances to get it right!
           </div>
         )}
