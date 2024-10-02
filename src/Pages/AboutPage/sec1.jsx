@@ -4,6 +4,7 @@ import { Component } from "react";
 import image from '/Assets/images/AboutPage/1.png';
 import './about.css';
 import image2 from '/Assets/images/AboutPage/vec.png';
+import i18n from 'i18next';
 
 class Sec1 extends Component {  
     constructor(props) {
@@ -40,6 +41,7 @@ componentDidMount() {
 
 render() { 
     const { t } = this.props;
+    const currentLanguage = i18n.language.split('-')[0];
     return (
         <div className="sec1 padc bg1" style={{paddingBottom: '150px'}}>
             <div className= {`left-about ${this.state.isVisible ? 'animate-apear' : ''}`} 
@@ -63,11 +65,10 @@ render() {
             >
                 <img src={image} alt="" />
             </div>
-            <div className= {`Vector ${this.state.isVisible ? 'animate-flash' : ''}`} 
-                ref={this.rightRef}>
-                <img src={image2} alt="" />
+            <div className={`${currentLanguage === 'ar' ? 'Vector1' : 'Vector'} ${this.state.isVisible ? 'animate-flash' : ''}`} ref={this.rightRef}>
+                <img style={{ transform: currentLanguage === 'ar' ? 'scaleX(-1)' : 'scaleX(1)', }} src={image2} alt="" />
             </div>
-            <div className= {`eclips ${this.state.isVisible ? ' animate-flash ' : ''}`} 
+            <div className= {`${currentLanguage === 'ar' ? 'eclips1' : 'eclips'} ${this.state.isVisible ? ' animate-flash ' : ''}`} 
                 ref={this.eclips}>
             
                 <p className="mcolor">
