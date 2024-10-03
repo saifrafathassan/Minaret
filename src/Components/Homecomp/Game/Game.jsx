@@ -167,7 +167,7 @@ class Game extends Component {
           )}
             {currentArea && currentImageIndex < 8 && (
               <div
-                className="absolute bg-red-500 opacity-50 cursor-pointer"
+                className="absolute opacity-50 cursor-pointer"
                 style={{
                   left: `${currentArea.xMin}px`,
                   top: `${currentArea.yMin}px`,
