@@ -110,12 +110,12 @@ class Game extends Component {
     const areas = [
       null,
       null,
-      { xMin: rect.width * 0.3, xMax: rect.width * 0.4 + 50, yMin: rect.height * 0.4, yMax: rect.height * 0.5 + 50 }, // image2
-      { xMin: rect.width * 0.6, xMax: rect.width * 0.7 + 50, yMin: rect.height * 0.3, yMax: rect.height * 0.4 + 50 }, // image3
-      { xMin: rect.width * 0.3, xMax: rect.width * 0.4 + 50, yMin: rect.height * 0.4, yMax: rect.height * 0.3 + 50 }, // image4
-      { xMin: rect.width * 0.7, xMax: rect.width * 0.5 + 50, yMin: rect.height * 0.5, yMax: rect.height * 0.6 + 50 }, // image5
-      { xMin: rect.width * 0.4, xMax: rect.width * 0.6 + 50, yMin: rect.height * 0.5, yMax: rect.height * 0.6 + 50 }, // image6
-      { xMin: rect.width * 0.3, xMax: rect.width * 0.5 + 50, yMin: rect.height * 0.7, yMax: rect.height * 0.8 + 50 }, // image7
+      { xMin: rect.width * 0.3, xMax: rect.width * 0.4 + 50, yMin: rect.height * 0.6, yMax: rect.height * 0.7 + 50 }, // image2
+      { xMin: rect.width * 0.6, xMax: rect.width * 0.7 + 50, yMin: rect.height * 0.5, yMax: rect.height * 0.6 + 50 }, // image3
+      { xMin: rect.width * 0.3, xMax: rect.width * 0.4 + 50, yMin: rect.height * 0.6, yMax: rect.height * 0.8 + 50 }, // image4
+      { xMin: rect.width * 0.7, xMax: rect.width * 0.5 + 50, yMin: rect.height * 0.7, yMax: rect.height * 0.8 + 50 }, // image5
+      { xMin: rect.width * 0.4, xMax: rect.width * 0.6 + 50, yMin: rect.height * 0.8, yMax: rect.height * 0.9 + 50 }, // image6
+      { xMin: rect.width * 0.3, xMax: rect.width * 0.5 + 50, yMin: rect.height * 1.1, yMax: rect.height * 1.2 + 50 }, // image7
       null,
     ];
 
@@ -128,10 +128,7 @@ class Game extends Component {
 
     return (
 <section className="bg-[#451C44] pt-20 md:h-[850px] w-full flex flex-col justify-center items-center relative">
-  <div className="w-full pt-32">
-    <hr className="border-t border-gray-400" />
-  </div>
-  <h1 className="pt-20 pb-10 text-3xl font-bold text-center">Welcome to our game</h1>
+  <h1 className="pt-20 pb-10 text-[40px] font-bold text-center text-[#F36E37]"><span className="text-[#FBC6AC]">Welcome</span> to our game</h1>
 
   <div className="text-white text-2xl mb-0 flex items-center justify-center gap-2">
     Your Score: {score} <IoMdStar className="text-yellow-300 mb-1" />
@@ -164,7 +161,7 @@ class Game extends Component {
               style={{ width: '100%', height: '100%' }} 
             />
             {currentImageIndex === 1 && (
-            <div className="absolute bottom-1 md:bottom-[100px] text-white text-sm sm:text-lg bg-black bg-opacity-50 p-1 sm:p-2 rounded-lg">
+            <div className="absolute bottom-1 text-white text-sm sm:text-lg bg-black bg-opacity-50 p-1 sm:p-2 rounded-lg">
                 remember these places because you will need them.
             </div>
           )}
