@@ -6,42 +6,18 @@ import { withTranslation } from 'react-i18next';
 const math = create(all);
 
 const Calculator = ({t}) => {
-    const [input, setInput] = useState("");
 
-    const handleClick = (value) => {
-        setInput(input + value);
-    };
-
-    const handleClear = () => {
-        setInput("");
-    };
-
-    const handleBackspace = () => {
-        setInput(input.slice(0, -1));
-    };
-
-    const handleCalculate = () => {
-        try {
-            // حساب النسبة المئوية
-            let expression = input;
-            if (expression.includes("%")) {
-                expression = expression.replace(/(\d+)%/g, (match, p1) => {
-                    return `${p1} * 0.01`;
-                });
-            }
-            const result = math.evaluate(expression);
-            setInput(result.toString());
-        } catch (error) {
-            setInput("Error");
-        }
-    };
 
     return (
-        <div className='calculator-container'> 
-            <div className='calculator-text'>
-                {t("Calculate")}
+        <section className='calculator-container padc'> 
+            <div className='calculator-text text-[50px]'>
+                {t("Calculate")} <span className='text-[#451C44]'>{t("your Services")}</span>
             </div>
-        </div>
+
+            <div className="calculator">
+
+            </div>
+        </section>
     );
 }
 

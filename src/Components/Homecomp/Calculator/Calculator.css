@@ -1,13 +1,17 @@
 .calculator-container {
     display: flex; 
-    justify-content: center; 
-    align-items: center; 
+    justify-content: start; 
+    align-items: start; 
     height: 35vh; 
     background-color: #F36E37; 
     width: 100%;
 }
 
 .calculator-text {
-    text-align: center;
-    font-size: 30px;
+    font-family: 'Somar-bold';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 150%;
+    color:  #FBC6AC;
 }
