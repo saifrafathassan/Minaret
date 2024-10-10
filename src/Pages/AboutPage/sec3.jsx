@@ -2,9 +2,12 @@ import React from "react";
 import { Component } from "react";
 import image from '/Assets/images/AboutPage/bro.png'
 import './about.css';
+import { withTranslation } from 'react-i18next';
+
 class Sec3 extends Component {
     state = {  } 
     render() { 
+        const { t } = this.props;
         return (
             <section className="padc bg2 sec-reverse">
                     <div className="left-about">
@@ -16,11 +19,11 @@ class Sec3 extends Component {
 
                     <div className="right" >
                         <div className="title" style={{marginBottom:'10px'}}>
-                        Our <p className="mcolor">Message</p> 
+                        {t("Our")} <p className="mcolor">{t("Message")}</p> 
                         </div>
                         <div className="desc">
                             <p>
-                            Beyond merely serving as a marketing agency, we position ourselves as architects in the digital frontier, guiding brands through the complexities with strategic finesse and innovative thinking. 'Minaret' isn't just our name; it's our commitment to raising your brand's profile and ensuring its message resonates across the digital expanse                            </p>
+                            {t("Beyond merely")}</p>
                         </div>
 
                     </div>
@@ -29,4 +32,4 @@ class Sec3 extends Component {
     }
 }
  
-export default Sec3;
+export default withTranslation()(Sec3);

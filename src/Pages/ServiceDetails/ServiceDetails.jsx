@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import servicesData from '../../utils/data/service.json';
 import './servicedetails.css';
 import Header from "../../Components/Header/Header";
-
+import { withTranslation } from 'react-i18next';
 
 const findServiceById = (data, id) => {
 
@@ -21,13 +21,13 @@ const findServiceById = (data, id) => {
 };
 
 
-const ServiceDetailsPage = () => {
+const ServiceDetailsPage = ({t}) => {
     const { id } = useParams(); // Extracts the service id from the URL
     const serviceId = parseInt(id.replace(':', ''), 10); // Converts the id to a number
     // Find the service by id
     let selectedService = findServiceById(servicesData, serviceId);
     if (!selectedService) {
-        return <div>Service not found</div>;
+        return <div>{t("Service not found")}</div>;
     }
 
     return (
@@ -56,7 +56,7 @@ const ServiceDetailsPage = () => {
                         <input type="text" className="input" name="service" placeholder="Choose Which Service You Want" required />
                         <textarea className="input" name="project-brief" placeholder="Project Brief" rows="5" required></textarea>
 
-                        <button className="contact-btn mcolor bg3" type="submit">Book Now</button>
+                        <button className="contact-btn mcolor bg3" type="submit">{t("Book Now")}</button>
                     </form>
                 </div>
             </div>
@@ -65,7 +65,7 @@ const ServiceDetailsPage = () => {
 };
 
 
-export default ServiceDetailsPage;
+export default withTranslation()(ServiceDetailsPage);
 
 /* <h1>{selectedService.service_name}</h1>
             <img src={selectedService.service_logo} alt={selectedService.service_name} />

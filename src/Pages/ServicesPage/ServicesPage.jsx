@@ -4,7 +4,7 @@ import Header from '../../Components/Header/Header';
 import './spage.css';
 import Categories from './categories';
 import services from '../../utils/data/service.json';
-
+import { withTranslation } from 'react-i18next';
 
 
 const addIdsToServices = (data) => {
@@ -43,12 +43,12 @@ class ServicesPage extends Component {
     render() { 
       
         const services_info=this.state.services_['services_info']
-        
+        const { t } = this.props;
      
         
         return (
             <section className='Services-Page '>
-                <Header Cap='Explore Our Services'/>
+                <Header Cap={t('Explore Our Services')}/>
                 <div className='services-hole-Contianer padc bg1'>
                     {
                         services_info.map((service,index)=>(
@@ -72,4 +72,4 @@ class ServicesPage extends Component {
     }
 }
  
-export default ServicesPage;
+export default withTranslation()(ServicesPage);

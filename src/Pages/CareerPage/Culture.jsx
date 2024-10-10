@@ -3,30 +3,28 @@ import { Component } from "react";
 import img1 from '/Assets/images/career/1.png';
 import img2 from '/Assets/images/career/2.png';
 import img3 from '/Assets/images/career/3.png';
+import { withTranslation } from 'react-i18next';
+
 class Culutre extends Component {
-    state = {  } 
+    state = {} 
     render() { 
+        const { t } = this.props;
         return (
            <div className="padc bg1 cultre-container">
                 <div className="title" >
-                    Our <span>Culutre</span>
+                    {t("Our")} <span>{t("Culutre")}</span>
                 </div>
 
                 <div className="life">
                     <div className="title">
-                    Life at The Agency
+                    {t("Life at The Agency")}
                     </div>
                     <div className="contents-1 " >
                         <div className="contents-left" >
                             <span>1</span>
                             <p className="desc  ">
-                                
-                            Life here is about more than just work. It's about fostering a community 
-                            where creativity blooms, ideas flourish, and growth is a constant. 
-                            From team brainstorming sessions to professional development workshops,
-                             we strive to make every day an opportunity for learning and innovation. 
-                             Our open, dynamic work environment 
-                            is designed to encourage collaboration and the sharing of new ideas.
+                                {t("Life")}
+
                             </p>
                         </div>
                         <div className="contents-right">
@@ -38,7 +36,7 @@ class Culutre extends Component {
             <div className="vision">
 
             <div className="title">
-            Vision and Values
+            {t("Vision and Values")}
                     </div>
                     <div className="contents-1 " >
                     <div className="contents-right">
@@ -48,12 +46,8 @@ class Culutre extends Component {
                         <div className="contents-left" >
                             <span >2</span>
                             <p className="desc  ">
-                                
-                            At The Minaret Marketing Agency,
-                             we're driven by a vision to set new benchmarks in the digital marketing world.
-                              Our core values revolve around collaboration, innovation, and continuous learning. 
-                              We believe that together, we can transform ideas into impactful 
-                              strategies that drive success for our clients and our team.
+                                {t("At The Minaret Marketing Agency")}
+
                             </p>
                         </div>
                         
@@ -63,32 +57,24 @@ class Culutre extends Component {
 
             <div className="diversity">
             <div className="title">
-            Diversity and Inclusion Statement
+            {t("Diversity and Inclusion Statement")}
                     </div>
                     <div className="contents-1 " >
                         <div className="contents-left" >
                             <span>3</span>
                             <p className="desc  ">
-                                
-                            Diversity is our strength, and inclusion is our commitment. 
-                            At The Minaret Marketing Agency, we're dedicated to building a workplace where everyone 
-                            feels valued and included, regardless of their background, identity, or beliefs.
-                             We celebrate the unique perspectives and experiences our team members bring to the table, 
-                            as they enrich our culture and enhance the innovative solutions we provide to our clients.
+                                {t("Diversity is our strength")}
+
                             </p>
                         </div>
                         <div className="contents-right">
                             <img src={img3} alt="" />
                         </div>
                     </div>
-
-
             </div>
-
            </div>
-
         );
     }
 }
- 
-export default Culutre;
+
+export default withTranslation()(Culutre);

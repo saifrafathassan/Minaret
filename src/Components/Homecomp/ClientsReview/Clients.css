@@ -11,7 +11,7 @@
 
 
 .right {
-    flex: 0.8;
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -127,6 +127,7 @@
     font-size: 1.23rem;
     opacity: 0.5;
 }
+
  
 
 @media (max-width: 768px) {
@@ -136,9 +137,6 @@
         gap: 2rem;
     }
 
-    .arrows {
-        /* display: none; */
-    }
     .title{
         font-size: 45px !important;
         margin-bottom: 20px;

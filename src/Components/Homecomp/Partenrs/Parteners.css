@@ -23,12 +23,31 @@
   .slider-wrapper .slick-list {
     overflow: hidden;
   }
+
   .slick-dots li{
     width:2px;
   }
+
   .slick-dots li button:before {
     color: #fff !important;
-    font-size: 10px !important;
+}
+
+.slick-dots li button:before {
+  transition: all 0.3s ease-in-out; 
+}
+
+.slick-dots li.slick-active button:before {
+  transform: scale(1.2); 
+  animation: bounce 0.6s; 
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px); 
+  }
 }
   
   

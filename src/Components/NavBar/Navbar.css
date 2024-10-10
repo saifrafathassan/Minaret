@@ -55,13 +55,18 @@
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+    .lng-btn {
+        top: 10px !important;
+
+        position: absolute;
+    }
     .NavMenue {
         display: none;
         flex-direction: column;
         padding: auto;
         background:rgb(0, 0, 0, 0.6);
         top: 8.77192vh; /* Adjust according to your navbar height */
-        padding: 1rem;
+        padding: 3rem 0 1rem 0;
         align-self: end;
         position: absolute;
         width:100%;

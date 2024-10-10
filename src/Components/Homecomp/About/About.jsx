@@ -2,10 +2,14 @@ import React, { useEffect, useRef } from "react";
 import './About.css';
 import image from '/Assets/images/about.png';
 import { Link } from "react-router-dom";
-const About = () => {
+import { withTranslation } from 'react-i18next';
+import i18n from 'i18next';
+
+const About = ({t}) => {
     const aboutRightRef = useRef(null);
     const aboutleftref=useRef(null);
     const imageref= useRef(null);
+    const currentLanguage = i18n.language.split('-')[0];
     useEffect(() => {
         const observer = new IntersectionObserver(
             (entries) => {
@@ -45,16 +49,16 @@ const About = () => {
     }, []);
 
     return (
-        <div className="padc about_container sm:py-[40px] md:py-[100px]">
+        <div dir={currentLanguage === 'ar' ? 'rtl' : 'ltr'} className="padc about_container sm:py-[40px] md:py-[100px]">
             <div className="About-left" ref={aboutleftref} >
                 <p className="p1">
-                    Choose The Minaret Marketing Agency for innovative strategies, a dedicated team, and a commitment to your brand's growth.
+                {t("Choose The Minaret")}
                 </p>
                 <p className="p1">
-                    We're not just marketers; we're your partners in navigating the digital landscape.
+                    {t("We're not just")}
                 </p>
                 <div className="p1">
-                    <button className="button"><Link to='/About'>Learn More</Link></button>
+                    <button className="button"><Link to='/About'>{t("Learn More")}</Link></button>
                 </div>
             </div>
 
@@ -63,14 +67,14 @@ const About = () => {
                     <img src={image} alt="" />
                 </div>
                 <div className="text">
-                    <span className="why pt-4">WHY</span>
+                    <span className="why pt-4">{t("WHY")}</span>
                     {/* <br /> */}
-                    <span>CHOOSE</span>
-                    <span>US</span>
+                    <span>{t("CHOOSE")}</span>
+                    <span>{t("US")}</span>
                 </div>
             </div>
         </div>
     );
 };
 
-export default About;
+export default withTranslation()(About);

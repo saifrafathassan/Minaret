@@ -5,17 +5,20 @@ import { TiSocialLinkedin } from "react-icons/ti";
 import { FiPhone } from "react-icons/fi";
 import ceo from '/Assets/images/AboutPage/team/1.png'
 import soft from '/Assets/images/AboutPage/team/2.png'
+import { withTranslation } from 'react-i18next';
+
 class Team extends Component {
     state = {}
     render() {
+        const { t } = this.props;
         return (
             <section className="padc Team-section bg1">
                 <div className="header">
                     <div className="title">
-                        <p >Meet <span style={{color:'#8A1848'}}> the Team</span></p>
+                        <p >{t("Meet")} <span style={{color:'#8A1848'}}> {t("the Team")}</span></p>
                     </div>
                     <div className="desc">
-                        <p>The Architects Behind Your Brand's Ascension</p>
+                        <p>{t("The Architects Behind Your Brand's Ascension")}</p>
                     </div>
                 </div>
 
@@ -26,10 +29,10 @@ class Team extends Component {
                         </div>
                         <div className="mem-data">
                             <div className="Name">
-                                <p> Ahmed El Khatib </p>
+                                <p>{t("Ahmed El Khatib")}  </p>
                             </div>
                             <div className="job">
-                            CEO
+                            {t("CEO")}
                             </div>
                             <hr/>
                             <div className="summary" >
@@ -54,14 +57,14 @@ class Team extends Component {
                         </div>
                         <div className="mem-data ">
                             <div className="Name ">
-                                <p> Mohamed Ali </p>
+                                <p>{t("Mohamed Ali")}  </p>
                             </div>
                             <div className="job">
-                            Software Manager
+                            {t("Software Manager")}
                             </div>
                             <hr/>
                             <div className="summary" >
-                                <p>As a Software Manager at Minerate Agency, lead a team of developers in creating and implementing software solutions to optimize marketing strategies, and ensure top-tier quality and performance in all projects. </p>
+                                <p>{t("As a Software Manager")}</p>
                             </div>
                             <div className="social">
                                 <div className="icon"> <TiSocialLinkedin size={20} /></div>
@@ -84,4 +87,4 @@ class Team extends Component {
     }
 }
 
-export default Team;
+export default withTranslation()(Team);

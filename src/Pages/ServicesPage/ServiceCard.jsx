@@ -3,9 +3,12 @@ import { Component } from "react";
 import './spage.css';
 import { Link } from "react-router-dom";
 import Btn from "../../Components/btn/btn";
+import { withTranslation } from 'react-i18next';
+
 class ServiceCard extends Component {
     state = {  } 
     render() { 
+        const { t } = this.props;
         return (
             <section className="card-section">
                 {
@@ -25,7 +28,7 @@ class ServiceCard extends Component {
                           
                            
                        
-                            <Btn   Caption={'Book Now'} link={`/Service/${service.service_id}`}/>
+                            <Btn   Caption={t('Book Now')} link={`/Service/${service.service_id}`}/>
                         
                           
 
@@ -39,4 +42,4 @@ class ServiceCard extends Component {
     }
 }
  
-export default ServiceCard;
+export default withTranslation()(ServiceCard);
