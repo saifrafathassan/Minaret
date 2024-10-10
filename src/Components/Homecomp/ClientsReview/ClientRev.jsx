@@ -81,7 +81,7 @@ class ClientRev extends Component {
                     <div className="title text-[50px]">
                         {t("Client")} <p className="mcolor">{t("Testimonials")}</p>
                     </div>
-                    <div className="desc">
+                    <div className="desc lg:w-[450px]">
                         {t("Hear from")}
                     </div>
                 </div>

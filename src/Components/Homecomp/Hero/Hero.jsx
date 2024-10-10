@@ -14,9 +14,9 @@ class Hero extends Component {
         return (
             <div dir={currentLanguage === 'ar' ? 'rtl' : 'ltr'} className="padc Hero_Container" >
                 <div className="Hero-left" >
-                    <span className="Hero-left-header sm:text-[30px] lg:text-[45px] ">{t("Distinctly Visible, Uniquely Heard")} </span>
+                    <span className="Hero-left-header sm:text-[30px] lg:text-[35px] ">{t("Distinctly Visible, Uniquely Heard")} </span>
 
-                    <p className="lg:text-[30px]">
+                    <p className="lg:text-[25px]">
                         {t("Navigating Your Brand to New Heights")}<br/>
                         {t("with")}  <span className="Company"> {t("The Minaret Marketing Agency.")}</span> {t("Your")}<br/>
                         {t("journey to unparalleled digital presence begins here.")}

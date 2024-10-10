@@ -2,9 +2,11 @@ import './Calculator.css';
 import { useState } from 'react';
 import { withTranslation } from 'react-i18next';
 import i18n from 'i18next';
-
+import Website from './website/Website';
 import Logo from './Logo/Logo';
-
+import Motion from './motiongrafic/Motion';
+import Ssocialmangment from './social/Ssocialmangment';
+import Adsmangment from './adsmangment/Adsmangment';
 
 const Calculator = ({ t }) => {
   const currentLanguage = i18n.language.split('-')[0];
@@ -36,6 +38,10 @@ const Calculator = ({ t }) => {
 
         {/*Show the Logo component only when Logo is selected from the menu.*/}
         {selectedService === "Logo" && <Logo setTotalPrice={setTotalPrice} />}
+        {selectedService === "Website" && <Website setTotalPrice={setTotalPrice} />}
+        {selectedService === "Motion Graphic" && <Motion setTotalPrice={setTotalPrice} />}
+        {selectedService === "Social media management" && <Ssocialmangment setTotalPrice={setTotalPrice} />}
+        {selectedService === "Sponsored Ads Management" && <Adsmangment setTotalPrice={setTotalPrice} />}
 
 
         {/*Show result only if there is a service selected*/}

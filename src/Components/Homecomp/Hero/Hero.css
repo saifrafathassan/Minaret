@@ -129,11 +129,12 @@
 
     .Hero-left {
         padding: 3rem 0  0;
+        width: 330px;
     }
 
     .Hero-left > p {
         font-size: 0.9rem;
-        line-height: 1.5rem;
+        line-height: 2rem;
     }
 
     .Hero-left-header {

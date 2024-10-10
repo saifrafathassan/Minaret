@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { FaCaretSquareRight } from "react-icons/fa";
 
 const Logo = ({ setTotalPrice }) => {
-  const [numOptions, setNumOptions] = useState(0);
+  const [numOptions, setNumOptions] = useState('');
   const [selectedOption, setSelectedOption] = useState("");
 
   const prices = {
@@ -21,7 +21,7 @@ const Logo = ({ setTotalPrice }) => {
   return (
     <div className='calculator'>
       <input
-        className='select py-2 mb-4 lg:mb-0 w-20'
+        className='select py-2 mb-4 lg:mb-0'
         placeholder='Enter number of options'
         type="number"
         value={numOptions}
@@ -33,9 +33,9 @@ const Logo = ({ setTotalPrice }) => {
         onChange={(e) => setSelectedOption(e.target.value)}
       >
         <option value="">Select Option</option>
-        <option value="Icon">Icon $15</option>
-        <option value="Typography">Typography $25</option>
-        <option value="Mixed">Mixed $20</option>
+        <option value="Icon">Icon</option>
+        <option value="Typography">Typography</option>
+        <option value="Mixed">Mixed</option>
       </select>
 
 

@@ -19,6 +19,7 @@
     align-items: center;
     justify-items: center;
     gap: 10px;
+    flex-wrap: wrap;
 }
 
 .calculat-btn {
@@ -43,6 +44,7 @@
     outline: none; 
     transition: border-color 0.3s ease; 
 }
+
 
 .select:hover {
     border-color: #ccc; 

@@ -44,10 +44,10 @@ const Contact =({t})=>{
                 <div className='Contact-Container h-[600px]' >
 
                 <div className='left-contact animate-expandContract padc sm:px-4 lg:px-[80px]' >
-                <div className='title-contact text-[40px] uppercase  '> 
+                <div className='title-contact text-[35px] uppercase  '> 
                     <p >{t('Ready')}</p>
                 </div>
-                <div dir={currentLanguage === 'ar' ? 'rtl' : 'ltr'} className='width-40 tc text-[20px] py-6'>
+                <div dir={currentLanguage === 'ar' ? 'rtl' : 'ltr'} className='lg:w-[300px] tc text-[20px] py-6'>
                 <p>{t('Contact')}</p>
                 </div>
                 <div className=' btn'>
