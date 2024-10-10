@@ -73,7 +73,7 @@ class ClientRev extends Component {
                     </div>
                     <div className="arrows">
                         <button onClick={this.prevSlide} className="arrow-up">↑</button>
-                        <button onClick={this.nextSlide} className="arrow-down"><HiArrowSmallDown className="ml-4"/></button>
+                        <button onClick={this.nextSlide} className="arrow-down"><HiArrowSmallDown/></button>
                     </div>
                 </div>
 
