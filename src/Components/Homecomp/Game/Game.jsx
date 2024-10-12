@@ -149,7 +149,7 @@ class Game extends Component {
     Your Score: {score} <IoMdStar className="text-yellow-300 mb-1" />
   </div>
 
-  <div className="flex sm:flex-row flex-col justify-center sm:justify-between items-center text-white text-xl mb-20 gap-10">
+  <div className="flex sm:flex-row flex-col justify-center sm:justify-between items-center text-white text-xl mb-20 lg:gap-10">
     <div className="flex items-center gap-2">
       Chances: {chances} <FaHeart className="text-red-500" />
     </div>
@@ -182,7 +182,7 @@ class Game extends Component {
           )}
             {currentArea && currentImageIndex < 8 && (
               <div
-                className="absolute opacity-50 cursor-pointer bg-red-500"
+                className="absolute opacity-50 cursor-pointer"
                 style={{
                   left: `${currentArea.xMin}px`,
                   top: `${currentArea.yMin}px`,
