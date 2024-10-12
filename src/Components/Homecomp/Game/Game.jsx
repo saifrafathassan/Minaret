@@ -107,30 +107,29 @@ class Game extends Component {
 
 
   getCorrectArea = (imageIndex, rect) => {
-    const isSmallScreen = window.innerWidth < 640; // افتراض أن الشاشة الصغيرة أقل من 640 بكسل
+    const isSmallScreen = window.innerWidth < 640; 
   
-    // المناطق للصورة بناءً على حجم الشاشة
     const areas = isSmallScreen
       ? [
         null,
         null,
-        { xMin: rect.width * 0.3, xMax: rect.width * 0.3 + 50, yMin: rect.height * 0.9, yMax: rect.height * 0.9 + 50 }, // image2 على شاشة كبيرة
-        { xMin: rect.width * 0.6, xMax: rect.width * 0.7 + 50, yMin: rect.height * 0.8, yMax: rect.height * 0.8 + 50 }, // image3 على شاشة كبيرة
-        { xMin: rect.width * 0.3, xMax: rect.width * 0.4 + 50, yMin: rect.height * 0.9, yMax: rect.height * 0.9 + 50 }, // image4 على شاشة كبيرة
-        { xMin: rect.width * 0.7, xMax: rect.width * 0.5 + 50, yMin: rect.height * 0.9, yMax: rect.height * 1 + 50 }, // image5 على شاشة كبيرة
-        { xMin: rect.width * 0.4, xMax: rect.width * 0.6 + 50, yMin: rect.height * 1, yMax: rect.height * 1 + 50 }, // image6 على شاشة كبيرة
-        { xMin: rect.width * 0.1, xMax: rect.width * 0.2 + 50, yMin: rect.height * 0.9, yMax: rect.height * 1 + 50 }, // image7 على شاشة كبيرة
+        { xMin: rect.width * 0.3, xMax: rect.width * 0.3 + 50, yMin: rect.height * 0.9, yMax: rect.height * 0.9 + 50 }, // small screen
+        { xMin: rect.width * 0.6, xMax: rect.width * 0.7 + 50, yMin: rect.height * 0.8, yMax: rect.height * 0.8 + 50 }, 
+        { xMin: rect.width * 0.3, xMax: rect.width * 0.4 + 50, yMin: rect.height * 0.9, yMax: rect.height * 0.9 + 50 }, 
+        { xMin: rect.width * 0.7, xMax: rect.width * 0.5 + 50, yMin: rect.height * 0.9, yMax: rect.height * 1 + 50 }, 
+        { xMin: rect.width * 0.4, xMax: rect.width * 0.6 + 50, yMin: rect.height * 1, yMax: rect.height * 1 + 50 }, 
+        { xMin: rect.width * 0.1, xMax: rect.width * 0.2 + 50, yMin: rect.height * 0.9, yMax: rect.height * 1 + 50 },
         null,
       ]
       : [
           null,
           null,
-          { xMin: rect.width * 0.3, xMax: rect.width * 0.4 + 50, yMin: rect.height * 0.6, yMax: rect.height * 0.7 + 50 }, // image2 على شاشة كبيرة
-          { xMin: rect.width * 0.6, xMax: rect.width * 0.7 + 50, yMin: rect.height * 0.5, yMax: rect.height * 0.6 + 50 }, // image3 على شاشة كبيرة
-          { xMin: rect.width * 0.3, xMax: rect.width * 0.4 + 50, yMin: rect.height * 0.6, yMax: rect.height * 0.8 + 50 }, // image4 على شاشة كبيرة
-          { xMin: rect.width * 0.7, xMax: rect.width * 0.5 + 50, yMin: rect.height * 0.7, yMax: rect.height * 0.8 + 50 }, // image5 على شاشة كبيرة
-          { xMin: rect.width * 0.4, xMax: rect.width * 0.6 + 50, yMin: rect.height * 0.8, yMax: rect.height * 0.9 + 50 }, // image6 على شاشة كبيرة
-          { xMin: rect.width * 0.3, xMax: rect.width * 0.5 + 50, yMin: rect.height * 1.1, yMax: rect.height * 1.2 + 50 }, // image7 على شاشة كبيرة
+          { xMin: rect.width * 0.3, xMax: rect.width * 0.4 + 50, yMin: rect.height * 0.6, yMax: rect.height * 0.7 + 50 }, // large screen
+          { xMin: rect.width * 0.6, xMax: rect.width * 0.7 + 50, yMin: rect.height * 0.5, yMax: rect.height * 0.6 + 50 }, 
+          { xMin: rect.width * 0.3, xMax: rect.width * 0.4 + 50, yMin: rect.height * 0.6, yMax: rect.height * 0.8 + 50 }, 
+          { xMin: rect.width * 0.7, xMax: rect.width * 0.5 + 50, yMin: rect.height * 0.7, yMax: rect.height * 0.8 + 50 }, 
+          { xMin: rect.width * 0.4, xMax: rect.width * 0.6 + 50, yMin: rect.height * 0.8, yMax: rect.height * 0.9 + 50 }, 
+          { xMin: rect.width * 0.3, xMax: rect.width * 0.5 + 50, yMin: rect.height * 1.1, yMax: rect.height * 1.2 + 50 }, 
           null,
         ];
   
