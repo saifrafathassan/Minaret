@@ -107,20 +107,36 @@ class Game extends Component {
 
 
   getCorrectArea = (imageIndex, rect) => {
-    const areas = [
-      null,
-      null,
-      { xMin: rect.width * 0.3, xMax: rect.width * 0.4 + 50, yMin: rect.height * 0.6, yMax: rect.height * 0.7 + 50 }, // image2
-      { xMin: rect.width * 0.6, xMax: rect.width * 0.7 + 50, yMin: rect.height * 0.5, yMax: rect.height * 0.6 + 50 }, // image3
-      { xMin: rect.width * 0.3, xMax: rect.width * 0.4 + 50, yMin: rect.height * 0.6, yMax: rect.height * 0.8 + 50 }, // image4
-      { xMin: rect.width * 0.7, xMax: rect.width * 0.5 + 50, yMin: rect.height * 0.7, yMax: rect.height * 0.8 + 50 }, // image5
-      { xMin: rect.width * 0.4, xMax: rect.width * 0.6 + 50, yMin: rect.height * 0.8, yMax: rect.height * 0.9 + 50 }, // image6
-      { xMin: rect.width * 0.3, xMax: rect.width * 0.5 + 50, yMin: rect.height * 1.1, yMax: rect.height * 1.2 + 50 }, // image7
-      null,
-    ];
-
+    const isSmallScreen = window.innerWidth < 640; // افتراض أن الشاشة الصغيرة أقل من 640 بكسل
+  
+    // المناطق للصورة بناءً على حجم الشاشة
+    const areas = isSmallScreen
+      ? [
+        null,
+        null,
+        { xMin: rect.width * 0.3, xMax: rect.width * 0.3 + 50, yMin: rect.height * 0.9, yMax: rect.height * 0.9 + 50 }, // image2 على شاشة كبيرة
+        { xMin: rect.width * 0.6, xMax: rect.width * 0.7 + 50, yMin: rect.height * 0.8, yMax: rect.height * 0.8 + 50 }, // image3 على شاشة كبيرة
+        { xMin: rect.width * 0.3, xMax: rect.width * 0.4 + 50, yMin: rect.height * 0.9, yMax: rect.height * 0.9 + 50 }, // image4 على شاشة كبيرة
+        { xMin: rect.width * 0.7, xMax: rect.width * 0.5 + 50, yMin: rect.height * 0.9, yMax: rect.height * 1 + 50 }, // image5 على شاشة كبيرة
+        { xMin: rect.width * 0.4, xMax: rect.width * 0.6 + 50, yMin: rect.height * 1, yMax: rect.height * 1 + 50 }, // image6 على شاشة كبيرة
+        { xMin: rect.width * 0.1, xMax: rect.width * 0.2 + 50, yMin: rect.height * 0.9, yMax: rect.height * 1 + 50 }, // image7 على شاشة كبيرة
+        null,
+      ]
+      : [
+          null,
+          null,
+          { xMin: rect.width * 0.3, xMax: rect.width * 0.4 + 50, yMin: rect.height * 0.6, yMax: rect.height * 0.7 + 50 }, // image2 على شاشة كبيرة
+          { xMin: rect.width * 0.6, xMax: rect.width * 0.7 + 50, yMin: rect.height * 0.5, yMax: rect.height * 0.6 + 50 }, // image3 على شاشة كبيرة
+          { xMin: rect.width * 0.3, xMax: rect.width * 0.4 + 50, yMin: rect.height * 0.6, yMax: rect.height * 0.8 + 50 }, // image4 على شاشة كبيرة
+          { xMin: rect.width * 0.7, xMax: rect.width * 0.5 + 50, yMin: rect.height * 0.7, yMax: rect.height * 0.8 + 50 }, // image5 على شاشة كبيرة
+          { xMin: rect.width * 0.4, xMax: rect.width * 0.6 + 50, yMin: rect.height * 0.8, yMax: rect.height * 0.9 + 50 }, // image6 على شاشة كبيرة
+          { xMin: rect.width * 0.3, xMax: rect.width * 0.5 + 50, yMin: rect.height * 1.1, yMax: rect.height * 1.2 + 50 }, // image7 على شاشة كبيرة
+          null,
+        ];
+  
     return areas[imageIndex];
   };
+  
 
   render() {
     const { currentImageIndex, score, chances, showInstructions, gameOver, showCongratulations, wins } = this.state;
@@ -167,7 +183,7 @@ class Game extends Component {
           )}
             {currentArea && currentImageIndex < 8 && (
               <div
-                className="absolute opacity-50 cursor-pointer"
+                className="absolute opacity-50 cursor-pointer bg-red-500"
                 style={{
                   left: `${currentArea.xMin}px`,
                   top: `${currentArea.yMin}px`,
@@ -181,17 +197,17 @@ class Game extends Component {
         )}
 
         {showInstructions && (
-          <div className="absolute bottom-1 text-white text-lg bg-black bg-opacity-50 p-2 rounded-lg">
+          <div className="absolute text-center bottom-0 lg:bottom-1 text-white lg:text-lg bg-black bg-opacity-50 lg:p-2 rounded-lg">
             Welcome to the game! Click the image to proceed. You have 3 chances to get it right!
           </div>
         )}
 
         {showCongratulations && (
-          <div className="absolute sm:bottom-20 lg:top-50 text-white text-3xl bg-black bg-opacity-70 p-5 lg:p-20 text-center rounded-lg flex flex-col items-center">
+          <div className="absolute bottom-0 sm:bottom-10 lg:top-50 text-white lg:text-3xl bg-black bg-opacity-70 p-2 lg:p-10 text-center rounded-lg flex flex-col items-center">
             <div>Congratulations! You've completed the game!</div>
             <button 
               onClick={this.resetGame} 
-              className="my-4 bg-green-500 text-white lg:p-3 rounded hover:bg-green-600 transition-colors duration-300 w-[200px] lg:w-full"
+              className="lg:my-4 bg-green-500 text-white lg:p-3 rounded hover:bg-green-600 transition-colors duration-300 w-[200px] lg:w-full"
             >
               Play Again
             </button>
