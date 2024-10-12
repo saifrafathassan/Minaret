@@ -21,11 +21,11 @@ class Sec3 extends Component {
                 <div className='cards'>
                 {
                         media.map((card, index) => (
-                            <div key={index} className="card">
-                                <div className="card-header">
+                            <div dir='ltr' key={index} className="card-contact-us">
+                                <div className="card-header text-[#FBC6AC]">
                                     {card.title}
                                 </div>
-                                <div className="card-content p-3">
+                                <div className="card-content-contact-us p-3">
                                     {
                                         Object.entries(card.content).map(([key, value], i) => (
                                             <p key={i}> <strong className='secolor'>{key}:</strong> {value} </p>
