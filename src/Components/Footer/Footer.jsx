@@ -39,7 +39,10 @@ class Footer extends Component {
                     <div className="col3">
                     <div className="f-title"><span>{t("Contact Info")}</span></div>
                         <p>
-                        {t("Call us")} :+201151131131
+                        {t("Management")} : +201151131131
+                        </p>
+                        <p>
+                        {t("Sales")} : +96899208915
                         </p>
                         <p>
                         {t("Our mail")} : Info@theminaretagency.com

@@ -4,7 +4,7 @@ import './Services.css';
 import arow from '/Assets/Gifs/0.gif';
 import { withTranslation } from 'react-i18next';
 import data from '../../../utils/data/data.json';
-
+import i18n from 'i18next';
 
 class Service extends Component {
     state = {
@@ -26,12 +26,20 @@ class Service extends Component {
         const serviceCat = data['service_cat'];
         const { hoveredServiceIndex } = this.state;
         const { t } = this.props;
+        const currentLanguage = i18n.language.split('-')[0];
         return (
             <div className="Service_container padc sm:py-[40px] md:py-[100px]">
                 <div className="service-grid">
                     <div className="first">
                         <div className="title text-[50px]">
-                            {t("Our")}  <span>{t("Services")} </span>
+                            {/* {t("Our")}  <span>{t("Services")} </span> */}
+                            {currentLanguage === 'en' ? (
+                            <>
+                            {t("Our")} <span>{t("Services")}</span>
+                                </>
+                                ) : (
+                                <span>{t("Services")}</span>
+                                )}  
                         </div>
                         <div className="desc">
                             {t("Explore our comprehensive")} 

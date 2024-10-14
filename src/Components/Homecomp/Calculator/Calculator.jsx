@@ -21,7 +21,7 @@ const Calculator = ({ t }) => {
 
   return (
     <section className='calculator-container padc lg:pb-36'>
-      <div className='calculator-text text-[50px]'>
+      <div dir={currentLanguage === 'ar' ? 'rtl' : 'ltr'} className='calculator-text text-[50px]'>
         {t("Calculate")} <span className='text-[#451C44]'>{t("your")}</span>
       </div>
 

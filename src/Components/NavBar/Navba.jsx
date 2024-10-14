@@ -42,12 +42,12 @@ class Navbar extends Component {
                             className={`item ${selectedItem === item ? "active" : ""}`}
                             onClick={() => this.handleItemClick(item)}
                         >
-                            <Link to={`/${item}`}>{t(item)}</Link>
+                            <Link onClick={() => this.setState({ menuOpen: false })} to={`/${item}`}>{t(item)}</Link>
                         </div>
                         
                     ))}
-                    <span className="lng-btn">
-                        <LanguageSwitcher/> 
+                    <span className="lng-btn text-sm md:text-lg">
+                        <LanguageSwitcher /> 
                     </span>
                 </div>
 

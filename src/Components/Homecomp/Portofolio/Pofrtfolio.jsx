@@ -17,13 +17,7 @@ class Portfolio extends Component {
         return (
             <section className=" portfolio-cont padc sm:py-[40px] md:py-[100px]sm:py-[40px] md:py-[100px]" >
                 <div dir={currentLanguage === 'ar' ? 'rtl' : 'ltr'} className="title text-[50px]">
-                {currentLanguage === 'en' ? (
-                    <>
-                    {t("Our")} <span>{t("Portfolio")}</span>
-                </>
-                ) : (
-                <span>{t("Portfolio")}</span>
-                )}  
+                {currentLanguage === 'en' ? ( <> {t("Our")} <span>{t("Portfolio")} </span> </> ) : ( <span> {t("Portfolio")} </span> )}  
                 </div>
 
                 <div className="Portf_images" >

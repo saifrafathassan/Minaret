@@ -9,7 +9,7 @@ class Sec3 extends Component {
         const { t } = this.props;
         const media=[
             {'title': t("contacttitle1"),'content':{"Egypt Address": t("Address1"), "Oman Address": t("Address2")}, 'icon':"/Assets/Gifs/cont1.gif"},
-            {'title': t("contacttitle2"),'content':{'Egyptian phone': '+201151131131','Oman phone' :'+96899208915', 'email':'Info@theminaretagency.com'},'icon':"/Assets/Gifs/cont2.gif"},
+            {'title': t("contacttitle2"),'content':{'Management': '+201151131131','Sales' :'+96899208915', 'email':'Info@theminaretagency.com'},'icon':"/Assets/Gifs/cont2.gif"},
             {'title': t("contacttitle3"),'content':{'Facebook':' The Minaret Agency','Instgram':' The Minaret Agency','Sanpchat':' The Minaret Agency'},'icon':"/Assets/Gifs/cont3.gif"}
         ]
 
@@ -18,10 +18,10 @@ class Sec3 extends Component {
                 <div className='title'>
                 {t("Contact us")} <span> {t("Directly")}</span>
                 </div>
-                <div className='cards'>
+                <div dir='ltr' className='cards'>
                 {
                         media.map((card, index) => (
-                            <div dir='ltr' key={index} className="card-contact-us">
+                            <div key={index} className="card-contact-us">
                                 <div className="card-header text-[#FBC6AC]">
                                     {card.title}
                                 </div>

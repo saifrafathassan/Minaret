@@ -25,7 +25,7 @@ class Sec1 extends Component {
                     <div className="title">
                         <p>{t("Get")} <span>{t("in Touch")}</span></p>
                     </div>
-                    <div className="sup-title frthcolor ">
+                    <div className="sup-title frthcolor pb-3">
                         {t("Embark")}
                     </div>
                     
