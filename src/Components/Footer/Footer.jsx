@@ -51,7 +51,7 @@ class Footer extends Component {
                 </div>
                 <div className="copy">
                     <hr/>
-                    <span>{t("The MINARET Marketing Agency")}</span>
+                    <span>{t("Footer")}</span>
                 </div>
             </section>
 
