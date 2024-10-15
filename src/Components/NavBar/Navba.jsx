@@ -3,7 +3,7 @@ import './Navbar.css';
 import logo from '/Assets/images/logo.png';
 import { Link } from 'react-router-dom';
 import { withTranslation } from 'react-i18next';
-
+import { IoCloseSharp, IoMenuSharp } from "react-icons/io5"; 
 
 import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
 
@@ -33,9 +33,7 @@ class Navbar extends Component {
                     <img src={logo} alt="Logo" />
                 </div>
 
-
                 <div className={`NavMenue ${menuOpen ? "open" : ""}`}>
-
                     {["Home", "About", "Services", "Portfolio", "Blog", "Contact us"].map((item) => (
                         <div
                             key={item}
@@ -44,24 +42,18 @@ class Navbar extends Component {
                         >
                             <Link onClick={() => this.setState({ menuOpen: false })} to={`/${item}`}>{t(item)}</Link>
                         </div>
-                        
                     ))}
-                    <span className="lng-btn text-sm md:text-lg">
+                    <span className="lng-btn ">
                         <LanguageSwitcher /> 
                     </span>
                 </div>
 
-                <div className="hamburger" onClick={this.toggleMenu}>
-                    {/* Hamburger icon */}
-                    <span className="bar"></span>
-                    <span className="bar"></span>
-                    
+                <div className="z-10" onClick={this.toggleMenu}>
+                    {menuOpen ? <IoCloseSharp size={30}/> : <IoMenuSharp size={30}/>}
                 </div>
-
-
             </div>
         );
     }
 }
 
-export default withTranslation()(Navbar)
+export default withTranslation()(Navbar);
