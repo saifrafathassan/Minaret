@@ -28,48 +28,48 @@ const StyledAccordion = styled(Accordion)(({ theme }) => ({
     backgroundColor: '#FBC6AC',
   }));
 
-const FAQAccordion = ({t}) => {
+const FAQs = ({t}) => {
   const faqs = [
     {
-      question: t("question1contact"),
-      answer: t("answer1contact"),
+      question: t("question1career"),
+      answer: t("answer1career"),
     },
     {
-      question: t("question2contact"),
-      answer: t("answer2contact"),
+      question: t("question2career"),
+      answer: t("answer2career"),
     },
     
     {
-        question: t("question3contact"),
-        answer: t("answer3contact"),
+        question: t("question3career"),
+        answer: t("answer3career"),
       },
       {
-        question: t("question4contact"),
-        answer: t("answer4contact"),
+        question: t("question4career"),
+        answer: t("answer4career"),
       },
       {
-        question: t("question5contact"),
-        answer: t("answer5contact"),
+        question: t("question5career"),
+        answer: t("answer5career"),
       },
       {
-        question: t("question6contact"),
-        answer: t("answer6contact"),
+        question: t("question6career"),
+        answer: t("answer6career"),
       },
       {
-        question: t("question7contact"),
-        answer: t("answer7contact"),
+        question: t("question7career"),
+        answer: t("answer7career"),
       },
       {
-        question: t("question8contact"),
-        answer: t("answer8contact"),
+        question: t("question8career"),
+        answer: t("answer8career"),
       },
       {
-        question: t("question9contact"),
-        answer: t("answer9contact"),
+        question: t("question9career"),
+        answer: t("answer9career"),
       },
       {
-        question: t("question10contact"),
-        answer: t("answer10contact"),
+        question: t("question10career"),
+        answer: t("answer10career"),
       },
   ];
 
@@ -95,4 +95,4 @@ const FAQAccordion = ({t}) => {
   );
 };
 
-export default withTranslation()(FAQAccordion);
+export default withTranslation()(FAQs);

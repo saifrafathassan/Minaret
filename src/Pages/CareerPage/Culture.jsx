@@ -4,74 +4,155 @@ import img1 from '/Assets/images/career/1.png';
 import img2 from '/Assets/images/career/2.png';
 import img3 from '/Assets/images/career/3.png';
 import { withTranslation } from 'react-i18next';
+import { motion } from 'framer-motion';
 
 class Culutre extends Component {
     state = {} 
     render() { 
         const { t } = this.props;
+
+        const textVariants = {
+            hidden: { opacity: 0, y: -50 },
+            visible: { opacity: 1, y: 0 },
+        };
+
+        const imageVariants = {
+            hidden: { opacity: 0, x: 0 },
+            visible: { opacity: 1, x: 0 },
+        };
+
         return (
            <div className="padc bg1 cultre-container">
-                <div className="title" >
+                <motion.div 
+                    className="title" 
+                    initial="hidden"
+                    whileInView="visible"
+                    variants={textVariants}
+                    transition={{ duration: 1 }}
+                    viewport={{ once: true, amount: 0.5 }}
+                >
                     {t("Our")} <span>{t("Culutre")}</span>
-                </div>
+                </motion.div>
 
                 <div className="life">
-                    <div className="title">
-                    {t("Life at The Agency")}
-                    </div>
-                    <div className="contents-1 " >
-                        <div className="contents-left" >
-                            <span>1</span>
-                            <p className="desc  ">
-                                {t("Life")}
+                    <motion.div 
+                        className="title"
+                        initial="hidden"
+                        whileInView="visible"
+                        variants={textVariants}
+                        transition={{ duration: 1 }}
+                        viewport={{ once: true, amount: 0.5 }}
+                    >
+                        {t("Life at The Agency")}
+                    </motion.div>
 
+                    <div className="contents-1">
+                        <motion.div 
+                            className="contents-left"
+                            initial="hidden"
+                            whileInView="visible"
+                            variants={textVariants}
+                            transition={{ duration: 1 }}
+                            viewport={{ once: true, amount: 0.5 }}
+                        >
+                            <span>1</span>
+                            <p className="desc">
+                                {t("Life")}
                             </p>
-                        </div>
-                        <div className="contents-right">
+                        </motion.div>
+
+                        <motion.div 
+                            className="contents-right"
+                            initial="hidden"
+                            whileInView="visible"
+                            variants={imageVariants}
+                            transition={{ duration: 1 }}
+                            viewport={{ once: true, amount: 0.5 }}
+                        >
                             <img src={img1} alt="" />
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
 
-            <div className="vision">
+                <div className="vision">
+                    <motion.div 
+                        className="title"
+                        initial="hidden"
+                        whileInView="visible"
+                        variants={textVariants}
+                        transition={{ duration: 1 }}
+                        viewport={{ once: true, amount: 0.5 }}
+                    >
+                        {t("Vision and Values")}
+                    </motion.div>
 
-            <div className="title">
-            {t("Vision and Values")}
-                    </div>
-                    <div className="contents-1 " >
-                    <div className="contents-right">
+                    <div className="contents-1">
+                        <motion.div 
+                            className="contents-right"
+                            initial="hidden"
+                            whileInView="visible"
+                            variants={imageVariants}
+                            transition={{ duration: 1 }}
+                            viewport={{ once: true, amount: 0.5 }}
+                        >
                             <img src={img2} alt="" />
-                        </div>
+                        </motion.div>
 
-                        <div className="contents-left" >
-                            <span >2</span>
-                            <p className="desc  ">
+                        <motion.div 
+                            className="contents-left"
+                            initial="hidden"
+                            whileInView="visible"
+                            variants={textVariants}
+                            transition={{ duration: 1 }}
+                            viewport={{ once: true, amount: 0.5 }}
+                        >
+                            <span>2</span>
+                            <p className="desc">
                                 {t("At The Minaret Marketing Agency")}
-
                             </p>
-                        </div>
-                        
+                        </motion.div>
                     </div>
+                </div>
 
-            </div>
+                <div className="diversity">
+                    <motion.div 
+                        className="title"
+                        initial="hidden"
+                        whileInView="visible"
+                        variants={textVariants}
+                        transition={{ duration: 1 }}
+                        viewport={{ once: true, amount: 0.5 }}
+                    >
+                        {t("Diversity and Inclusion Statement")}
+                    </motion.div>
 
-            <div className="diversity">
-            <div className="title">
-            {t("Diversity and Inclusion Statement")}
-                    </div>
-                    <div className="contents-1 " >
-                        <div className="contents-left" >
+                    <div className="contents-1">
+                        <motion.div 
+                            className="contents-left"
+                            initial="hidden"
+                            whileInView="visible"
+                            variants={textVariants}
+                            transition={{ duration: 1 }}
+                            viewport={{ once: true, amount: 0.5 }}
+                        >
                             <span>3</span>
-                            <p className="desc  ">
+                            <p className="desc">
                                 {t("Diversity is our strength")}
-
                             </p>
-                        </div>
-                        <div className="contents-right">
+                        </motion.div>
+
+                        <motion.div 
+                            className="contents-right"
+                            initial="hidden"
+                            whileInView="visible"
+                            variants={imageVariants}
+                            transition={{ duration: 1 }}
+                            viewport={{ once: true, amount: 0.5 }}
+                        >
                             <img src={img3} alt="" />
-                        </div>
+                        </motion.div>
                     </div>
-            </div>
+                </div>
            </div>
         );
     }

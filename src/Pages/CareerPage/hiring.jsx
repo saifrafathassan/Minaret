@@ -3,7 +3,8 @@ import { withTranslation } from 'react-i18next';
 import { Component } from "react";
 import img5 from '/Assets/images/career/5.png';
 import img6 from '/Assets/images/career/6.png';
-import FAQAccordion from "../ContactPage/FAQAccordion";
+import FAQs from "../ContactPage/FAQs";
+
 class Hiring extends Component {
     constructor(props) {
         super(props);
@@ -66,7 +67,7 @@ class Hiring extends Component {
                     </div>
                 </div>
 
-                <FAQAccordion/>
+                <FAQs/>
             </div>
         );
     }

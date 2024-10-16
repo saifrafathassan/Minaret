@@ -66,7 +66,7 @@ render() {
                 <img src={image} alt="" />
             </div>
             <div className={`${currentLanguage === 'ar' ? 'Vector1' : 'Vector'} ${this.state.isVisible ? 'animate-flash' : ''}`} ref={this.rightRef}>
-                <img style={{ transform: currentLanguage === 'ar' ? 'scaleX(-1)' : 'scaleX(1)', }} src={image2} alt="" />
+            <img style={{ transform: window.innerWidth < 640 ? 'scaleX(1)' : (currentLanguage === 'ar' ? 'scaleX(-1)' : 'scaleX(1)'),}} src={image2} alt="" />
             </div>
             <div className= {`${currentLanguage === 'ar' ? 'eclips1' : 'eclips'} ${this.state.isVisible ? ' animate-flash ' : ''}`} 
                 ref={this.eclips}>

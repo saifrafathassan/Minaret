@@ -325,6 +325,7 @@
     
 
 }
+
 @media (max-width: 480px) {
     .left-header{
         font-size: 24px;
@@ -362,9 +363,20 @@
         z-index: 98;
         
     }
+
+    .Vector1{
+        position:absolute;
+        width: 60%;
+        top:45.2rem;
+        left: 0.75rem;;
+        z-index: 98;
+        
+    }
+
     .eclips{
         display: none;
     }
+
     .eclips{
         position: absolute;
         display: flex;
@@ -383,4 +395,28 @@
         z-index: 100;
         /* border: 1px red solid; */
     }
+
+    .eclips1{
+        display: none;
+    }
+
+    .eclips1{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Somar-bold';
+        font-size: 0.5rem;
+        padding: 20px;
+        bottom: 6.22rem;
+        width: 5.8rem;
+        height: 74px;
+        right: 17.7rem;
+        background: rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(50px);
+        border-radius: 50%;
+        z-index: 100;
+        /* border: 1px red solid; */
+    }
+
 }

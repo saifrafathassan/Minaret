@@ -25,7 +25,7 @@ class Usps extends Component {
         };
 
         return (
-            <section className="padc usps bg2">
+            <section className="padc usps bg2 pb-10">
                 <div className="title">
                     USPs
                 </div>

@@ -18,7 +18,7 @@ class Hero extends Component {
 
                     <p className="lg:text-[25px]">
                         {t("Navigating Your Brand to New Heights")}<br/>
-                        {t("with")}  <span className="Company"> {t("The Minaret Marketing Agency.")}</span> {t("Your")}<br/>
+                        {t("with")}  <span className="Company"> {t("The Minaret Marketing Agency.")}</span><br/>
                         {t("journey to unparalleled digital presence begins here.")}
                     </p>
                 </div>
