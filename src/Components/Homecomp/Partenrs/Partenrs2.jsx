@@ -29,7 +29,7 @@ const Partenrs2 = ({t}) => {
   return (
     <section 
       dir={currentLanguage === 'ar' ? 'rtl' : 'ltr'}
-      className='relative w-full h-[100vh] overflow-hidden' // Always full height
+      className='relative w-full h-[400px] md:h-[100vh] overflow-hidden' // Always full height
       style={{ 
         backgroundImage: `url(${Bgimg})`, 
         backgroundSize: 'cover', 
@@ -79,7 +79,7 @@ const Partenrs2 = ({t}) => {
             initial="hidden" 
             animate={controls} 
             transition={{ duration: 0.5 }}
-            className="absolute bottom-16 z-10 text-3xl text-white border-4 border-[#451C44] py-4 px-20 transition duration-300 ease-in-out hover:bg-orange-500 hover:bg-opacity-50"
+            className="absolute bottom-16 z-10 text-2xl md:text-3xl text-white border-4 border-[#451C44] py-2 md:py-4 px-10 md:px-20 transition duration-300 ease-in-out hover:bg-orange-500 hover:bg-opacity-50"
           >
             {t("See More")}
             <style jsx>{`
