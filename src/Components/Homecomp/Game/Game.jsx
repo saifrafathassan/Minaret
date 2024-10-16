@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import { motion } from "framer-motion"; 
-import image from '/Assets/images/Game/Property1.jpg';
-import image1 from '/Assets/images/Game/Property 1=Variant2.jpg';
-import image2 from '/Assets/images/Game/Property 1=Variant3.jpg';
-import image3 from '/Assets/images/Game/Property 1=Variant4.jpg';
-import image4 from '/Assets/images/Game/Property-1=Variant5.jpg';
-import image5 from '/Assets/images/Game/Property-1=Variant6.jpg';
-import image6 from '/Assets/images/Game/Property-1=Variant7.jpg';
-import image7 from '/Assets/images/Game/Property-1=Variant8.jpg';
-import image8 from '/Assets/images/Game/Property-1=Variant9.jpg';
+import image from '/Assets/images/Game/1.png';
+import image1 from '/Assets/images/Game/2.png';
+import image2 from '/Assets/images/Game/3.png';
+import image3 from '/Assets/images/Game/4.png';
+import image4 from '/Assets/images/Game/5.png';
+import image5 from '/Assets/images/Game/6.png';
+import image6 from '/Assets/images/Game/7.png';
+import image7 from '/Assets/images/Game/8.png';
+import image8 from '/Assets/images/Game/9.png';
 
 import { FaHeart } from "react-icons/fa";
 import { GiTrophyCup } from "react-icons/gi";
@@ -113,23 +113,23 @@ class Game extends Component {
       ? [
         null,
         null,
-        { xMin: rect.width * 0.3, xMax: rect.width * 0.3 + 50, yMin: rect.height * 0.9, yMax: rect.height * 0.9 + 50 }, // small screen
-        { xMin: rect.width * 0.6, xMax: rect.width * 0.7 + 50, yMin: rect.height * 0.8, yMax: rect.height * 0.8 + 50 }, 
-        { xMin: rect.width * 0.3, xMax: rect.width * 0.4 + 50, yMin: rect.height * 0.9, yMax: rect.height * 0.9 + 50 }, 
-        { xMin: rect.width * 0.7, xMax: rect.width * 0.5 + 50, yMin: rect.height * 0.9, yMax: rect.height * 1 + 50 }, 
-        { xMin: rect.width * 0.4, xMax: rect.width * 0.6 + 50, yMin: rect.height * 1, yMax: rect.height * 1 + 50 }, 
-        { xMin: rect.width * 0.1, xMax: rect.width * 0.2 + 50, yMin: rect.height * 0.9, yMax: rect.height * 1 + 50 },
+        { xMin: rect.width * 0.5, xMax: rect.width * 0.6 + 50, yMin: rect.height * 0.6, yMax: rect.height * 0.7 + 50 }, // small screen
+        { xMin: rect.width * 0.4, xMax: rect.width * 0.5 + 50, yMin: rect.height * 0.6, yMax: rect.height * 0.8 + 50 }, 
+        { xMin: rect.width * 0.5, xMax: rect.width * 0.6 + 50, yMin: rect.height * 0.7, yMax: rect.height * 0.8 + 50 }, 
+        { xMin: rect.width * 0.4, xMax: rect.width * 0.5 + 50, yMin: rect.height * 0.7, yMax: rect.height * 0.8 + 50 }, 
+        { xMin: rect.width * 0.4, xMax: rect.width * 0.6 + 50, yMin: rect.height * 0.7, yMax: rect.height * 0/8 + 50 }, 
+        { xMin: rect.width * 0.2, xMax: rect.width * 0.3 + 50, yMin: rect.height * 0.7, yMax: rect.height * 0.8 + 50 },
         null,
       ]
       : [
           null,
           null,
-          { xMin: rect.width * 0.3, xMax: rect.width * 0.4 + 50, yMin: rect.height * 0.6, yMax: rect.height * 0.7 + 50 }, // large screen
-          { xMin: rect.width * 0.6, xMax: rect.width * 0.7 + 50, yMin: rect.height * 0.5, yMax: rect.height * 0.6 + 50 }, 
-          { xMin: rect.width * 0.3, xMax: rect.width * 0.4 + 50, yMin: rect.height * 0.6, yMax: rect.height * 0.8 + 50 }, 
-          { xMin: rect.width * 0.7, xMax: rect.width * 0.5 + 50, yMin: rect.height * 0.7, yMax: rect.height * 0.8 + 50 }, 
-          { xMin: rect.width * 0.4, xMax: rect.width * 0.6 + 50, yMin: rect.height * 0.8, yMax: rect.height * 0.9 + 50 }, 
-          { xMin: rect.width * 0.3, xMax: rect.width * 0.5 + 50, yMin: rect.height * 1.1, yMax: rect.height * 1.2 + 50 }, 
+          { xMin: rect.width * 0.6, xMax: rect.width * 0.7 + 50, yMin: rect.height * 0.6, yMax: rect.height * 0.7 + 50 }, // large screen
+          { xMin: rect.width * 0.4, xMax: rect.width * 0.5 + 50, yMin: rect.height * 0.6, yMax: rect.height * 0.7 + 50 }, 
+          { xMin: rect.width * 0.6, xMax: rect.width * 0.7 + 50, yMin: rect.height * 0.6, yMax: rect.height * 0.8 + 50 }, 
+          { xMin: rect.width * 0.5, xMax: rect.width * 0.5 + 50, yMin: rect.height * 0.8, yMax: rect.height * 0.9 + 50 }, 
+          { xMin: rect.width * 0.4, xMax: rect.width * 0.6 + 50, yMin: rect.height * 1, yMax: rect.height * 1.1 + 50 }, 
+          { xMin: rect.width * 0.3, xMax: rect.width * 0.5 + 50, yMin: rect.height * 0.8, yMax: rect.height * 0.9 + 50 }, 
           null,
         ];
   
@@ -182,7 +182,7 @@ class Game extends Component {
           )}
             {currentArea && currentImageIndex < 8 && (
               <div
-                className="absolute opacity-50 cursor-pointer"
+                className="absolute opacity-50 cursor-pointer bg-red-500"
                 style={{
                   left: `${currentArea.xMin}px`,
                   top: `${currentArea.yMin}px`,
@@ -196,7 +196,7 @@ class Game extends Component {
         )}
 
         {showInstructions && (
-          <div className="absolute text-center bottom-0 lg:bottom-1 text-white lg:text-lg bg-black bg-opacity-50 lg:p-2 rounded-lg">
+          <div className="absolute text-[10px] text-center bottom-0 lg:bottom-1 text-white lg:text-lg bg-black bg-opacity-50 lg:p-2 rounded-lg">
             Welcome to the game! Click the image to proceed. You have 3 chances to get it right!
           </div>
         )}
