@@ -143,7 +143,7 @@ class Game extends Component {
 
     return (
 <section className="bg-[#451C44] pt-20 md:h-[850px] w-full flex flex-col justify-center items-center relative">
-  <h1 className="pt-20 pb-10 text-[40px] font-bold text-center text-[#F36E37]"><span className="text-[#FBC6AC]">Welcome</span> to our game</h1>
+  <h1 className="pt-20 pb-10 text-[35px] font-bold text-center text-[#F36E37]"><span className="text-[#FBC6AC]">Welcome</span> to our game</h1>
 
   <div className="text-white text-2xl mb-0 flex items-center justify-center gap-2">
     Your Score: {score} <IoMdStar className="text-yellow-300 mb-1" />
