@@ -1,8 +1,11 @@
 import { motion, useAnimation } from 'framer-motion';
 import Bgimg from '../../../../public/Assets/images/waterbg.png';
 import Waterimg from '../../../../public/Assets/images/water.jpg';
+import { withTranslation } from 'react-i18next';
+import i18n from 'i18next';
 
-const Partenrs2 = () => {
+const Partenrs2 = ({t}) => {
+  const currentLanguage = i18n.language.split('-')[0];
   const controls = useAnimation(); 
   const contentVariants = {
     hidden: { opacity: 0, y: -150 }, 
@@ -25,6 +28,7 @@ const Partenrs2 = () => {
 
   return (
     <section 
+      dir={currentLanguage === 'ar' ? 'rtl' : 'ltr'}
       className='relative w-full h-[100vh] overflow-hidden' // Always full height
       style={{ 
         backgroundImage: `url(${Bgimg})`, 
@@ -63,9 +67,10 @@ const Partenrs2 = () => {
             initial="hidden" 
             animate={controls} 
             transition={{ duration: 0.5 }}
-            className="absolute top-10 md:left-24 p-4 text-4xl text-center"
+            className="absolute top-10 md:start-24 p-4 text-4xl text-center"
+            
           >
-            <h3>OUR CLIENTS</h3> 
+            <h3>{t("OUR CLIENTS")}</h3> 
           </motion.div>
 
           {/* Button with glowing border effect and transparent background */}
@@ -76,7 +81,7 @@ const Partenrs2 = () => {
             transition={{ duration: 0.5 }}
             className="absolute bottom-16 z-10 text-3xl text-white border-4 border-[#451C44] py-4 px-20 transition duration-300 ease-in-out hover:bg-orange-500 hover:bg-opacity-50"
           >
-            See More
+            {t("See More")}
             <style jsx>{`
               button {
                 box-shadow: 0 0 10px rgba(69, 28, 68, 0.6), 0 0 20px rgba(69, 28, 68, 0.5), 0 0 30px rgba(69, 28, 68, 0.4);
@@ -89,4 +94,4 @@ const Partenrs2 = () => {
   );
 }
 
-export default Partenrs2;
+export default withTranslation()(Partenrs2);
