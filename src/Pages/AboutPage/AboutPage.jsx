@@ -11,6 +11,7 @@ import Usps from "./usps";
 
 import { withTranslation } from 'react-i18next';
 import i18n from 'i18next';
+import Parteners from "../../Components/Homecomp/Partenrs/Parteners";
 
 class AboutPage extends Component {
     state = {  } 
@@ -24,6 +25,7 @@ class AboutPage extends Component {
                 <Sec2/>
                 <Sec3/>
                 <Sec4/>
+                <Parteners/>
                 <Usps/>
                 <Team/>
                 
