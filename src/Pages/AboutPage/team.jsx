@@ -77,7 +77,7 @@ class Team extends Component {
                                 <p>{t("Abdallah Hassn")}  </p>
                             </div>
                             <div className="job">
-                            {t("Administration Accountant ")}
+                            {t("Administration Accountant")}
                             </div>
                             <hr/>
                             <div className="summary lg:h-[180px]" >
