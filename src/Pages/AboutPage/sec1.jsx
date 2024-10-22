@@ -83,7 +83,7 @@ class Sec1 extends Component {
                     </motion.div>
                 </motion.div>
                 <div className='right rightImg'>
-                    <img src={image} alt="" />
+                    <img loading="lazy" src={image} alt="" />
                 </div>
                 <motion.div
                     className={`${currentLanguage === 'ar' ? 'Vector1' : 'Vector'} ${this.state.isVisible ? 'animate-flash' : ''}`}
@@ -93,7 +93,7 @@ class Sec1 extends Component {
                     variants={textVariants}
                     transition={{ duration: 0.5, delay: 0.6 }} 
                 >
-                    <img style={{ transform: window.innerWidth < 640 ? 'scaleX(1)' : (currentLanguage === 'ar' ? 'scaleX(-1)' : 'scaleX(1)'), }} src={image2} alt="" />
+                    <img loading="lazy" style={{ transform: window.innerWidth < 640 ? 'scaleX(1)' : (currentLanguage === 'ar' ? 'scaleX(-1)' : 'scaleX(1)'), }} src={image2} alt="" />
                 </motion.div>
                 <motion.div
                     className={`${currentLanguage === 'ar' ? 'eclips1' : 'eclips'} ${this.state.isVisible ? ' animate-flash ' : ''}`}

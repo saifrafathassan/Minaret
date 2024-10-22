@@ -54,7 +54,7 @@ componentDidMount() {
                     <div className={`right  ${this.state.isVisible ? 'animate-apear-2' : ''}`} 
                 ref={this.rightRef} >
                         <div className="imagepana">
-                        <img src={image} alt="" />
+                        <img loading="lazy" src={image} alt="" />
                         </div>
                         
                     </div>

@@ -33,7 +33,8 @@ class Sec2 extends Component {
                         </form>
 
                     </div>
-                    <div className="sec2-right  ">
+                    <div className="sec2-right  text-center">
+                        <h1 className="text-xl mb-1">Egypt Office</h1>
                     <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3519.4327639249877!2d30.7552204!3d28.1028404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145b2551f1aedb95%3A0x2e2167212752034e!2sThe%20Minaret%20Agency!5e0!3m2!1sen!2seg!4v1724089847954!5m2!1sen!2seg"
             
@@ -49,7 +50,8 @@ class Sec2 extends Component {
                             referrerPolicy="no-referrer-when-downgrade"
                         ></iframe>
                     </div>
-                    <div className="sec2-right  ">
+                    <div className="sec2-right  text-center">
+                    <h1 className="text-xl mb-1">Oman Office</h1>
                     <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.2387504161566!2d58.154921400000006!3d23.595768999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e8de318b749ed61%3A0xbb710adf6e9260d6!2sThe%20Minaret%20Agency!5e0!3m2!1sen!2seg!4v1728914450778!5m2!1sen!2seg"
             
