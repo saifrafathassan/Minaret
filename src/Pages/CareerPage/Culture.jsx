@@ -69,7 +69,7 @@ class Culutre extends Component {
                             transition={{ duration: 1 }}
                             viewport={{ once: true, amount: 0.5 }}
                         >
-                            <img src={img1} className="py-3" alt="" />
+                            <img src={img1} className="py-14" alt="" />
                         </motion.div>
                     </div>
                 </div>
