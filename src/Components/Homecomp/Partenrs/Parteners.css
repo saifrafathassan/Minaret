@@ -73,6 +73,7 @@
   @media (max-width: 576px) {
     .logo {
       width: 50rem;
+      height: 10rem !important;
     }
     .partenr{
       padding-right: 2rem;
@@ -86,6 +87,7 @@
     }
     .slick-dots{
       bottom: -20px !important;
+      padding-right: 20px;
     }
   }
   

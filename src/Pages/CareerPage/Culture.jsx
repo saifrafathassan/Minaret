@@ -69,7 +69,7 @@ class Culutre extends Component {
                             transition={{ duration: 1 }}
                             viewport={{ once: true, amount: 0.5 }}
                         >
-                            <img src={img1} alt="" />
+                            <img src={img1} className="py-3" alt="" />
                         </motion.div>
                     </div>
                 </div>
@@ -95,7 +95,7 @@ class Culutre extends Component {
                             transition={{ duration: 1 }}
                             viewport={{ once: true, amount: 0.5 }}
                         >
-                            <img src={img2} alt="" />
+                            <img src={img2} className="py-3" alt="" />
                         </motion.div>
 
                         <motion.div 
@@ -149,7 +149,7 @@ class Culutre extends Component {
                             transition={{ duration: 1 }}
                             viewport={{ once: true, amount: 0.5 }}
                         >
-                            <img src={img3} alt="" />
+                            <img src={img3} className="py-3" alt="" />
                         </motion.div>
                     </div>
                 </div>
