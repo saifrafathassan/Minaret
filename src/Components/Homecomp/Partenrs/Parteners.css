@@ -72,18 +72,17 @@
   
   @media (max-width: 576px) {
     .logo {
-      width: 50rem;
-      height: 10rem !important;
+      height: 4rem !important;
     }
     .partenr{
-      padding-right: 2rem;
-      padding-left: 2rem;
+      padding-right: 1rem;
+      padding-left: 1rem;
     }
     .title{
-      font-size: 45px;
+      font-size: 40px !important;
     }
     .silder{
-      padding: 20px;
+      padding: 15px;
     }
     .slick-dots{
       bottom: -20px !important;
