@@ -16,7 +16,7 @@ class Blogs extends Component {
 <div className="blog-card-container-page">
                         {bolgs.map((blog, index) => (
                             <div key={index} className="blog-page">
-                                <img src={blog.image} alt={`Blog ${index + 1}`}  />
+                                <img src={blog.image} alt={`Blog ${index + 1}`} loading='lazy'  />
                                 <div className="bolg-title-page "> {blog.title} </div>
                                 <div className="blog-content-page" >{blog.content}</div>
                                 <div className='read-more '>

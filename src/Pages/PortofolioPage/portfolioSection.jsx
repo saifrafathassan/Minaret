@@ -17,7 +17,7 @@ class PortSection extends Component {
                     {
                         portfolio.map((img,index)=>(
                             <div key={index} className='image-portfolio'>
-                                    <img src={img} alt="" />
+                                    <img src={img} alt="Our Portfolio" loading='lazy' />
                             </div>
                         ))
                     }

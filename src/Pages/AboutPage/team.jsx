@@ -41,7 +41,7 @@ class Team extends Component {
                     
                     <div className="member">
                         <div className="mem-image">
-                            <img src={ceo} alt="" />
+                            <img src={ceo} alt="Ahmed El Khatib, CEO of The Minaret Agency" loading="lazy"/>
                         </div>
                         <div className="mem-data">
                             <div className="Name">
@@ -70,7 +70,7 @@ class Team extends Component {
 
                     <div className="member">
                         <div className="mem-image">
-                            <img src={abdllha} alt="" />
+                            <img src={abdllha} alt="Abdallah Hassn, Administration Accountant of The Minaret Agency" loading="lazy" />
                         </div>
                         <div className="mem-data ">
                             <div className="Name ">
@@ -99,7 +99,7 @@ class Team extends Component {
 
                     <div className="member">
                         <div className="mem-image">
-                            <img src={Gehad} alt="" />
+                            <img src={Gehad} alt="Gehad M. Shehata, Team manager of The Minaret Agency" loading="lazy" />
                         </div>
                         <div className="mem-data ">
                             <div className="Name ">
@@ -128,7 +128,7 @@ class Team extends Component {
 
                     <div className="member h-full">
                         <div className="mem-image">
-                            <img src={Doaa} alt="" />
+                            <img src={Doaa} alt="Doaa Asqalany, Account Manager of The Minaret Agency" loading="lazy" />
                         </div>
                         <div className="mem-data ">
                             <div className="Name ">
@@ -157,7 +157,7 @@ class Team extends Component {
 
                     <div className="member">
                         <div className="mem-image">
-                            <img src={safaa} alt="" />
+                            <img src={safaa} alt="Safaa Gaber, Sales Administrator of The Minaret Agency" loading="lazy" />
                         </div>
                         <div className="mem-data ">
                             <div className="Name ">
@@ -186,7 +186,7 @@ class Team extends Component {
 
                     <div className="member">
                         <div className="mem-image">
-                            <img src={eman} alt="" />
+                            <img src={eman} alt="Eman Qasim, Content Creator" loading="lazy" />
                         </div>
                         <div className="mem-data ">
                             <div className="Name ">
@@ -215,7 +215,7 @@ class Team extends Component {
 
                     <div className="member">
                         <div className="mem-image">
-                            <img src={mostafa} alt="" />
+                            <img src={mostafa} alt="Mostafa Mahmoud, Graphic Design Team Lead of The Minaret Agency" loading="lazy" />
                         </div>
                         <div className="mem-data ">
                             <div className="Name ">
@@ -244,7 +244,7 @@ class Team extends Component {
 
                     <div className="member">
                         <div className="mem-image">
-                            <img src={mona} alt="" />
+                            <img src={mona} alt="Mona Sayed, Sr.Graphic Designer" loading="lazy" />
                         </div>
                         <div className="mem-data ">
                             <div className="Name ">
@@ -273,7 +273,7 @@ class Team extends Component {
 
                     <div className="member">
                         <div className="mem-image">
-                            <img src={Shimaa} alt="" />
+                            <img src={Shimaa} alt="Shimaa Karam, Sr.Graphic Designer" loading="lazy" />
                         </div>
                         <div className="mem-data ">
                             <div className="Name ">
@@ -302,7 +302,7 @@ class Team extends Component {
 
                     <div className="member h-full">
                         <div className="mem-image">
-                            <img src={Amira} alt="" />
+                            <img src={Amira} alt="Amira Mohamed, Sr.Graphic Designer" loading="lazy" />
                         </div>
                         <div className="mem-data ">
                             <div className="Name ">
@@ -331,7 +331,7 @@ class Team extends Component {
 
                     <div className="member">
                         <div className="mem-image">
-                            <img src={sohila} alt="" />
+                            <img src={sohila} alt="Sohila Mohammed, Illustrator" loading="lazy" />
                         </div>
                         <div className="mem-data ">
                             <div className="Name ">
@@ -360,7 +360,7 @@ class Team extends Component {
 
                     <div className="member h-full">
                         <div className="mem-image">
-                            <img src={ahmed} alt="" />
+                            <img src={ahmed} alt="Ahmed Nshaat, Motion Designer" loading="lazy" />
                         </div>
                         <div className="mem-data ">
                             <div className="Name ">
@@ -390,7 +390,7 @@ class Team extends Component {
 
                     <div className="member">
                         <div className="mem-image">
-                            <img src={mohmed} alt="" />
+                            <img src={mohmed} alt="Mohamed Emad, Videographer & Photographer" loading="lazy" />
                         </div>
                         <div className="mem-data ">
                             <div className="Name ">
@@ -419,7 +419,7 @@ class Team extends Component {
 
                     <div className="member">
                         <div className="mem-image">
-                            <img src={bassem} alt="" />
+                            <img src={bassem} alt="Basem Shehab, Videographer & Photographer" loading="lazy" />
                         </div>
                         <div className="mem-data ">
                             <div className="Name ">
@@ -448,7 +448,7 @@ class Team extends Component {
 
                     <div className="member">
                         <div className="mem-image">
-                            <img src={Mohamidali} alt="" />
+                            <img src={Mohamidali} alt="Mohamed Ali, Software Manager" loading="lazy" />
                         </div>
                         <div className="mem-data ">
                             <div className="Name ">
@@ -477,7 +477,7 @@ class Team extends Component {
 
                     <div className="member">
                         <div className="mem-image">
-                            <img src={Abdelrhman} alt="" />
+                            <img src={Abdelrhman} alt="Abdelrahman Fathy, Web Developer" loading="lazy" />
                         </div>
                         <div className="mem-data ">
                             <div className="Name ">
@@ -506,7 +506,7 @@ class Team extends Component {
 
                     <div className="member h-full">
                         <div className="mem-image">
-                            <img src={saif} alt="" />
+                            <img src={saif} alt="Saif R Mostafa, Front-End Developer" loading="lazy" />
                         </div>
                         <div className="mem-data ">
                             <div className="Name ">
