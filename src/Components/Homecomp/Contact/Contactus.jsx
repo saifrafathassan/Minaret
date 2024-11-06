@@ -51,7 +51,7 @@ const Contact =({t})=>{
                 <p>{t('Contact')}</p>
                 </div>
                 <div className=' btn'>
-                    <Link to="/Contact us">  <span > {t('Contact us')} </span></Link>    
+                    <a href='https://wa.me/96899208915'>  <span > {t('Contact us')} </span></a> 
                 </div>
                 </div>
 

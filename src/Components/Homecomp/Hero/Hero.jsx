@@ -25,7 +25,7 @@ class Hero extends Component {
 
                 <div className="Hero-right" >
                     <div className="image flex sm:justify-center md:justify-end sm:pl-0 md:pl-[80px]">
-                    <img src={image} alt=" " />
+                    <a href='https://wa.me/96899208915'> <img src={image} alt=" " /></a>
                     </div>
                 </div>
             </div>

@@ -12,7 +12,7 @@ class Service extends Component {
     };
     handleClick = () => {
         this.props.history.push('/Services');
-      };
+    };
     handleMouseEnter = (index) => {
         this.setState({ hoveredServiceIndex: index });
     };
@@ -34,37 +34,41 @@ class Service extends Component {
                         <div className="title text-[50px]">
                             {/* {t("Our")}  <span>{t("Services")} </span> */}
                             {currentLanguage === 'en' ? (
-                            <>
-                            {t("Our")} <span>{t("Services")}</span>
+                                <>
+                                    {t("Our")} <span>{t("Services")}</span>
                                 </>
-                                ) : (
+                            ) : (
                                 <span>{t("Services")}</span>
-                                )}  
+                            )}
                         </div>
                         <div className="desc">
-                            {t("Explore our comprehensive")} 
+                            {t("Explore our comprehensive")}
                         </div>
                         <div className="view-more pt-4">
-                            <div className="v-cont"><span>{t("view more")} </span></div>
-                            <div className="back">
-                                <img src={arow} alt="->" />
-                            </div>
+                            <a href="https://wa.me/96899208915" target="_blank" rel="noopener noreferrer">
+                                <div className="v-cont">
+                                    <span>{t("view more")}</span>
+                                </div>
+                                <div className="back">
+                                    <img src={arow} alt="->" />
+                                </div>
+                            </a>
                         </div>
                     </div>
-   
-                 
+
+
                     {services.map((service, index) => (
                         <div
                             key={index}
                             className="card"
                             onMouseEnter={() => this.handleMouseEnter(index)}
                             onMouseLeave={this.handleMouseLeave}
-                           
+
                         >
                             {hoveredServiceIndex === index ? (
                                 <>
                                     <div className="card-header">
-                                    {index + 1 < 10 ? `0${index + 1}` : index + 1} <span>{service.service_categories[0]}</span>
+                                        {index + 1 < 10 ? `0${index + 1}` : index + 1} <span>{service.service_categories[0]}</span>
                                     </div>
                                     <div className="card-content">
                                         <ul>
@@ -98,11 +102,12 @@ class Service extends Component {
                                 </>
                             )}
                         </div>
+
                     ))}
                 </div>
             </div>
         );
     }
 }
- 
+
 export default withTranslation()(Service);

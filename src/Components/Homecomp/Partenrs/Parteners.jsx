@@ -40,18 +40,19 @@ const Parteners = ({t}) => {
                     slidesToShow: 3,
                 },
             },
-            {
-                breakpoint: 992,
-                settings: {
-                    slidesToShow: 3,
-                },
-            },
+           
             {
                 breakpoint: 768,
                 settings: {
-                    slidesToShow: 3,
+                    slidesToShow: 2,
                 },
             },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                },
+            }
         ],
     };
 

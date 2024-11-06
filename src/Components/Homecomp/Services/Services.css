@@ -179,10 +179,44 @@
 
 
 .view-more {
-display: flex;
+    display: flex;
+}
+
+.view-more-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none; /* Remove default link styling */
+}
+
+.v-cont span {
+    font-family: 'Somar';
+    font-weight: 500;
+    text-align: end;
+    font-size: 0.7rem;
+}
+
+.v-cont {
+    padding: 3px 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.07);
+    border-radius: 10px 0 0 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 7rem;
+    justify-content: space-between;
+}
+
+.view-more-link img {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    width: 2rem;
+    height: 1.5rem;
+}
 
     
-}
+
 .v-cont span{
     display: block;
     font-family: 'Somar';
@@ -215,16 +249,14 @@ display: flex;
   height: 1.5rem;
 
 }
-
-.back{
+.back {
     display: flex;
     align-items: center;
     background: #F36E37;
     height: 100%;
-    width:11%;
+    
     border-radius: 0px 10px 10px 0px;
 }
-
 /* end of the frist card */ 
 
  

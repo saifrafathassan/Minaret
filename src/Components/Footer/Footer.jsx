@@ -45,7 +45,7 @@ class Footer extends Component {
                         {t("Sales")} : +96899208915
                         </p>
                         <p>
-                        {t("Our mail")} : Info@theminaretagency.com
+                     <a href="mailto:info@theminaretagency.com" target="_blank">    {t("Our mail")} : Info@theminaretagency.com</a>
                         </p>
                     </div>
                 </div>

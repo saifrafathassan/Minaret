@@ -121,7 +121,9 @@
         flex-direction: column;
         gap:5rem
     }
-
+    .contents-right{
+        margin-top: 20px;
+    }
     .contents-1 {
         flex-direction: column;
     }

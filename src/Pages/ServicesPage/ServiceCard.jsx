@@ -5,41 +5,34 @@ import { Link } from "react-router-dom";
 import Btn from "../../Components/btn/btn";
 import { withTranslation } from 'react-i18next';
 
+
+
+
 class ServiceCard extends Component {
-    state = {  } 
-    render() { 
-        const { t } = this.props;
+    render() {
+        const { t, i18n } = this.props;  // Destructure i18n to access the language
+
         return (
             <section className="card-section">
                 {
-                    this.props.Services.map((service,index)=>
-                    (
-                        <div className="spagecard  " key={index} >
-                            
+                    this.props.Services.map((service, index) => (
+                        <div className="spagecard" key={index}>
                             <div className="crad-logo">
-                            <img src={service.service_logo} alt="" />    
+                                <img src={service.service_icon} alt="" />
                             </div>
                             <div className="title s2">
-                                {service.service_name}
+                                {i18n.language === 'ar' ? service.name_ar : service.name} {/* Conditional rendering */}
                             </div>
-                            <div className="desc text-sm ">
-                                {service.service_decs}
+                            <div className="desc text-sm">
+                                {i18n.language === 'ar' ? service.service_desc_ar : service.service_desc} {/* Conditional rendering */}
                             </div>
-                          
-                           
-                       
-                            <Btn   Caption={t('Book Now')} link={`/Service/${service.service_id}`}/>
-                        
-                          
-
+                            <Btn Caption={t('Book Now')} link={`/Service/${service.id}`} />
                         </div>
-                    )
-                )
+                    ))
                 }
             </section>
-
         );
     }
 }
- 
+
 export default withTranslation()(ServiceCard);

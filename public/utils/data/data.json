@@ -85,7 +85,149 @@
       ]
 
 
+,
+"service_category": [{
+    "id": 28,
+    "name": "Foundation and Strategy",
+    "name_ar": "",
+    "icon": "http://127.0.0.1:8000/media/media/Assets/Gifs/1.gif",
+    "sub_categories": [
+        {
+            "id": 53,
+            "name": "Strategy and Consulting",
+            "name_ar": "",
+            "services": [
+                {
+                    "id": 127,
+                    "name": "Strategic Planning and Consulting",
+                    "name_ar": "",
+                    "service_desc": "Crafting bespoke business strategies focused on digital navigation, long-term growth, and ROI. Our plans are designed to integrate seamlessly with your business operations, ensuring sustainable success.",
+                    "service_desc_ar": "",
+                    "service_icon": "http://127.0.0.1:8000/media/icons/media/Assets/images/Service-Logo/1.png"
+                },
+                {
+                    "id": 128,
+                    "name": "Market Research & Competitor Analysis",
+                    "name_ar": "",
+                    "service_desc": "Crafting bespoke business strategies focused on digital navigation, long-term growth, and ROI. Our plans are designed to integrate seamlessly with your business operations, ensuring sustainable success.",
+                    "service_desc_ar": "",
+                    "service_icon": "http://127.0.0.1:8000/media/icons/media/Assets/images/Service-Logo/2.png"
+                },
+                {
+                    "id": 129,
+                    "name": "Business Development Strategy",
+                    "name_ar": "",
+                    "service_desc": "Specializing in identifying and pursuing strategic partnerships, exploring new markets, and developing channels for customer acquisition to drive business growth. We help you identify untapped opportunities and forge connections that amplify your reach and influence.",
+                    "service_desc_ar": "",
+                    "service_icon": "http://127.0.0.1:8000/media/icons/media/Assets/images/Service-Logo/3.png"
+                },
+                {
+                    "id": 130,
+                    "name": "Operational Efficiency Consulting",
+                    "name_ar": "",
+                    "service_desc": "Streamlining operations to enhance productivity and reduce costs. Our approach involves analyzing your business processes, identifying areas for improvement, and implementing solutions that boost operational effectiveness.",
+                    "service_desc_ar": "",
+                    "service_icon": "http://127.0.0.1:8000/media/icons/media/Assets/images/Service-Logo/4.png"
+                }
+            ]
+        },
+        {
+            "id": 54,
+            "name": "Branding and Identity",
+            "name_ar": "",
+            "services": [
+                {
+                    "id": 131,
+                    "name": "Branding and Logo Design",
+                    "name_ar": "",
+                    "service_desc": " Crafting unique brand identities with memorable logos, ensuring brand consistency across all digital platforms.",
+                    "service_desc_ar": "",
+                    "service_icon": "http://127.0.0.1:8000/media/icons/media/Assets/images/Service-Logo/5.png"
+                },
+                {
+                    "id": 132,
+                    "name": " Graphic Design",
+                    "name_ar": "",
+                    "service_desc": "Creating visually appealing designs, including infographics and branding materials, to communicate brand messages effectively.",
+                    "service_desc_ar": "",
+                    "service_icon": "http://127.0.0.1:8000/media/icons/media/Assets/images/Service-Logo/6.png"
+                }
+            ]
+        }
+    ]
+},
+{
+    "id": 29,
+    "name": "Content Development and Visibility",
+    "name_ar": "",
+    "icon": "http://127.0.0.1:8000/media/media/Assets/Gifs/2.gif",
+    "sub_categories": [
+        {
+            "id": 55,
+            "name": "Content and SEO",
+            "name_ar": "",
+            "services": [
+                {
+                    "id": 133,
+                    "name": "Content Strategy Development",
+                    "name_ar": "",
+                    "service_desc": "Creating comprehensive content plans aligned with business objectives, targeting audience engagement and brand authority.",
+                    "service_desc_ar": "",
+                    "service_icon": "http://127.0.0.1:8000/media/icons/media/Assets/images/Service-Logo/7.png"
+                },
+                {
+                    "id": 134,
+                    "name": "Search Engine Optimization (SEO)",
+                    "name_ar": "",
+                    "service_desc": "SEO Brief: Enhancing online visibility through technical SEO, keyword optimization, and high-quality backlinks for higher search engine rankings.",
+                    "service_desc_ar": "",
+                    "service_icon": "http://127.0.0.1:8000/media/icons/media/Assets/images/Service-Logo/8.png"
+                },
+                {
+                    "id": 135,
+                    "name": "Content Marketing",
+                    "name_ar": "",
+                    "service_desc": "Developing and distributing valuable content to attract, engage, and retain a targeted audience, fostering brand loyalty.",
+                    "service_desc_ar": "",
+                    "service_icon": "http://127.0.0.1:8000/media/icons/media/Assets/images/Service-Logo/9.png"
+                }
+            ]
+        },
+        {
+            "id": 56,
+            "name": "Media and Creative Services",
+            "name_ar": "",
+            "services": [
+                {
+                    "id": 136,
+                    "name": "Motion & Animation",
+                    "name_ar": "",
+                    "service_desc": "Bring your brand to life with our Motion & Animation services. From captivating videos to engaging animations, we make your message move.",
+                    "service_desc_ar": "",
+                    "service_icon": "http://127.0.0.1:8000/media/icons/media/Assets/images/Service-Logo/10.png"
+                },
+                {
+                    "id": 137,
+                    "name": "Video Marketing",
+                    "name_ar": "",
+                    "service_desc": "Producing engaging video content such as explainer videos, testimonials, and product demos to enhance online presence.",
+                    "service_desc_ar": "",
+                    "service_icon": "http://127.0.0.1:8000/media/icons/media/Assets/images/Service-Logo/11.png"
+                },
+                {
+                    "id": 138,
+                    "name": "Interactive Content Creation",
+                    "name_ar": "",
+                    "service_desc": "Developing interactive elements like quizzes and polls to increase user engagement and time spent on the site.",
+                    "service_desc_ar": "",
+                    "service_icon": "http://127.0.0.1:8000/media/icons/media/Assets/images/Service-Logo/12.png"
+                }
+            ]
+        }
+    ]
+}
 
+]
 
     
     

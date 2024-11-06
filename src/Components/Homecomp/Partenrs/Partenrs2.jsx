@@ -1,6 +1,6 @@
 import { motion, useAnimation } from 'framer-motion';
-import Bgimg from '/Assets/images/waterbg.png';
-import Waterimg from '/Assets/images/water.jpg';
+import Bgimg from '../../../../public/Assets/images/waterbg.png';
+import Waterimg from '../../../../public/Assets/images/water.jpg';
 import { withTranslation } from 'react-i18next';
 import i18n from 'i18next';
 

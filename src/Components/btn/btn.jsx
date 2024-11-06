@@ -10,19 +10,14 @@ class Btn extends Component {
     render() { 
         const { t } = this.props;
         return (
-            <div className="the-button">
-                 
-
+            <Link to={this.props.link} className="the-button">
             <div className="caption">
-            <Link to={this.props.link}>
-            <span> { this.props.Caption}</span>
-            </Link>
-           
+                <span>{this.props.Caption}</span>
             </div>
-            <div className="arow" >
-                    <img src={arow} alt="" />
+            <div className="arow">
+                <img src={arow} alt="" />
             </div>
-        </div>
+        </Link>
         );
     }
 }

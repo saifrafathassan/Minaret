@@ -10,7 +10,7 @@ import Blogs from './../../Components/Homecomp/Blog/Blogs';
 import Game from './../../Components/Homecomp/Game/Game'
 import Contact from "../../Components/Homecomp/Contact/Contactus";
 import Calculator from "../../Components/Homecomp/Calculator/Calculator";
-
+import Service2 from "../../Components/Homecomp/Services/newService";
 import './home.css';
 import Partenrs2 from "../../Components/Homecomp/Partenrs/Partenrs2";
 
@@ -21,13 +21,14 @@ class Home extends Component {
             <div className="Home">
                 <Hero />
                 <About />
-                <Service />
+                <Service2/>
                 <Calculator/>
                 <Partenrs2 />
                 <Portfolio />
                 <ClientRev />
                 <Blogs />
                 <Game/>
+              
                 <Contact/>
             </div>
         );

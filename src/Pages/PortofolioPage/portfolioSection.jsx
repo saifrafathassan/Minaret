@@ -1,30 +1,38 @@
 import React  from 'react';
 import { Component } from 'react';
-import img1 from '/Assets/images/Portfolio/12.png';
-import img2 from '/Assets/images/Portfolio/22.png';
-import img3 from '/Assets/images/Portfolio/32.png';
-import img4 from '/Assets/images/Portfolio/4.png';
-import img5 from '/Assets/images/Portfolio/5.png';
-import img6 from '/Assets/images/Portfolio/6.png';
+import api from '../../../APi';
+
 
 class PortSection extends Component {
-    state = {  } 
+    state = { 
+        portfolio: [] // Initialize state to hold portfolio items
+    }; 
+
+    componentDidMount() {
+        // Fetch portfolio data from the API
+        api.get('/portfolio/') // Use the global api instance to fetch data
+            .then(response => {
+                // Set the fetched data to the state
+                this.setState({ portfolio: response.data });
+            })
+            .catch(error => {
+                console.error("There was an error fetching the portfolio data!", error);
+            });
+    }
+
     render() { 
-        const portfolio=[img1,img4,img5,img3,img2,img6]
         return (
-            <section className='padc bg1' >
+            <section className='padc bg1'>
                 <div className='port-grid'>
                     {
-                        portfolio.map((img,index)=>(
-                            <div key={index} className='image-portfolio'>
-                                    <img src={img} alt="Our Portfolio" loading='lazy' />
+                        this.state.portfolio.map((item) => (
+                            <div key={item.id} className='image-portfolio'>
+                                <img src={item.image} alt={item.name} /> {/* Use the image URL from API */}
                             </div>
                         ))
                     }
                 </div>
-
             </section>
-
         );
     }
 }
