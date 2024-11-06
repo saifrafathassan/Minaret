@@ -1,6 +1,6 @@
 import React from 'react';
 import { Component } from 'react';
-import axios from 'axios';
+// import axios from 'axios';
 import arow from '/Assets/Gifs/0.gif';
 import './blogs.css'
 import { withTranslation } from 'react-i18next';
