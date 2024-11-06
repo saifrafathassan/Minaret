@@ -174,6 +174,7 @@ class Game extends Component {
               exit={{ opacity: 0 }} 
               transition={{ duration: 0.8, ease: "easeInOut" }}
               style={{ width: '100%', height: '100%' }} 
+              loading="lazy"
             />
             {currentImageIndex === 1 && (
             <div className="absolute bottom-1 text-white text-sm sm:text-lg bg-black bg-opacity-50 p-1 sm:p-2 rounded-lg">
