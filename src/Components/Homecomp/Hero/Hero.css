@@ -7,7 +7,6 @@
     background-image: url('/Assets/images/background.png');
     background-size: cover;
     background-repeat: no-repeat;
-    
 }
 
 .Hero-left {
@@ -125,6 +124,8 @@
 @media (max-width: 480px) {
     .Hero_Container {
         padding-top: 2rem;
+        background-position: center;
+        background-size: cover
     }
 
     .Hero-left {
