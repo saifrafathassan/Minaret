@@ -124,12 +124,12 @@
 
 @media (max-width: 480px) {
     .Hero_Container {
-        padding-top: 3rem;
+        padding-top: 2rem;
     }
 
     .Hero-left {
         padding: 3rem 0  0;
-        width: 300px;
+        width: 130%;
     }
 
     .Hero-left > p {
@@ -137,15 +137,4 @@
         line-height: 2rem;
     }
 
-    .Hero-left-header {
-        /* font-size: 1rem; */
-        line-height: 1.5rem;
-        /* padding-top: 200px; */
-    }
-
-    .image img {
-        left: 1rem;
-        top: 2rem;
-        max-width: 15rem;
-    }
 }

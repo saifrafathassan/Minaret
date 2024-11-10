@@ -30,8 +30,8 @@ class Sec4 extends Component {
                         initial="hidden"
                         whileInView="visible"
                         variants={textVariants}
-                        transition={{ duration: 1 }}
-                        viewport={{ once: true, amount: 0.5 }}
+                        transition={{ duration: 1.5 }}
+                        viewport={{ once: true, amount: 0.8 }}
                         >
                        <div>
                        <div className="title missionTitle"  style={{marginBottom:'10px'}}>
@@ -60,8 +60,8 @@ class Sec4 extends Component {
                         initial="hidden"
                         whileInView="visible"
                         variants={imageVariants}
-                        transition={{ duration: 1 }}
-                        viewport={{ once: true, amount: 0.5 }}
+                        transition={{ duration: 1.5 }}
+                        viewport={{ once: true, amount: 0.8 }}
                         >
                     <div className="right">
                         <div className="imagepana">
